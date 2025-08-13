@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+				mono: ['JetBrains Mono', 'monospace'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -26,7 +30,9 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))',
+					muted: 'hsl(var(--primary-muted))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -52,6 +58,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Scientific theme colors
+				'hero-bg': 'hsl(var(--hero-bg))',
+				'hero-overlay': 'hsl(var(--hero-overlay))',
+				'scientific-accent': 'hsl(var(--scientific-accent))',
+				'protein-blue': 'hsl(var(--protein-blue))',
+				'dna-green': 'hsl(var(--dna-green))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -70,25 +82,50 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-20px)' }
+				},
+				'fade-in-up': {
+					from: { opacity: '0', transform: 'translateY(30px)' },
+					to: { opacity: '1', transform: 'translateY(0)' }
+				},
+				'glow': {
+					'0%': { boxShadow: '0 0 20px hsl(var(--primary) / 0.2)' },
+					'100%': { boxShadow: '0 0 30px hsl(var(--primary) / 0.4)' }
+				},
+				'molecular-drift': {
+					'0%, 100%': { transform: 'translate(0, 0) rotate(0deg)' },
+					'33%': { transform: 'translate(-10px, -10px) rotate(1deg)' },
+					'66%': { transform: 'translate(10px, -5px) rotate(-1deg)' }
+				},
+				'pulse-scientific': {
+					'0%, 100%': { opacity: '1', transform: 'scale(1)' },
+					'50%': { opacity: '0.8', transform: 'scale(1.05)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'fade-in-up': 'fade-in-up 0.8s ease-out',
+				'glow': 'glow 2s ease-in-out infinite alternate',
+				'molecular-drift': 'molecular-drift 20s ease-in-out infinite',
+				'pulse-scientific': 'pulse-scientific 3s ease-in-out infinite'
+			},
+			// Add gradient utilities
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-scientific': 'var(--gradient-scientific)',
+				'gradient-card': 'var(--gradient-card)'
 			}
 		}
 	},
