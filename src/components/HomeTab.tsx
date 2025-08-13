@@ -114,6 +114,14 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
           <Button 
             size="lg"
             variant="outline"
+            onClick={() => onNavigate('publications')}
+            className="bg-transparent border-white text-white hover:bg-white/10"
+          >
+            View Publications
+          </Button>
+          <Button 
+            size="lg"
+            variant="outline"
             onClick={() => onNavigate('teaching')}
             className="bg-transparent border-white text-white hover:bg-white/10"
           >

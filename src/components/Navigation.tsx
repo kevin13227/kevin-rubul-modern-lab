@@ -10,6 +10,7 @@ interface NavigationProps {
 const tabs = [
   { id: 'home', label: 'Home' },
   { id: 'biography', label: 'Biography' },
+  { id: 'publications', label: 'Publications' },
   { id: 'teaching', label: 'Teaching & Activism' },
   { id: 'contact', label: 'Contact' },
 ];

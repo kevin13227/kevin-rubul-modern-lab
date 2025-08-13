@@ -3,6 +3,7 @@ import { Navigation } from "./Navigation";
 import { HeroSection } from "./HeroSection";
 import { HomeTab } from "./HomeTab";
 import { BiographyTab } from "./BiographyTab";
+import { PublicationsTab } from "./PublicationsTab";
 import { TeachingTab } from "./TeachingTab";
 import { ContactTab } from "./ContactTab";
 
@@ -21,6 +22,8 @@ export const RubulMoutSite = () => {
         return <HomeTab onNavigate={handleTabChange} />;
       case 'biography':
         return <BiographyTab />;
+      case 'publications':
+        return <PublicationsTab />;
       case 'teaching':
         return <TeachingTab />;
       case 'contact':
@@ -71,6 +74,12 @@ export const RubulMoutSite = () => {
                   className="block text-muted-foreground hover:text-primary transition-colors link-underline"
                 >
                   Biography
+                </button>
+                <button 
+                  onClick={() => handleTabChange('publications')}
+                  className="block text-muted-foreground hover:text-primary transition-colors link-underline"
+                >
+                  Publications & Patents
                 </button>
                 <button 
                   onClick={() => handleTabChange('teaching')}
