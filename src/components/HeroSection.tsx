@@ -1,21 +1,17 @@
 import { Button } from "@/components/ui/button";
 import heroMolecularBg from "@/assets/hero-molecular-bg.jpg";
-
 interface HeroSectionProps {
   onNavigate: (tab: string) => void;
 }
-
-export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
-  return (
-    <section 
-      className="relative min-h-[70vh] flex items-center justify-center hero-molecular-bg"
-      style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(${heroMolecularBg})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}
-    >
+export const HeroSection = ({
+  onNavigate
+}: HeroSectionProps) => {
+  return <section className="relative min-h-[70vh] flex items-center justify-center hero-molecular-bg" style={{
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(${heroMolecularBg})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed'
+  }}>
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto animate-fade-in-up">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
@@ -31,40 +27,21 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              size="lg"
-              onClick={() => onNavigate('biography')}
-              className="btn-hero px-8 py-4 text-lg font-semibold animate-glow"
-            >
+            <Button size="lg" onClick={() => onNavigate('biography')} className="btn-hero px-8 py-4 text-lg font-semibold animate-glow">
               Learn About My Research
             </Button>
             
-            <Button 
-              size="lg" 
-              variant="outline"
-              onClick={() => onNavigate('contact')}
-              className="bg-white/10 text-white border-white/30 hover:bg-white/20 backdrop-blur-sm px-8 py-4 text-lg"
-            >
+            <Button size="lg" variant="outline" onClick={() => onNavigate('contact')} className="bg-white/10 text-white border-white/30 hover:bg-white/20 backdrop-blur-sm px-8 py-4 text-lg">
               Get In Touch
             </Button>
           </div>
           
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="glass-card p-6 rounded-xl text-white">
-              <h3 className="text-lg font-semibold mb-2">40+ Publications</h3>
-              <p className="text-white/80">Research articles in protein design and cell biology</p>
-            </div>
-            <div className="glass-card p-6 rounded-xl text-white">
-              <h3 className="text-lg font-semibold mb-2">Bestselling Author</h3>
-              <p className="text-white/80">50,000+ copies sold in Assamese language</p>
-            </div>
-            <div className="glass-card p-6 rounded-xl text-white">
-              <h3 className="text-lg font-semibold mb-2">Science Activism</h3>
-              <p className="text-white/80">Weekly outreach to students worldwide</p>
-            </div>
+            
+            
+            
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
