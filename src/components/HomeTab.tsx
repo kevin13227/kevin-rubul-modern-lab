@@ -1,9 +1,9 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BookOpen, Users, Award } from "lucide-react";
-import stemCellsImg from "@/assets/project-stem-cells.jpg";
-import proteinDesignImg from "@/assets/project-protein-design.jpg";
-import notchSignalingImg from "@/assets/project-notch-signaling.jpg";
+import workProteinImg from "@/assets/work-protein-design.jpg";
+import workStemcellImg from "@/assets/work-stemcell.jpg";
+import workImmunoageingImg from "@/assets/work-immunoageing.jpg";
 
 interface HomeTabProps {
   onNavigate: (tab: string) => void;
@@ -44,7 +44,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
             <Card className="h-full hover:shadow-lg transition-all duration-300 bg-card/50 backdrop-blur-sm border-border/50">
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
-                  src={proteinDesignImg} 
+                  src={workProteinImg} 
                   alt="Protein Design" 
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
@@ -64,7 +64,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
             <Card className="h-full hover:shadow-lg transition-all duration-300 bg-card/50 backdrop-blur-sm border-border/50">
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
-                  src={stemCellsImg} 
+                  src={workStemcellImg} 
                   alt="Hematopoietic Stem & T-Cell Development" 
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
@@ -84,7 +84,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
             <Card className="h-full hover:shadow-lg transition-all duration-300 bg-card/50 backdrop-blur-sm border-border/50">
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
-                  src={notchSignalingImg} 
+                  src={workImmunoageingImg} 
                   alt="Immuno-Ageing" 
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
