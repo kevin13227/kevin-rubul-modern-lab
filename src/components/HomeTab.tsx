@@ -1,4 +1,3 @@
-import { ProjectCard } from "./ProjectCard";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BookOpen, Users, Award } from "lucide-react";
@@ -11,28 +10,6 @@ interface HomeTabProps {
 }
 
 export const HomeTab = ({ onNavigate }: HomeTabProps) => {
-  const projects = [
-    {
-      title: "Notch Signaling Agonists for T-Cell Development",
-      description: "Developed soluble agonists for the Notch signaling pathway to promote T cell development from bone marrow stem cells and enhance cell-based immunity during vaccination.",
-      image: notchSignalingImg,
-      tags: ["Protein Design", "T-Cell Biology", "Immunology"],
-      link: "https://www.cell.com"
-    },
-    {
-      title: "Computational Protein Design for Immune Function",
-      description: "Using cutting-edge computational technologies to modulate signaling pathways in immune development, function, and aging to enhance T cell function against cancer and infections.",
-      image: proteinDesignImg,
-      tags: ["Computational Biology", "Protein Engineering", "Immunotherapy"],
-    },
-    {
-      title: "Hematopoietic Stem Cell Engineering",
-      description: "Research into bone marrow stem cell development and function, focusing on enhancing their ability to generate functional T cells for therapeutic applications.",
-      image: stemCellsImg,
-      tags: ["Stem Cells", "Cell Biology", "Regenerative Medicine"],
-    }
-  ];
-
   const achievements = [
     {
       icon: Award,
@@ -53,22 +30,75 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
 
   return (
     <div className="space-y-12">
-      {/* Current Research Projects */}
+      {/* Research Focus */}
       <section className="animate-fade-in-up">
         <div className="text-center mb-10">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Current Research Projects</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4">Research Focus</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Exploring the frontiers of protein design, cell biology, and immunology to develop 
-            breakthrough therapies for cancer, autoimmune diseases, and viral infections.
+            An RNA-centric view of the cell surface: protein design, hematopoietic stem & T-cell development, and immuno-ageing.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <div key={index} className="animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
-              <ProjectCard {...project} />
-            </div>
-          ))}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="animate-fade-in-up" style={{ animationDelay: '0s' }}>
+            <Card className="h-full hover:shadow-lg transition-all duration-300 bg-card/50 backdrop-blur-sm border-border/50">
+              <div className="aspect-video overflow-hidden rounded-t-lg">
+                <img 
+                  src={proteinDesignImg} 
+                  alt="Protein Design" 
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-2xl font-bold text-foreground">Protein Design</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-muted-foreground text-lg leading-relaxed">
+                  Engineering and analyzing protein structures to uncover new biological functions.
+                </CardDescription>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+            <Card className="h-full hover:shadow-lg transition-all duration-300 bg-card/50 backdrop-blur-sm border-border/50">
+              <div className="aspect-video overflow-hidden rounded-t-lg">
+                <img 
+                  src={stemCellsImg} 
+                  alt="Hematopoietic Stem & T-Cell Development" 
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-2xl font-bold text-foreground">Hematopoietic Stem & T-Cell Development</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-muted-foreground text-lg leading-relaxed">
+                  Decoding developmental programs guiding immune cell formation and function.
+                </CardDescription>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <Card className="h-full hover:shadow-lg transition-all duration-300 bg-card/50 backdrop-blur-sm border-border/50">
+              <div className="aspect-video overflow-hidden rounded-t-lg">
+                <img 
+                  src={notchSignalingImg} 
+                  alt="Immuno-Ageing" 
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-2xl font-bold text-foreground">Immuno‑Ageing</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-muted-foreground text-lg leading-relaxed">
+                  Understanding age-associated immune changes to inform healthier longevity.
+                </CardDescription>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
