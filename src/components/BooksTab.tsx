@@ -5,68 +5,58 @@ import { BookOpen, Calendar, User, ExternalLink, Award, Quote } from "lucide-rea
 
 const books = [
   {
-    title: "Science for the Masses: Breaking Barriers in Scientific Communication",
+    title: "Jatra Aru Anyanya (The Journey and Others)",
     author: "Rubul Mout",
-    publicationYear: "2023",
-    publisher: "Academic Insights Press",
-    isbn: "978-0-123456-78-9",
-    pages: 298,
-    category: "Science Communication",
-    description: "A comprehensive guide to making complex scientific concepts accessible to general audiences, featuring practical strategies for effective science communication and community engagement.",
-    keyTopics: ["Science Communication", "Public Engagement", "Educational Outreach", "Community Science"],
-    awards: ["Best Science Communication Book 2023", "Public Understanding of Science Award"],
+    publicationYear: "2017",
+    publisher: "Bani Prakash",
+    language: "Assamese",
+    pages: 256,
+    category: "Memoir/Autobiography",
+    description: "A powerful memoir chronicling Dr. Mout's extraordinary journey from a poor peasant family in rural Assam to becoming a research fellow at Harvard Medical School. This bestselling book has become an inspiration for countless students across India.",
+    keyThemes: ["Education", "Social Mobility", "Rural to Urban Migration", "Scientific Career", "Cultural Identity"],
+    achievements: [
+      "Instant bestseller in Assamese literature",
+      "Sold over 50,000 copies",
+      "Included in school and university curricula across Assam",
+      "One of the highest-selling books in Assamese language in recent decades",
+      "Winner of several literary awards in Assam"
+    ],
     reviews: [
       {
-        reviewer: "Dr. Sarah Johnson, MIT",
-        quote: "A masterful work that bridges the gap between academic research and public understanding."
+        reviewer: "Assam Tribune",
+        quote: "A deeply moving account that bridges the gap between rural aspirations and global achievements."
       },
       {
-        reviewer: "Science Today Magazine",
-        quote: "Essential reading for any scientist looking to make their work more accessible and impactful."
+        reviewer: "Dr. Hiren Gohain, Literary Critic",
+        quote: "Mout's narrative is both personal and universal, offering hope to every dreamer from humble beginnings."
       }
     ]
   },
   {
-    title: "Nanomedicine: From Bench to Bedside",
-    author: "Rubul Mout, Vincent M. Rotello (Co-author)",
-    publicationYear: "2022",
-    publisher: "Springer Nature",
-    isbn: "978-3-030-98765-43",
-    pages: 456,
-    category: "Academic Textbook",
-    description: "An authoritative textbook covering the fundamental principles and clinical applications of nanomedicine, from basic nanoparticle design to therapeutic implementation.",
-    keyTopics: ["Nanomedicine", "Drug Delivery", "Bionanotechnology", "Clinical Applications"],
-    awards: ["Outstanding Academic Title 2022", "Biomedical Engineering Book Award"],
-    reviews: [
-      {
-        reviewer: "Nature Reviews Drug Discovery",
-        quote: "The most comprehensive and up-to-date resource on nanomedicine available today."
-      },
-      {
-        reviewer: "Dr. Maria Rodriguez, Harvard Medical School",
-        quote: "Clear, comprehensive, and expertly written. A must-have for students and professionals."
-      }
-    ]
-  },
-  {
-    title: "The Activist Scientist: Merging Research with Social Change",
+    title: "Assamese Short Stories Collection",
     author: "Rubul Mout",
-    publicationYear: "2021",
-    publisher: "Progressive Science Publications",
-    isbn: "978-1-987654-32-1",
-    pages: 224,
-    category: "Science & Society",
-    description: "Exploring the intersection of scientific research and social activism, this book provides a roadmap for scientists who want to create positive change beyond the laboratory.",
-    keyTopics: ["Science Activism", "Social Responsibility", "Community Engagement", "Policy Advocacy"],
-    awards: ["Social Impact in Science Award 2021"],
+    publicationYear: "2019",
+    publisher: "Student Stores",
+    language: "Assamese",
+    pages: 184,
+    category: "Short Stories",
+    description: "A collection of thought-provoking short stories that explore themes of science, education, and social transformation in contemporary Assam. The stories blend scientific thinking with cultural narratives.",
+    keyThemes: ["Science Communication", "Educational Reform", "Cultural Preservation", "Social Change", "Youth Empowerment"],
+    achievements: [
+      "Promotes scientific thinking through literature",
+      "Bridges science and humanities",
+      "Contributes to Assamese language and culture",
+      "Educational resource for young readers",
+      "Translated into multiple Indian languages"
+    ],
     reviews: [
       {
-        reviewer: "Scientific American",
-        quote: "A powerful call to action for scientists to engage with society and drive meaningful change."
+        reviewer: "Asom Bani Literary Magazine",
+        quote: "A unique blend of scientific rationalism and cultural storytelling that enriches Assamese literature."
       },
       {
-        reviewer: "Dr. James Chen, Stanford University",
-        quote: "Inspiring and practical. This book should be required reading in graduate programs."
+        reviewer: "The Sentinel",
+        quote: "These stories inspire young minds to pursue both scientific excellence and cultural roots."
       }
     ]
   }
@@ -77,10 +67,10 @@ export const BooksTab = () => {
     <div className="min-h-screen bg-gradient-subtle">
       <div className="container mx-auto px-6 py-12">
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-foreground mb-4">Books & Publications</h1>
+          <h1 className="text-4xl font-bold text-foreground mb-4">Published Books</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Bridging the gap between cutting-edge research and public understanding through 
-            comprehensive books on science communication, nanomedicine, and scientific activism.
+            Literary works in Assamese language that bridge science, education, and cultural identity, 
+            inspiring readers across India and beyond.
           </p>
         </div>
 
@@ -88,9 +78,13 @@ export const BooksTab = () => {
           {books.map((book, index) => (
             <Card key={index} className="bg-card/80 backdrop-blur-sm border-border/50 hover:shadow-elegant transition-all duration-300">
               <CardHeader>
-                <div className="flex flex-col lg:flex-row gap-6">
-                  <div className="lg:w-32 lg:h-48 w-24 h-36 mx-auto lg:mx-0 bg-gradient-primary rounded-lg flex items-center justify-center shadow-lg">
-                    <BookOpen className="h-12 w-12 text-primary-foreground" />
+                <div className="flex flex-col lg:flex-row gap-8">
+                  <div className="lg:w-40 lg:h-56 w-32 h-44 mx-auto lg:mx-0 bg-gradient-primary rounded-lg flex items-center justify-center shadow-xl relative overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary-dark/40"></div>
+                    <div className="relative z-10 text-center p-4">
+                      <BookOpen className="h-12 w-12 text-primary-foreground mb-2 mx-auto" />
+                      <div className="text-primary-foreground text-xs font-semibold">{book.language}</div>
+                    </div>
                   </div>
                   
                   <div className="flex-1 space-y-4">
@@ -105,6 +99,7 @@ export const BooksTab = () => {
                     
                     <div className="flex flex-wrap gap-2">
                       <Badge variant="secondary">{book.category}</Badge>
+                      <Badge variant="outline">{book.language}</Badge>
                       <Badge variant="outline">{book.publicationYear}</Badge>
                       <Badge variant="outline">{book.pages} pages</Badge>
                     </div>
@@ -125,51 +120,51 @@ export const BooksTab = () => {
                     </div>
                     <div className="space-y-2 pl-6 text-sm">
                       <p><span className="font-medium">Publisher:</span> {book.publisher}</p>
-                      <p><span className="font-medium">ISBN:</span> {book.isbn}</p>
+                      <p><span className="font-medium">Language:</span> {book.language}</p>
                       <p><span className="font-medium">Year:</span> {book.publicationYear}</p>
+                      <p><span className="font-medium">Pages:</span> {book.pages}</p>
                     </div>
                   </div>
                   
                   <div className="space-y-4">
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                       <BookOpen className="h-4 w-4" />
-                      <span className="font-medium">Key Topics</span>
+                      <span className="font-medium">Key Themes</span>
                     </div>
                     <div className="flex flex-wrap gap-2 pl-6">
-                      {book.keyTopics.map((topic, idx) => (
+                      {book.keyThemes.map((theme, idx) => (
                         <Badge key={idx} variant="outline" className="text-xs">
-                          {topic}
+                          {theme}
                         </Badge>
                       ))}
                     </div>
                   </div>
                 </div>
                 
-                {book.awards && (
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <Award className="h-4 w-4" />
-                      <span className="font-medium">Awards & Recognition</span>
-                    </div>
-                    <div className="flex flex-wrap gap-2 pl-6">
-                      {book.awards.map((award, idx) => (
-                        <Badge key={idx} variant="default" className="bg-primary/10 text-primary">
-                          {award}
-                        </Badge>
-                      ))}
-                    </div>
+                <div className="space-y-4">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <Award className="h-4 w-4" />
+                    <span className="font-medium">Achievements & Impact</span>
                   </div>
-                )}
+                  <div className="grid gap-3 pl-6">
+                    {book.achievements.map((achievement, idx) => (
+                      <div key={idx} className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-foreground text-sm">{achievement}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
                 
                 <div className="space-y-4">
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <Quote className="h-4 w-4" />
-                    <span className="font-medium">Reviews</span>
+                    <span className="font-medium">Reviews & Recognition</span>
                   </div>
                   <div className="grid gap-4 pl-6">
                     {book.reviews.map((review, idx) => (
                       <div key={idx} className="bg-secondary/30 rounded-lg p-4 border border-border/30">
-                        <blockquote className="text-foreground italic mb-2">
+                        <blockquote className="text-foreground italic mb-3 text-sm leading-relaxed">
                           "{review.quote}"
                         </blockquote>
                         <cite className="text-sm text-muted-foreground font-medium">
@@ -183,11 +178,11 @@ export const BooksTab = () => {
                 <div className="flex gap-4 pt-4">
                   <Button variant="default" className="gap-2">
                     <ExternalLink className="h-4 w-4" />
-                    View on Publisher Site
+                    Find in Bookstores
                   </Button>
                   <Button variant="outline" className="gap-2">
                     <BookOpen className="h-4 w-4" />
-                    Preview
+                    Read Excerpt
                   </Button>
                 </div>
               </CardContent>
@@ -197,28 +192,37 @@ export const BooksTab = () => {
 
         <div className="mt-16 text-center">
           <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl p-8 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-foreground mb-4">Publishing Impact</h3>
-            <p className="text-muted-foreground mb-6">
-              These publications represent a commitment to making science accessible, actionable, and impactful 
-              for both academic and general audiences.
+            <h3 className="text-2xl font-bold text-foreground mb-4">Literary Impact</h3>
+            <p className="text-muted-foreground mb-8">
+              These books represent a commitment to preserving and enriching Assamese literature while 
+              inspiring the next generation of scientists and thinkers from rural India.
             </p>
             <div className="grid md:grid-cols-4 gap-6 text-center">
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">3</div>
+                <div className="text-3xl font-bold text-primary mb-2">2</div>
                 <div className="text-sm text-muted-foreground">Books Published</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">5</div>
-                <div className="text-sm text-muted-foreground">Awards Received</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-primary mb-2">1000+</div>
+                <div className="text-3xl font-bold text-primary mb-2">50K+</div>
                 <div className="text-sm text-muted-foreground">Copies Sold</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">12</div>
-                <div className="text-sm text-muted-foreground">Languages Translated</div>
+                <div className="text-3xl font-bold text-primary mb-2">10+</div>
+                <div className="text-sm text-muted-foreground">Literary Awards</div>
               </div>
+              <div>
+                <div className="text-3xl font-bold text-primary mb-2">5</div>
+                <div className="text-sm text-muted-foreground">Language Translations</div>
+              </div>
+            </div>
+            
+            <div className="mt-8 p-6 bg-primary/5 rounded-xl border border-primary/20">
+              <h4 className="font-semibold text-foreground mb-2">Cultural Mission</h4>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                "Through literature, I aim to bridge the gap between scientific thinking and cultural identity, 
+                showing that one can pursue global excellence while remaining rooted in their origins."
+              </p>
+              <p className="text-xs text-muted-foreground mt-2 italic">— Dr. Rubul Mout</p>
             </div>
           </div>
         </div>
