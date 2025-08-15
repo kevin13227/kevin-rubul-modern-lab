@@ -29,16 +29,12 @@ const publicationTabs = [
 
 export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
   return (
-    <nav className="bg-card/80 backdrop-blur-md border-b border-border/50 sticky top-0 z-50">
+    <nav className="bg-[#8B1538] sticky top-0 z-50">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">RM</span>
-            </div>
             <div>
-              <h1 className="text-xl font-bold text-foreground">Dr. Rubul Mout</h1>
-              <p className="text-sm text-muted-foreground">Research Fellow, Harvard Medical School</p>
+              <h1 className="text-xl font-bold text-white tracking-wider">DR. RUBUL MOUT</h1>
             </div>
           </div>
           
@@ -46,13 +42,13 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
             {tabs.map((tab) => (
               <Button
                 key={tab.id}
-                variant={activeTab === tab.id ? "default" : "ghost"}
+                variant="ghost"
                 onClick={() => onTabChange(tab.id)}
                 className={cn(
-                  "px-6 py-2 transition-all duration-300",
+                  "px-6 py-2 transition-all duration-300 font-medium tracking-wide",
                   activeTab === tab.id 
-                    ? "bg-primary text-primary-foreground shadow-lg shadow-primary/25" 
-                    : "hover:bg-secondary hover:text-secondary-foreground"
+                    ? "bg-white text-[#8B1538] hover:bg-white/90" 
+                    : "text-white hover:bg-white/10 hover:text-white"
                 )}
               >
                 {tab.label}
@@ -63,18 +59,18 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button
-                  variant={['publications', 'patents', 'books'].includes(activeTab) ? "default" : "ghost"}
+                  variant="ghost"
                   className={cn(
-                    "px-6 py-2 transition-all duration-300",
+                    "px-6 py-2 transition-all duration-300 font-medium tracking-wide",
                     ['publications', 'patents', 'books'].includes(activeTab)
-                      ? "bg-primary text-primary-foreground shadow-lg shadow-primary/25" 
-                      : "hover:bg-secondary hover:text-secondary-foreground"
+                      ? "bg-white text-[#8B1538] hover:bg-white/90" 
+                      : "text-white hover:bg-white/10 hover:text-white"
                   )}
                 >
                   Publications <ChevronDown className="ml-2 h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-card border-border/50 backdrop-blur-md">
+              <DropdownMenuContent className="bg-white border border-gray-200">
                 {publicationTabs.map((tab) => (
                   <DropdownMenuItem
                     key={tab.id}
@@ -82,8 +78,8 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
                     className={cn(
                       "cursor-pointer transition-colors",
                       activeTab === tab.id 
-                        ? "bg-primary/10 text-primary font-medium" 
-                        : "hover:bg-secondary/50"
+                        ? "bg-[#8B1538]/10 text-[#8B1538] font-medium" 
+                        : "hover:bg-gray-50 text-gray-700"
                     )}
                   >
                     {tab.label}
@@ -98,7 +94,7 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
             <select 
               value={activeTab}
               onChange={(e) => onTabChange(e.target.value)}
-              className="bg-secondary text-secondary-foreground border border-border rounded-lg px-3 py-2"
+              className="bg-white text-[#8B1538] border border-gray-300 rounded-lg px-3 py-2"
             >
               {tabs.map((tab) => (
                 <option key={tab.id} value={tab.id}>{tab.label}</option>
