@@ -6,6 +6,8 @@ import { BiographyTab } from "./BiographyTab";
 import { PublicationsTab } from "./PublicationsTab";
 import { TeachingTab } from "./TeachingTab";
 import { ContactTab } from "./ContactTab";
+import { PatentsTab } from "./PatentsTab";
+import { BooksTab } from "./BooksTab";
 
 export const RubulMoutSite = () => {
   const [activeTab, setActiveTab] = useState('home');
@@ -24,6 +26,10 @@ export const RubulMoutSite = () => {
         return <BiographyTab />;
       case 'publications':
         return <PublicationsTab />;
+      case 'patents':
+        return <PatentsTab />;
+      case 'books':
+        return <BooksTab />;
       case 'teaching':
         return <TeachingTab />;
       case 'contact':

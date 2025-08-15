@@ -1,6 +1,13 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { ChevronDown } from "lucide-react";
 
 interface NavigationProps {
   activeTab: string;
@@ -10,9 +17,14 @@ interface NavigationProps {
 const tabs = [
   { id: 'home', label: 'Home' },
   { id: 'biography', label: 'Biography' },
-  { id: 'publications', label: 'Publications' },
   { id: 'teaching', label: 'Teaching & Activism' },
   { id: 'contact', label: 'Contact' },
+];
+
+const publicationTabs = [
+  { id: 'publications', label: 'Publications' },
+  { id: 'patents', label: 'Patents' },
+  { id: 'books', label: 'Books' },
 ];
 
 export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
@@ -46,6 +58,39 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
                 {tab.label}
               </Button>
             ))}
+            
+            {/* Publications Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button
+                  variant={['publications', 'patents', 'books'].includes(activeTab) ? "default" : "ghost"}
+                  className={cn(
+                    "px-6 py-2 transition-all duration-300",
+                    ['publications', 'patents', 'books'].includes(activeTab)
+                      ? "bg-primary text-primary-foreground shadow-lg shadow-primary/25" 
+                      : "hover:bg-secondary hover:text-secondary-foreground"
+                  )}
+                >
+                  Publications <ChevronDown className="ml-2 h-4 w-4" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-card border-border/50 backdrop-blur-md">
+                {publicationTabs.map((tab) => (
+                  <DropdownMenuItem
+                    key={tab.id}
+                    onClick={() => onTabChange(tab.id)}
+                    className={cn(
+                      "cursor-pointer transition-colors",
+                      activeTab === tab.id 
+                        ? "bg-primary/10 text-primary font-medium" 
+                        : "hover:bg-secondary/50"
+                    )}
+                  >
+                    {tab.label}
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
           
           {/* Mobile menu */}
@@ -58,6 +103,11 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
               {tabs.map((tab) => (
                 <option key={tab.id} value={tab.id}>{tab.label}</option>
               ))}
+              <optgroup label="Publications">
+                {publicationTabs.map((tab) => (
+                  <option key={tab.id} value={tab.id}>{tab.label}</option>
+                ))}
+              </optgroup>
             </select>
           </div>
         </div>
