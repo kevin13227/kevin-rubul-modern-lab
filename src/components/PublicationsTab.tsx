@@ -157,6 +157,11 @@ export const PublicationsTab = () => {
     {
       title: "HK Vora, FR Shaik, I Pal-Bhowmick, R Mout, GK Jarori. \"Effect of Deletion of a Plant Like Pentapeptide Insert on Kinetic, Structural and Immunological Properties of Enolase from Plasmodium falciparum\" Arch. Biochem. Biophys., 2009, 485, 128-138",
       link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:2osOgNQ5qMEC"
+    },
+    {
+      title: "For the complete list of publications and citations, please see the Google Scholar page here.",
+      link: "https://scholar.google.com/citations?user=NpMfqDUAAAAJ&hl=en",
+      isSpecial: true
     }
   ];
 
@@ -176,36 +181,53 @@ export const PublicationsTab = () => {
                <div key={index} className="bg-card/80 border-border/50 backdrop-blur-sm border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
                 <div className="h-full flex flex-col">
                   <div className="flex-1">
-                    <h3 className="text-base font-medium text-foreground leading-tight mb-4 line-clamp-6">
-                      {publication.title}
+                    <h3 className={`text-base font-medium leading-tight mb-4 line-clamp-6 ${index === 39 ? 'font-bold text-lg' : ''}`}>
+                      {index === 39 ? (
+                        <>
+                          For the complete list of publications and citations, please see the Google Scholar page{' '}
+                          <a 
+                            href={publication.link} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-primary hover:text-primary-glow underline"
+                          >
+                            here
+                          </a>
+                          .
+                        </>
+                      ) : (
+                        publication.title
+                      )}
                     </h3>
                   </div>
                   <div className="mt-auto pt-4 border-t border-border/30">
                     <div className="flex justify-between items-center">
                       <div>
-                        {publication.link === null ? (
-                          <span className="text-muted-foreground text-sm font-medium">
-                            Manuscript in Preparation
-                          </span>
-                        ) : publication.link === "placeholder" ? (
-                          <span className="text-muted-foreground text-sm font-medium">
-                            Placeholder
-                          </span>
-                        ) : (
-                          <a 
-                            href={publication.link} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="text-primary hover:text-primary-glow transition-colors flex items-center gap-2 text-sm font-medium group"
-                            title="View Publication"
-                          >
-                            <span>View Publication</span>
-                            <ExternalLink className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                          </a>
+                        {index === 39 ? null : (
+                          publication.link === null ? (
+                            <span className="text-muted-foreground text-sm font-medium">
+                              Manuscript in Preparation
+                            </span>
+                          ) : publication.link === "placeholder" ? (
+                            <span className="text-muted-foreground text-sm font-medium">
+                              Placeholder
+                            </span>
+                          ) : (
+                            <a 
+                              href={publication.link} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="text-primary hover:text-primary-glow transition-colors flex items-center gap-2 text-sm font-medium group"
+                              title="View Publication"
+                            >
+                              <span>View Publication</span>
+                              <ExternalLink className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                            </a>
+                          )
                         )}
                       </div>
                       <span className="text-2xl font-bold text-foreground/80 ml-4">
-                        {index + 1}
+                        {index === 39 ? null : index + 1}
                       </span>
                     </div>
                   </div>
