@@ -68,59 +68,59 @@ export const PublicationsTab = () => {
     },
     {
       title: "R Mout, GY Tonga, L Wang, M Ray, T Roy, VM Rotello. \"Programmed Self-Assembly of Hierarchical Nanostructures through Protein-Nanoparticle Coengineering\" ACS Nano, 2017, 11, 3456-3462.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:MXK_kJrjxJIC"
     },
     {
       title: "K Saha, M Rahimi, M Yazdani, ST Kim, DF Moyano, S Hou, R Das, R Mout, F Rezaee, M Mahmoudi, VM Rotello. \"Regulation of Macrophage Recognition Through the Interplay of Nanoparticle Surface Functionality and Protein Corona\" ACS Nano, 2016, 10, 4421-4430.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:0EnyYjriUFMC"
     },
     {
       title: "S Rana, SG Elci, R Mout, AK Singla, M Yazdani, M Bender, A Bajaj, K Saha, UHF Bunz, FR Jirik, VM Rotello. \"Ratiometric Array of Conjugated Polymers-Fluorescent Protein Provides a Robust Mammalian Cell Sensor\" J. Am. Chem. Soc., 2016, 138, 4522-4529.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:hqOjcs7Dif8C"
     },
     {
       title: "S Rana, ND Le*, R Mout*, K Saha, GY Tonga, RE Bain, OR Miranda, CM Rotello, VM Rotello. \"A Multichannel Nanosensor for Instantaneous Readout of Cancer Drug Mechanisms\" Nature Nanotechnol., 2015, 10, 65-69. (*equal contribution)",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:_FxGoFyzp5QC"
     },
     {
       title: "GY Tonga, Y Jeong, B Duncan, T Mizuhara, R Mout, R Das, ST Kim, YC Yeh, B Yan, S Hou, VM Rotello. \"Supramolecular Regulation of Bioorthogonal Catalysis in Cells using Nanoparticle-Embedded Transition Metal Catalysts\" Nature Chem., 2015, 7, 597-603.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:UebtZRa9Y70C"
     },
     {
       title: "S Rana, NDB Le, R Mout, B Duncan, SG Elci, K Saha, VM Rotello. \"A Multichannel Biosensor for Rapid Determination of Cell Surface Glycomic Signatures\" ACS Cent. Sci., 2015, 1, 191-197.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "placeholder"
     },
     {
       title: "CS Kim, R Mout, Y Zhao, YC Yeh, R Tang, Y Jeong, B Duncan, JA Hardy, VM Rotello. \"Co-Delivery of Protein and Small Molecule Therapeutics using Nanoparticle-Stabilized Nanocapsules\" Bioconjug. Chem., 2015, 26, 950-954.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:roLk4NBRz8UC"
     },
     {
       title: "E Jeoung, YC Yeh, T Nelson, T Kushida, LS Wang, R Mout, X Li, K Saha, A Gupta, GY Tonga, JJ Lannutti, VM Rotello. \"Fabrication of Functional Nanofibers through Post‐Nanoparticle Functionalization\" Macromol. Rapid Commun., 2015, 36, 678-683.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "placeholder"
     },
     {
       title: "Z Ekmekci, K Saha, DF Moyano, GY Tonga, H Wang, R Mout, VM Rotello. \"Probing the Protein–Nanoparticle Interface: The Role of Aromatic Substitution Pattern on Affinity\" Supramol. Chem., 2015, 27, 123-126.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "placeholder"
     },
     {
       title: "Y Jiang, R Tang, B Duncan, Z Jiang, B Yan, R Mout, VM Rotello. \"Direct Cytosolic Delivery of siRNA using Nanoparticle-Stabilized Nanocapsules\" Angew. Chem. Int. Ed. Engl., 2015, 54, 506-510.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:eQOLeE2rZwMC"
     },
     {
       title: "X Li, YC Yeh, K Giri, R Mout, RF Landis, YS Prakash, VM Rotello. \"Control of Nanoparticle Penetration into Biofilms through Surface Design\" Chem. Commun., 2015, 51, 282-285.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:WF5omc3nYNoC"
     },
     {
       title: "X Li, H Kong, R Mout, K Saha, DF Moyano, SM Robinson, S Rana, X Zhang, MA Riley, VM Rotello. \"Rapid Identification of Bacterial Biofilms and Biofilm Wound Models using a Multichannel Nanosensor\" ACS Nano, 2014, 8, 12014-12019.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:ufrVoPGSRksC"
     },
     {
       title: "YC Yeh, R Tang, R Mout, Y Jeong, VM Rotello \"Fabrication of Multiresponsive Bioactive Nanocapsules through Orthogonal Self-Assembly\" Angew. Chem. Int. Ed. Engl., 2014, 53, 5137-5141.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "placeholder"
     },
     {
       title: "R Mout, GY Tonga, M Ray, DF Moyano, Y Xing, VM Rotello \"Environmentally Responsive Histidine-Carboxylate Zipper Formation between Proteins and Nanoparticles\" Nanoscale, 2014, 6, 8873-8877.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "placeholder"
     },
     {
       title: "YC Yeh, S Rana, R Mout, B Yan, FS Alfonso, VM Rotello. \"Supramolecular Tailoring of Protein–Nanoparticle Interactions using Cucurbituril Mediators\" Chem Commun., 2014, 50, 5565-5568.",
@@ -128,7 +128,7 @@ export const PublicationsTab = () => {
     },
     {
       title: "R Mout, VM Rotello. \"Bio and Nano Working Together: Engineering the Protein‐Nanoparticle Interface\" Isr. J. Chem., 2013, 53, 521-529.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:MXK_kJrjxJIC"
     },
     {
       title: "R Tang, CS Kim, DJ Solfiell, S Rana, R Mout, EM Velázquez-Delgado, A Chompoosor, Y Jeong, B Yan, ZJ Zhu, CK Kim, JA Hardy, VM Rotello. \"Direct Delivery of Functional Proteins and Enzymes to the Cytosol using Nanoparticle-Stabilized Nanocapsules\" ACS Nano, 2013, 7, 6667-6673.",
@@ -173,7 +173,7 @@ export const PublicationsTab = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {publications.map((publication, index) => (
-                             <div key={index} className={`${publication.title.includes("Programmed Self-Assembly of Hierarchical Nanostructures through Protein-Nanoparticle Coengineering") ? "bg-green-100/80 border-green-300" : "bg-card/80 border-border/50"} backdrop-blur-sm border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]`}>
+                             <div key={index} className={`${publication.title.includes("Supramolecular Tailoring of Protein–Nanoparticle Interactions using Cucurbituril Mediators") ? "bg-green-100/80 border-green-300" : "bg-card/80 border-border/50"} backdrop-blur-sm border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]`}>
                 <div className="h-full flex flex-col">
                   <div className="flex-1">
                     <h3 className="text-base font-medium text-foreground leading-tight mb-4 line-clamp-6">
@@ -181,7 +181,15 @@ export const PublicationsTab = () => {
                     </h3>
                   </div>
                   <div className="mt-auto pt-4 border-t border-border/30">
-                    {publication.link ? (
+                    {publication.link === null ? (
+                      <span className="text-muted-foreground text-sm font-medium">
+                        Manuscript in Preparation
+                      </span>
+                    ) : publication.link === "placeholder" ? (
+                      <span className="text-muted-foreground text-sm font-medium">
+                        Placeholder
+                      </span>
+                    ) : (
                       <a 
                         href={publication.link} 
                         target="_blank" 
@@ -192,10 +200,6 @@ export const PublicationsTab = () => {
                         <span>View Publication</span>
                         <ExternalLink className="w-4 h-4 group-hover:scale-110 transition-transform" />
                       </a>
-                    ) : (
-                      <span className="text-muted-foreground text-sm font-medium">
-                        Manuscript in Preparation
-                      </span>
                     )}
                   </div>
                 </div>
