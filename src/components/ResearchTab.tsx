@@ -10,7 +10,7 @@ export const ResearchTab = () => {
     <div className="max-w-6xl mx-auto space-y-16">
       {/* Header */}
       <div className="text-center space-y-6">
-        <h1 className="text-5xl font-bold text-foreground">Research</h1>
+        <h1 className="text-5xl font-bold text-[#8B1538]">Research</h1>
       </div>
 
 
@@ -134,7 +134,7 @@ export const ResearchTab = () => {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-gray-700 leading-relaxed">
                   Developing engineered proteins that target specific cancer cell markers with high specificity and low toxicity. This project combines computational design with experimental validation to create novel therapeutic agents.
                 </p>
               </CardContent>
@@ -149,7 +149,7 @@ export const ResearchTab = () => {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-gray-700 leading-relaxed">
                   Investigating the use of induced pluripotent stem cells for tissue repair and regeneration in pediatric patients. Focus on developing safe and effective protocols for clinical applications.
                 </p>
               </CardContent>
@@ -165,7 +165,7 @@ export const ResearchTab = () => {
               </div>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 Developing strategies to rejuvenate the aging immune system and improve vaccine responses in elderly populations. This project aims to identify novel therapeutic targets and develop interventions that can restore immune function.
               </p>
             </CardContent>
