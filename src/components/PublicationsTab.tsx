@@ -4,35 +4,35 @@ export const PublicationsTab = () => {
   const publications = [
     {
       title: "AP Patni, R Mout, R Moore, AA Alghadeer, GQ Daley, D Baker, J Mathieu, H Ruohola-Baker, \"Designed Soluble Notch Agonist Drives Human Ameloblast Maturation for Tooth Regeneration\" bioRxiv, 2025, doi: https://doi.org/10.1101/2025.04.03.646929",
-      link: "https://www.biorxiv.org/content/10.1101/2025.04.03.646929v1.abstract"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:JV2RwH3_ST0C"
     },
     {
       title: "R Mout, ...U Lendahl, D Baker, SC Blacklow, GQ Daley et al., \"Design of Soluble Notch Agonists That Drive T Cell Development and Boost Immunity\" Cell, 2025, DOI: 10.1016/j.cell.2025.07.009.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:blknAaTinKkC"
     },
     {
       title: "R Mout, R Jing, L Hensch, U Lendahl, GQ Daley. \"Notch Signaling in Blood Development\" Manuscript in preparation, 2025",
-      link: "https://scholar.google.com/citations?user=NpMfqDUAAAAJ&hl=en"
+      link: null
     },
     {
       title: "B Huang, ...R Mout, ...C Bertozzi, D Baker. \"Designed endocytosis-inducing proteins degrade targets and amplify signals\" Nature, 2025, 638(8051), 796-804.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:M3NEmzRMIkIC"
     },
     {
       title: "R Mout*#, RC Bretherton*, J Decarreau, S Lee, N Gregorio, NI Edman, M Ahlrichs, Y Hsia, DD Sahtoe, G Ueda, A Sharma, R Schulman, CA DeForest#, D Baker#. \"De novo design of modular protein hydrogels with programmable intra- and extracellular viscoelasticity\" Proc. Natl. Acad. Sci. U.S.A., 2024, 121(6), e2309457121 (#co-corresponding author)",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:eQOkuEAAAAAJ"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:e5wmG9Sq2KIC"
     },
     {
       title: "M Ray, G Brancolini, DC Luther, Z Jiang, R Cao-Milán, AM Cuadros, A Burden, V Clark, S Rana, R Mout, RF Landis, S Corni, VM Rotello. \"High affinity protein surface binding through co-engineering of nanoparticles and proteins\" Nanoscale, 2022, 14, 2411-2418.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:TQgYirikUcIC"
     },
     {
       title: "Y Hsia*, R Mout*, ..., D Baker. \"Design of multi-scale protein complexes by hierarchical building block fusion\" Nat commun., 2021, 12, 2294 (*equal contribution)",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:HDshCWvjkbEC"
     },
     {
       title: "YW Lee*, R Mout*, ..., VM Rotello. \"In Vivo Editing of Macrophages through Systemic Delivery of CRISPR‐Cas9‐Ribonucleoprotein‐Nanoparticle Nanoassemblies\" Adv. Therap. 2019, 2, 1900041 (*equal contribution)",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:IWHjjKOFINEC"
     },
     {
       title: "M Ray, YW Lee, J Hardie, R Mout, GY Tonga, ME Farkas, VM Rotello \"CRISPRed Macrophages for Cell-Based Cancer Immunotherapy\" Bioconjugate Chem. 2018, 29, 445-450.",
@@ -173,7 +173,7 @@ export const PublicationsTab = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {publications.map((publication, index) => (
-              <div key={index} className="bg-card/80 backdrop-blur-sm border border-border/50 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
+              <div key={index} className={`${publication.title.includes("CRISPRed Macrophages for Cell-Based Cancer Immunotherapy") ? "bg-green-100/80 border-green-300" : "bg-card/80 border-border/50"} backdrop-blur-sm border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]`}>
                 <div className="h-full flex flex-col">
                   <div className="flex-1">
                     <h3 className="text-base font-medium text-foreground leading-tight mb-4 line-clamp-6">
@@ -181,16 +181,22 @@ export const PublicationsTab = () => {
                     </h3>
                   </div>
                   <div className="mt-auto pt-4 border-t border-border/30">
-                    <a 
-                      href={publication.link} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-primary hover:text-primary-glow transition-colors flex items-center gap-2 text-sm font-medium group"
-                      title="View Publication"
-                    >
-                      <span>View Publication</span>
-                      <ExternalLink className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                    </a>
+                    {publication.link ? (
+                      <a 
+                        href={publication.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-primary hover:text-primary-glow transition-colors flex items-center gap-2 text-sm font-medium group"
+                        title="View Publication"
+                      >
+                        <span>View Publication</span>
+                        <ExternalLink className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                      </a>
+                    ) : (
+                      <span className="text-muted-foreground text-sm font-medium">
+                        Manuscript in Preparation
+                      </span>
+                    )}
                   </div>
                 </div>
               </div>
