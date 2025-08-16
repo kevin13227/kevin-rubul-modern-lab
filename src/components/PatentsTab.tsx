@@ -1,38 +1,38 @@
 const patents = [
   {
-    title: "Compositions and methods for intracellular delivery",
-    inventors: "Rubul Mout, Vincent M. Rotello",
-    patentNumber: "US Patent 10,434,130",
-    year: "2019",
-    status: "Granted"
+    title: "Compositions and methods for T-cell development and stimulation using designed expandable notch agonists",
+    inventors: "R Mout, GQ Daley",
+    patentNumber: "Provisional patent application filed, Application Number. 63/800,138",
+    year: "2023",
+    status: "Provisional"
   },
   {
-    title: "Nanoparticle-protein conjugates for targeted therapy",
-    inventors: "Rubul Mout, Vincent M. Rotello, Sarit Agasti",
-    patentNumber: "US Patent Application 16/789,234",
+    title: "Methods and compositions for T-cell differentiation",
+    inventors: "R Mout, G Daley, et al.",
+    patentNumber: "Application Number: 63/413,377",
+    year: "2022",
+    status: "Provisional"
+  },
+  {
+    title: "De novo design of multi-component protein hydrogel with programmable viscoelasticity",
+    inventors: "R Mout, D Baker, et al.",
+    patentNumber: "US Patent App. 63/353,391",
+    year: "2022",
+    status: "Provisional"
+  },
+  {
+    title: "WORMS Scaffolds: Multi-scale protein complexes",
+    inventors: "Y Hsia, R Mout, D Baker, et al.",
+    patentNumber: "US Patent App. 17/564,467",
     year: "2021",
     status: "Pending"
   },
   {
-    title: "Biosensor systems using functionalized gold nanoparticles",
-    inventors: "Rubul Mout, Krishnendu Saha, Vincent M. Rotello",
-    patentNumber: "US Patent 9,857,367",
-    year: "2018",
-    status: "Granted"
-  },
-  {
-    title: "E-tag method for intracellular protein delivery",
-    inventors: "Rubul Mout, et al.",
-    patentNumber: "US Patent Pending",
+    title: "Nanoparticle-Protein Complex for Intracellular Protein Delivery",
+    inventors: "VM Rotello, R Mout",
+    patentNumber: "US application (USPTO)- US20180022831A1",
     year: "2020",
-    status: "Pending"
-  },
-  {
-    title: "Soluble Notch agonists for T-cell activation",
-    inventors: "Rubul Mout, et al.",
-    patentNumber: "US Patent Pending",
-    year: "2024",
-    status: "Pending"
+    status: "Granted"
   }
 ];
 
@@ -64,16 +64,6 @@ export const PatentsTab = () => {
                       <div className="flex items-center gap-4 text-sm">
                         <span className="text-primary font-medium">
                           {patent.patentNumber}
-                        </span>
-                        <span className="text-muted-foreground">
-                          {patent.year}
-                        </span>
-                        <span className={`px-2 py-1 rounded text-xs font-medium ${
-                          patent.status === 'Granted' 
-                            ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200' 
-                            : 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200'
-                        }`}>
-                          {patent.status}
                         </span>
                       </div>
                     </div>
