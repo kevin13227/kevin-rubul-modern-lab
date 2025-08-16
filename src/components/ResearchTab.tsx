@@ -120,58 +120,7 @@ export const ResearchTab = () => {
         </div>
       </section>
 
-      {/* Current Projects Section */}
-      <section className="bg-secondary/30 rounded-3xl p-8 md:p-12">
-        <h2 className="text-3xl font-bold text-center mb-10">Current Research Projects</h2>
-        <div className="space-y-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <Card className="border-0 bg-card/50">
-              <CardHeader>
-                <CardTitle className="text-xl">Novel Protein Therapeutics for Cancer</CardTitle>
-                <div className="flex items-center space-x-2">
-                  <span className="text-sm text-muted-foreground">Harvard Medical School</span>
-                  <span className="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs font-medium">Active</span>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-700 leading-relaxed">
-                  Developing engineered proteins that target specific cancer cell markers with high specificity and low toxicity. This project combines computational design with experimental validation to create novel therapeutic agents.
-                </p>
-              </CardContent>
-            </Card>
 
-            <Card className="border-0 bg-card/50">
-              <CardHeader>
-                <CardTitle className="text-xl">Stem Cell-Based Regenerative Medicine</CardTitle>
-                <div className="flex items-center space-x-2">
-                  <span className="text-sm text-muted-foreground">Boston Children's Hospital</span>
-                  <span className="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs font-medium">Active</span>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-700 leading-relaxed">
-                  Investigating the use of induced pluripotent stem cells for tissue repair and regeneration in pediatric patients. Focus on developing safe and effective protocols for clinical applications.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-
-          <Card className="border-0 bg-card/50 lg:col-span-2">
-            <CardHeader>
-              <CardTitle className="text-xl">Immunoaging Interventions</CardTitle>
-              <div className="flex items-center space-x-2">
-                <span className="text-sm text-muted-foreground">Harvard Medical School</span>
-                <span className="px-2 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs font-medium">Planning</span>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-700 leading-relaxed">
-                Developing strategies to rejuvenate the aging immune system and improve vaccine responses in elderly populations. This project aims to identify novel therapeutic targets and develop interventions that can restore immune function.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
     </div>
   );
 };
