@@ -9,55 +9,58 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Base colors - light mode */
-    --background: 0 0% 98%;
-    --foreground: 0 0% 5%;
+    /* Base colors - dark mode default */
+    --background: 210 15% 8%;
+    --foreground: 0 0% 95%;
 
     /* Card colors */
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 5%;
+    --card: 210 15% 12%;
+    --card-foreground: 0 0% 95%;
 
     /* Popover colors */
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 5%;
+    --popover: 210 15% 12%;
+    --popover-foreground: 0 0% 95%;
 
-    /* Primary - Crimson/Red theme */
-    --primary: 348 83% 47%;
+    /* Primary - New gradient colors */
+    --primary: 325 100% 52%; /* #FF0F7B */
     --primary-foreground: 0 0% 98%;
-    --primary-glow: 348 100% 65%;
-    --primary-muted: 348 50% 25%;
+    --primary-glow: 325 100% 52%; /* #FF0F7B */
+    --primary-muted: 325 50% 25%;
+    --primary-accent: 42 76% 62%; /* #EDB753 */
+    --primary-secondary: 45 76% 62%; /* #EDD153 */
 
-    /* Secondary - Elegant grays */
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 15%;
+    /* Secondary - Dark blue-gray */
+    --secondary: 210 15% 15%;
+    --secondary-foreground: 0 0% 90%;
 
     /* Muted tones */
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 210 15% 15%;
+    --muted-foreground: 0 0% 65%;
 
-    /* Accent - Scientific blue undertones */
-    --accent: 210 40% 96%;
-    --accent-foreground: 210 90% 25%;
+    /* Accent - Pink/Gold theme */
+    --accent: 210 15% 15%;
+    --accent-foreground: 325 100% 70%;
 
     /* Status colors */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
     /* Border and input */
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 348 83% 47%;
+    --border: 210 15% 20%;
+    --input: 210 15% 20%;
+    --ring: 325 100% 52%;
 
     /* Scientific theme colors */
-    --hero-bg: 0 0% 8%;
-    --hero-overlay: 348 83% 47%;
-    --scientific-accent: 210 100% 50%;
+    --hero-bg: 210 15% 5%;
+    --hero-overlay: 325 100% 52%;
+    --scientific-accent: 42 76% 62%;
     --protein-blue: 210 100% 65%;
     --dna-green: 120 60% 45%;
 
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(var(--hero-bg)), hsl(var(--primary-muted)));
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-accent)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-accent)) 75%, hsl(var(--primary-secondary)) 100%);
     --gradient-scientific: linear-gradient(45deg, hsl(var(--protein-blue)), hsl(var(--dna-green)));
     --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--muted)));
 

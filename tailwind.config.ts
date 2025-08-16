@@ -32,7 +32,9 @@ export default {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))',
 					glow: 'hsl(var(--primary-glow))',
-					muted: 'hsl(var(--primary-muted))'
+					muted: 'hsl(var(--primary-muted))',
+					accent: 'hsl(var(--primary-accent))',
+					secondary: 'hsl(var(--primary-secondary))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -124,6 +126,7 @@ export default {
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-secondary': 'var(--gradient-secondary)',
 				'gradient-scientific': 'var(--gradient-scientific)',
 				'gradient-card': 'var(--gradient-card)'
 			}

@@ -8,6 +8,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { ChevronDown } from "lucide-react";
+import harvardLogo from "@/assets/harvard-logo.svg";
 
 interface NavigationProps {
   activeTab: string;
@@ -30,10 +31,17 @@ const publicationTabs = [
 
 export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
   return (
-    <nav className="bg-[#8B1538] sticky top-0 z-50">
+    <nav className="bg-[#A51C30] sticky top-0 z-50 shadow-lg">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-4">
+            <div className="w-12 h-12 bg-white rounded-full p-2 flex items-center justify-center shadow-md">
+              <img 
+                src={harvardLogo} 
+                alt="Harvard University" 
+                className="w-8 h-8"
+              />
+            </div>
             <div>
               <h1 className="text-xl font-bold text-white tracking-wider">DR. RUBUL MOUT</h1>
             </div>
@@ -46,10 +54,10 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
                 variant="ghost"
                 onClick={() => onTabChange(tab.id)}
                 className={cn(
-                  "px-6 py-2 transition-all duration-300 font-medium tracking-wide",
+                  "px-6 py-2 transition-all duration-300 font-medium tracking-wide relative",
                   activeTab === tab.id 
-                    ? "bg-white text-[#8B1538] hover:bg-white/90" 
-                    : "text-white hover:bg-white/10 hover:text-white"
+                    ? "bg-white text-[#A51C30] hover:bg-white/90 shadow-[0_0_20px_#FF0F7B80]" 
+                    : "text-white hover:bg-white/10 hover:text-white hover:shadow-[0_0_15px_#FF0F7B60]"
                 )}
               >
                 {tab.label}
@@ -62,16 +70,16 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
                 <Button
                   variant="ghost"
                   className={cn(
-                    "px-6 py-2 transition-all duration-300 font-medium tracking-wide",
+                    "px-6 py-2 transition-all duration-300 font-medium tracking-wide relative",
                     ['publications', 'patents', 'books'].includes(activeTab)
-                      ? "bg-white text-[#8B1538] hover:bg-white/90" 
-                      : "text-white hover:bg-white/10 hover:text-white"
+                      ? "bg-white text-[#A51C30] hover:bg-white/90 shadow-[0_0_20px_#FF0F7B80]" 
+                      : "text-white hover:bg-white/10 hover:text-white hover:shadow-[0_0_15px_#FF0F7B60]"
                   )}
                 >
                   Publications <ChevronDown className="ml-2 h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-white border border-gray-200">
+              <DropdownMenuContent className="bg-slate-900 border border-slate-700 text-white">
                 {publicationTabs.map((tab) => (
                   <DropdownMenuItem
                     key={tab.id}
@@ -79,8 +87,8 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
                     className={cn(
                       "cursor-pointer transition-colors",
                       activeTab === tab.id 
-                        ? "bg-[#8B1538]/10 text-[#8B1538] font-medium" 
-                        : "hover:bg-gray-50 text-gray-700"
+                        ? "bg-gradient-to-r from-[#FF0F7B] via-[#EDB753] to-[#EDD153] text-white font-medium" 
+                        : "hover:bg-slate-800 text-white hover:shadow-[0_0_10px_#FF0F7B40]"
                     )}
                   >
                     {tab.label}
@@ -95,7 +103,7 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
             <select 
               value={activeTab}
               onChange={(e) => onTabChange(e.target.value)}
-              className="bg-white text-[#8B1538] border border-gray-300 rounded-lg px-3 py-2"
+              className="bg-slate-900 text-white border border-slate-700 rounded-lg px-3 py-2 shadow-[0_0_10px_#FF0F7B40]"
             >
               {tabs.map((tab) => (
                 <option key={tab.id} value={tab.id}>{tab.label}</option>

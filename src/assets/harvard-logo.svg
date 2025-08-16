@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="white">
+  <!-- Harvard University Shield/Crest -->
+  <defs>
+    <style>
+      .cls-1 { fill: white; }
+      .cls-2 { fill: none; stroke: white; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Shield outline -->
+  <path class="cls-1" d="M100 20 L160 40 L160 120 Q160 160 100 180 Q40 160 40 120 L40 40 Z"/>
+  
+  <!-- Three books representing "Veritas" -->
+  <!-- Top left book - "VE" -->
+  <rect x="50" y="50" width="35" height="25" class="cls-2" rx="2"/>
+  <rect x="52" y="52" width="31" height="21" fill="white"/>
+  <text x="67.5" y="67" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8B1538">VE</text>
+  
+  <!-- Top right book - "RI" -->
+  <rect x="115" y="50" width="35" height="25" class="cls-2" rx="2"/>
+  <rect x="117" y="52" width="31" height="21" fill="white"/>
+  <text x="132.5" y="67" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8B1538">RI</text>
+  
+  <!-- Bottom center book - "TAS" -->
+  <rect x="82.5" y="85" width="35" height="25" class="cls-2" rx="2"/>
+  <rect x="84.5" y="87" width="31" height="21" fill="white"/>
+  <text x="100" y="102" text-anchor="middle" font-family="serif" font-size="10" font-weight="bold" fill="#8B1538">TAS</text>
+  
+  <!-- Banner with "HARVARD" -->
+  <path class="cls-1" d="M30 130 Q100 140 170 130 Q170 145 100 150 Q30 145 30 130"/>
+  <text x="100" y="142" text-anchor="middle" font-family="serif" font-size="14" font-weight="bold" fill="#8B1538">HARVARD</text>
+  
+  <!-- Decorative laurel wreaths -->
+  <path class="cls-1" d="M25 45 Q20 50 25 55 Q30 60 35 55 Q40 50 35 45 Q30 40 25 45" opacity="0.7"/>
+  <path class="cls-1" d="M165 45 Q170 50 165 55 Q160 60 155 55 Q150 50 155 45 Q160 40 165 45" opacity="0.7"/>
+</svg>
