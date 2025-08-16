@@ -1,113 +1,92 @@
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import harvardLogo from "@/assets/harvard-logo.png";
 
-interface NavigationProps {
-  activeTab: string;
-  onTabChange: (tab: string) => void;
-}
+const Navigation = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
-const tabs = [
-  { id: 'home', label: 'Home' },
-  { id: 'biography', label: 'Biography' },
-  { id: 'teaching', label: 'Teaching & Activism' },
-  { id: 'contact', label: 'Contact' },
-];
+  const navItems = [
+    { href: "/", label: "Home" },
+    { href: "/biography", label: "Biography" },
+    { href: "/teaching", label: "Teaching & Activism" },
+    { href: "/contact", label: "Contact" },
+    { href: "/publications", label: "Publications" },
+  ];
 
-const publicationTabs = [
-  { id: 'publications', label: 'Publications' },
-  { id: 'patents', label: 'Patents' },
-  { id: 'books', label: 'Books' },
-];
+  const isActive = (href: string) => {
+    if (href === "/") return location.pathname === "/";
+    return location.pathname.startsWith(href);
+  };
 
-export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
   return (
-    <nav className="bg-[#8B1538] sticky top-0 z-50">
-      <div className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <div>
-              <h1 className="text-xl font-bold text-white tracking-wider">DR. RUBUL MOUT</h1>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#A41034] border-b border-red-800/50">{/* Harvard red background */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo with Harvard shield */}
+          <Link to="/" className="flex items-center gap-3 text-xl font-bold text-white hover:text-white/90 transition-colors">
+            <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center p-1">
+              <img src={harvardLogo} alt="Harvard" className="w-full h-full object-contain" />
             </div>
-          </div>
-          
-          <div className="hidden md:flex items-center space-x-2">
-            {tabs.map((tab) => (
-              <Button
-                key={tab.id}
-                variant="ghost"
-                onClick={() => onTabChange(tab.id)}
-                className={cn(
-                  "px-6 py-2 transition-all duration-300 font-medium tracking-wide",
-                  activeTab === tab.id 
-                    ? "bg-white text-[#8B1538] hover:bg-white/90" 
-                    : "text-white hover:bg-white/10 hover:text-white"
-                )}
+            DR. RUBUL MOUT
+          </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-1">
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                to={item.href}
+                className={`px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 hover:bg-white/10 ${
+                  isActive(item.href)
+                    ? "bg-white/20 text-white"
+                    : "text-white/90 hover:text-white"
+                }`}
               >
-                {tab.label}
-              </Button>
+                {item.label}
+              </Link>
             ))}
-            
-            {/* Publications Dropdown */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button
-                  variant="ghost"
-                  className={cn(
-                    "px-6 py-2 transition-all duration-300 font-medium tracking-wide",
-                    ['publications', 'patents', 'books'].includes(activeTab)
-                      ? "bg-white text-[#8B1538] hover:bg-white/90" 
-                      : "text-white hover:bg-white/10 hover:text-white"
-                  )}
-                >
-                  Publications <ChevronDown className="ml-2 h-4 w-4" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-white border border-gray-200">
-                {publicationTabs.map((tab) => (
-                  <DropdownMenuItem
-                    key={tab.id}
-                    onClick={() => onTabChange(tab.id)}
-                    className={cn(
-                      "cursor-pointer transition-colors",
-                      activeTab === tab.id 
-                        ? "bg-[#8B1538]/10 text-[#8B1538] font-medium" 
-                        : "hover:bg-gray-50 text-gray-700"
-                    )}
-                  >
-                    {tab.label}
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
           </div>
-          
-          {/* Mobile menu */}
+
+          {/* Mobile menu button */}
           <div className="md:hidden">
-            <select 
-              value={activeTab}
-              onChange={(e) => onTabChange(e.target.value)}
-              className="bg-white text-[#8B1538] border border-gray-300 rounded-lg px-3 py-2"
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-white hover:bg-white/10"
             >
-              {tabs.map((tab) => (
-                <option key={tab.id} value={tab.id}>{tab.label}</option>
-              ))}
-              <optgroup label="Publications">
-                {publicationTabs.map((tab) => (
-                  <option key={tab.id} value={tab.id}>{tab.label}</option>
-                ))}
-              </optgroup>
-            </select>
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </Button>
           </div>
         </div>
+
+        {/* Mobile Navigation */}
+        {isOpen && (
+          <div className="md:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 border-t border-white/10">
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  to={item.href}
+                  className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-200 ${
+                    isActive(item.href)
+                      ? "bg-white/20 text-white"
+                      : "text-white/90 hover:text-white hover:bg-white/10"
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );
 };
+
+export default Navigation;
