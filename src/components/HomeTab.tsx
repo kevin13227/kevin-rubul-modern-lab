@@ -33,8 +33,8 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
       {/* Research Focus */}
       <section className="animate-fade-in-up">
         <div className="text-center mb-10">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Research Focus</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-white mb-4">Research Focus</h2>
+          <p className="text-xl text-black max-w-3xl mx-auto">
             An RNA-centric view of the cell surface: protein design, hematopoietic stem & T-cell development, and immuno-ageing.
           </p>
         </div>
@@ -53,7 +53,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
                 <CardTitle className="text-2xl font-bold text-foreground">Protein Design</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-muted-foreground text-lg leading-relaxed">
+                <CardDescription className="text-black text-lg leading-relaxed">
                   Engineering and analyzing protein structures to uncover new biological functions.
                 </CardDescription>
               </CardContent>
@@ -73,7 +73,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
                 <CardTitle className="text-2xl font-bold text-foreground">Hematopoietic Stem & T-Cell Development</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-muted-foreground text-lg leading-relaxed">
+                <CardDescription className="text-black text-lg leading-relaxed">
                   Decoding developmental programs guiding immune cell formation and function.
                 </CardDescription>
               </CardContent>
@@ -93,7 +93,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
                 <CardTitle className="text-2xl font-bold text-foreground">Immuno‑Ageing</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-muted-foreground text-lg leading-relaxed">
+                <CardDescription className="text-black text-lg leading-relaxed">
                   Understanding age-associated immune changes to inform healthier longevity.
                 </CardDescription>
               </CardContent>

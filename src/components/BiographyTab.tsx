@@ -44,8 +44,8 @@ export const BiographyTab = () => {
     <div className="max-w-4xl mx-auto space-y-12">
       {/* Header */}
       <div className="text-center animate-fade-in-up">
-        <h2 className="text-4xl font-bold text-foreground mb-4">Biography</h2>
-        <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+        <h2 className="text-4xl font-bold text-white mb-4">Biography</h2>
+        <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
           From a poor peasant family in rural India to the halls of Harvard Medical School - 
           a journey of scientific discovery, social impact, and cultural preservation.
         </p>
@@ -54,24 +54,24 @@ export const BiographyTab = () => {
       {/* Main Bio */}
       <Card className="glass-card p-8 md:p-12">
         <CardContent className="space-y-6 text-lg leading-relaxed">
-          <p className="text-foreground">
+          <p className="text-black font-bold">
             <strong>Dr. Rubul Mout</strong> is a Fellow (Research) at Harvard Medical School, Harvard University, 
             and the Stem Cell & Regenerative Biology Program, Boston Children's Hospital (BCH).
           </p>
           
-          <p className="text-muted-foreground">
+          <p className="text-black">
             Born, brought up, and educated in India, Dr. Mout moved to the United States to pursue his PhD 
             from the University of Massachusetts, Amherst. Prior to joining Harvard/BCH, he was a Washington 
             Research Foundation Innovation Fellow at the Institute for Protein Design, University of Washington.
           </p>
           
-          <p className="text-muted-foreground">
+          <p className="text-black">
             At Harvard/BCH, Dr. Mout developed soluble agonists for the Notch signaling pathway for T cell 
             development and function. These agonists promoted the development of T cells from bone marrow stem 
             cells and activated the Notch pathway in T cells during vaccination to boost cell-based immunity.
           </p>
           
-          <p className="text-muted-foreground">
+          <p className="text-black">
             Currently, Dr. Mout uses computational protein design technologies to modulate signaling in immune 
             development, function, and ageing. The ultimate goal of this research is to enhance T cell function 
             to better combat cancer, autoimmune diseases, and viral infections.
@@ -81,7 +81,7 @@ export const BiographyTab = () => {
 
       {/* Timeline */}
       <section>
-        <h3 className="text-3xl font-bold text-center mb-10">Career Timeline</h3>
+        <h3 className="text-3xl font-bold text-center mb-10 text-white">Career Timeline</h3>
         <div className="space-y-8">
           {timeline.map((item, index) => (
             <div key={index} className="flex items-start gap-6 animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
@@ -93,7 +93,7 @@ export const BiographyTab = () => {
                   <span className="text-sm font-semibold px-3 py-1 bg-primary/10 text-primary rounded-full">
                     {item.year}
                   </span>
-                  <h4 className="text-xl font-semibold text-foreground">{item.title}</h4>
+                  <h4 className="text-xl font-semibold text-white">{item.title}</h4>
                 </div>
                 <p className="text-muted-foreground leading-relaxed">{item.description}</p>
               </div>
@@ -109,7 +109,7 @@ export const BiographyTab = () => {
           {achievements.map((achievement, index) => (
             <div key={index} className="flex items-start gap-3 p-4 bg-card/50 rounded-lg">
               <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-              <p className="text-muted-foreground">{achievement}</p>
+              <p className="text-black">{achievement}</p>
             </div>
           ))}
         </div>
@@ -125,7 +125,7 @@ export const BiographyTab = () => {
             <h3 className="text-2xl font-bold">Literary Contributions</h3>
           </div>
           
-          <div className="space-y-4 text-muted-foreground">
+          <div className="space-y-4 text-black">
             <p>
               Dr. Mout is also the author of two books—a collection of short stories and a memoir—in 
               his native language, Assamese. His memoir depicts his extraordinary journey from a poor 
