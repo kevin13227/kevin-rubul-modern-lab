@@ -16,6 +16,7 @@ interface NavigationProps {
 
 const tabs = [
   { id: 'home', label: 'Home' },
+  { id: 'research', label: 'Research' },
   { id: 'biography', label: 'Biography' },
   { id: 'teaching', label: 'Teaching & Activism' },
   { id: 'contact', label: 'Contact' },

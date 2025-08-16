@@ -6,7 +6,7 @@ import workStemcellImg from "@/assets/work-stemcell.jpg";
 import workImmunoageingImg from "@/assets/work-immunoageing.jpg";
 
 interface HomeTabProps {
-  onNavigate: (tab: string) => void;
+  onNavigate: (tab: string, section?: string) => void;
 }
 
 export const HomeTab = ({ onNavigate }: HomeTabProps) => {
@@ -33,15 +33,18 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
       {/* Research Focus */}
       <section className="animate-fade-in-up">
         <div className="text-center mb-10">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Research Focus</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-white mb-4">Research Focus</h2>
+          <p className="text-xl text-black max-w-3xl mx-auto">
             An RNA-centric view of the cell surface: protein design, hematopoietic stem & T-cell development, and immuno-ageing.
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="animate-fade-in-up" style={{ animationDelay: '0s' }}>
-            <Card className="h-full hover:shadow-lg transition-all duration-300 bg-card/50 backdrop-blur-sm border-border/50">
+            <Card 
+              className="h-full hover:shadow-lg transition-all duration-300 bg-card/50 backdrop-blur-sm border-border/50 cursor-pointer hover:bg-card/70"
+              onClick={() => onNavigate('research', 'protein-design')}
+            >
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
                   src={workProteinImg} 
@@ -53,7 +56,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
                 <CardTitle className="text-2xl font-bold text-foreground">Protein Design</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-muted-foreground text-lg leading-relaxed">
+                <CardDescription className="text-black text-lg leading-relaxed">
                   Engineering and analyzing protein structures to uncover new biological functions.
                 </CardDescription>
               </CardContent>
@@ -61,7 +64,10 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
           </div>
 
           <div className="animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-            <Card className="h-full hover:shadow-lg transition-all duration-300 bg-card/50 backdrop-blur-sm border-border/50">
+            <Card 
+              className="h-full hover:shadow-lg transition-all duration-300 bg-card/50 backdrop-blur-sm border-border/50 cursor-pointer hover:bg-card/70"
+              onClick={() => onNavigate('research', 'stem-cell-biology')}
+            >
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
                   src={workStemcellImg} 
@@ -73,7 +79,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
                 <CardTitle className="text-2xl font-bold text-foreground">Hematopoietic Stem & T-Cell Development</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-muted-foreground text-lg leading-relaxed">
+                <CardDescription className="text-black text-lg leading-relaxed">
                   Decoding developmental programs guiding immune cell formation and function.
                 </CardDescription>
               </CardContent>
@@ -81,7 +87,10 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
           </div>
 
           <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <Card className="h-full hover:shadow-lg transition-all duration-300 bg-card/50 backdrop-blur-sm border-border/50">
+            <Card 
+              className="h-full hover:shadow-lg transition-all duration-300 bg-card/50 backdrop-blur-sm border-border/50 cursor-pointer hover:bg-card/70"
+              onClick={() => onNavigate('research', 'immunology-aging')}
+            >
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
                   src={workImmunoageingImg} 
@@ -93,7 +102,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
                 <CardTitle className="text-2xl font-bold text-foreground">Immuno‑Ageing</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-muted-foreground text-lg leading-relaxed">
+                <CardDescription className="text-black text-lg leading-relaxed">
                   Understanding age-associated immune changes to inform healthier longevity.
                 </CardDescription>
               </CardContent>
