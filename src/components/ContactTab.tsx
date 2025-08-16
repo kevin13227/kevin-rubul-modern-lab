@@ -15,13 +15,24 @@ export const ContactTab = () => {
       icon: Building,
       label: "Institution",
       value: "Harvard Medical School & Boston Children's Hospital",
-      description: "Stem Cell & Regenerative Biology Program"
+      description: "Stem Cell & Regenerative Biology Program",
+      links: [
+        {
+          text: "Harvard Medical School",
+          url: "https://hms.harvard.edu/"
+        },
+        {
+          text: "Boston Children's Hospital",
+          url: "https://www.childrenshospital.org/"
+        }
+      ]
     },
     {
       icon: MapPin,
       label: "Location",
       value: "Boston, Massachusetts",
-      description: "Cambridge/Boston Area"
+      description: "Cambridge/Boston Area",
+      mapLink: "https://maps.google.com/?q=Boston+Massachusetts"
     }
   ];
 
@@ -58,6 +69,31 @@ export const ContactTab = () => {
                 {contact.link ? (
                   <a 
                     href={contact.link}
+                    className="text-primary hover:text-primary-glow transition-colors link-underline text-lg"
+                  >
+                    {contact.value}
+                  </a>
+                ) : contact.links ? (
+                  <div className="text-foreground text-lg">
+                    {contact.links.map((link, linkIndex) => (
+                      <span key={linkIndex}>
+                        <a 
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-primary hover:text-primary-glow transition-colors link-underline"
+                        >
+                          {link.text}
+                        </a>
+                        {linkIndex < contact.links.length - 1 && " & "}
+                      </span>
+                    ))}
+                  </div>
+                ) : contact.mapLink ? (
+                  <a 
+                    href={contact.mapLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-primary hover:text-primary-glow transition-colors link-underline text-lg"
                   >
                     {contact.value}
