@@ -27,7 +27,7 @@ export const HeroSection = ({
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" onClick={() => onNavigate('biography')} className="btn-hero px-8 py-4 text-lg font-semibold animate-glow">
+            <Button size="lg" onClick={() => onNavigate('research')} className="btn-hero px-8 py-4 text-lg font-semibold animate-glow">
               Learn About My Research
             </Button>
             
