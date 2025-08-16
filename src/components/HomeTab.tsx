@@ -41,7 +41,10 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="animate-fade-in-up" style={{ animationDelay: '0s' }}>
-            <Card className="h-full hover:shadow-lg transition-all duration-300 bg-card/50 backdrop-blur-sm border-border/50">
+            <Card 
+              className="h-full hover:shadow-lg transition-all duration-300 bg-card/50 backdrop-blur-sm border-border/50 cursor-pointer hover:bg-card/70"
+              onClick={() => onNavigate('research', 'protein-design')}
+            >
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
                   src={workProteinImg} 
@@ -61,7 +64,10 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
           </div>
 
           <div className="animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-            <Card className="h-full hover:shadow-lg transition-all duration-300 bg-card/50 backdrop-blur-sm border-border/50">
+            <Card 
+              className="h-full hover:shadow-lg transition-all duration-300 bg-card/50 backdrop-blur-sm border-border/50 cursor-pointer hover:bg-card/70"
+              onClick={() => onNavigate('research', 'stem-cell-biology')}
+            >
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
                   src={workStemcellImg} 
@@ -81,7 +87,10 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
           </div>
 
           <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <Card className="h-full hover:shadow-lg transition-all duration-300 bg-card/50 backdrop-blur-sm border-border/50">
+            <Card 
+              className="h-full hover:shadow-lg transition-all duration-300 bg-card/50 backdrop-blur-sm border-border/50 cursor-pointer hover:bg-card/70"
+              onClick={() => onNavigate('research', 'immunology-aging')}
+            >
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
                   src={workImmunoageingImg} 
