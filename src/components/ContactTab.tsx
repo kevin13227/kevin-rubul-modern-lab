@@ -25,10 +25,6 @@ export const ContactTab = () => {
     }
   ];
 
-
-
-
-
   return (
     <div className="max-w-4xl mx-auto space-y-12">
       {/* Header */}
@@ -43,10 +39,7 @@ export const ContactTab = () => {
       {/* Contact Information */}
       <Card className="glass-card">
         <CardHeader>
-          <CardTitle className="text-2xl flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <Mail className="w-5 h-5 text-primary-foreground" />
-            </div>
+          <CardTitle className="text-2xl">
             Contact Information
           </CardTitle>
           <CardDescription>
@@ -75,45 +68,24 @@ export const ContactTab = () => {
                 {contact.description && (
                   <p className="text-muted-foreground text-sm mt-1">{contact.description}</p>
                 )}
+                {/* Add Send Email button underneath the Email section */}
+                {contact.label === "Email" && (
+                  <div className="mt-4">
+                    <Button 
+                      size="default"
+                      className="bg-primary hover:bg-primary/90 text-primary-foreground"
+                      asChild
+                    >
+                      <a href="mailto:rubul.mout@childrens.harvard.edu" className="flex items-center gap-2">
+                        <Mail className="w-4 h-4" />
+                        Send Email
+                      </a>
+                    </Button>
+                  </div>
+                )}
               </div>
             </div>
           ))}
-        </CardContent>
-      </Card>
-
-
-
-
-
-      {/* Response Time */}
-      <Card className="bg-gradient-primary text-white border-0">
-        <CardContent className="p-8 text-center">
-          <h3 className="text-2xl font-bold mb-4">Response Time</h3>
-          <p className="text-white/90 text-lg leading-relaxed max-w-2xl mx-auto">
-            I typically respond to professional inquiries within 2-3 business days. For urgent 
-            research collaborations or time-sensitive opportunities, please mention "URGENT" 
-            in your subject line.
-          </p>
-          
-          <Separator className="my-6 bg-white/20" />
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              size="lg"
-              variant="secondary"
-              className="bg-white text-primary hover:bg-white/90"
-              asChild
-            >
-              <a href="mailto:rubul.mout@childrens.harvard.edu" className="flex items-center gap-2">
-                <Mail className="w-5 h-5" />
-                Send Email
-              </a>
-            </Button>
-            
-            <p className="text-white/80 text-sm">
-              or connect through institutional channels
-            </p>
-          </div>
         </CardContent>
       </Card>
 
