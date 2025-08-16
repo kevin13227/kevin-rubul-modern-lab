@@ -108,7 +108,7 @@ export const BiographyTab = () => {
         <div className="space-y-8">
           {timeline.map((item, index) => (
             <div key={index} className="flex items-start gap-6 animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
-              <div className="flex-shrink-0 w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center">
+              <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-r from-[#FF0F7B] via-[#ffcc00] to-[#ffcc00] rounded-full flex items-center justify-center">
                 <item.icon className="w-8 h-8 text-primary-foreground" />
               </div>
               <div className="flex-1">
