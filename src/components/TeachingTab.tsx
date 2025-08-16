@@ -7,13 +7,24 @@ export const TeachingTab = () => {
   const initiatives = [
     {
       title: "Sunday Science Activism",
-      description: "Weekly outreach program through Zoom to interact with college and university students from around the world",
+      description: (
+        <>
+          Weekly sessions (9:00-10:30 AM, EST) to meet with university students who are interested in a science career. Meetings are held through Zoom or Google Meet. Those who are interested can contact me at{" "}
+          <a 
+            href="mailto:rubulharvard@gmail.com" 
+            className="text-primary hover:underline font-medium"
+          >
+            rubulharvard@gmail.com
+          </a>
+          .
+        </>
+      ),
       icon: Video,
       details: [
-        "Interactive sessions every Sunday",
+        "Interactive sessions",
         "Global student participation",
         "Science education and career guidance",
-        "Q&A sessions with aspiring scientists"
+        //"Q&A sessions with aspiring scientists"
       ],
       link: "https://research.childrenshospital.org/rubulmout/Science-activism"
     },
@@ -176,7 +187,7 @@ export const TeachingTab = () => {
         <h3 className="text-3xl font-bold mb-4">Join the Movement</h3>
         <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
           Whether you're a student, educator, or science enthusiast, there are many ways to get involved 
-          in our mission to democratize science education.
+          in our mission to spread science education.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
