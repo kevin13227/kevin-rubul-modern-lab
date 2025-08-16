@@ -178,7 +178,7 @@ export const PublicationsTab = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {publications.map((publication, index) => (
-               <div key={index} className="bg-card/80 border-border/50 backdrop-blur-sm border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
+               <div key={index} className="bg-card/80 border-white/30 backdrop-blur-sm border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
                 <div className="h-full flex flex-col">
                   <div className="flex-1">
                     <h3 className={`text-base font-medium leading-tight mb-4 line-clamp-6 ${index === 39 ? 'font-bold text-lg' : ''}`}>
