@@ -18,7 +18,7 @@ const tabs = [
   { id: 'home', label: 'Home' },
   { id: 'research', label: 'Research' },
   { id: 'biography', label: 'Biography' },
-  { id: 'teaching', label: 'Teaching & Activism' },
+  //{ id: 'teaching', label: 'Teaching & Activism' },
   { id: 'contact', label: 'Contact' },
 ];
 
@@ -26,6 +26,11 @@ const publicationTabs = [
   { id: 'publications', label: 'Publications' },
   { id: 'patents', label: 'Patents' },
   { id: 'books', label: 'Books' },
+];
+
+const teachingTabs = [
+  { id: 'courses', label: 'Courses' },
+  { id: 'sundayScience', label: 'Sunday Science' }
 ];
 
 export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
@@ -88,7 +93,53 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
+
+            {/* Teaching Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button
+                  variant="ghost"
+                  className={cn(
+                    "px-6 py-2 transition-all duration-300 font-medium tracking-wide",
+                    ['teaching', 'courses', 'sundayscience'].includes(activeTab)
+                      ? "bg-white text-[#8B1538] hover:bg-white/90" 
+                      : "text-white hover:bg-white/10 hover:text-white"
+                  )}
+                >
+                  Teaching & Activism <ChevronDown className="ml-2 h-4 w-4" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-white border border-gray-200">
+                <DropdownMenuItem
+                  onClick={() => onTabChange('teaching')}
+                  className={cn(
+                    "cursor-pointer transition-colors font-medium",
+                    activeTab === 'teaching'
+                      ? "bg-[#8B1538]/10 text-[#8B1538] font-medium" 
+                      : "hover:bg-gray-50 text-gray-700"
+                  )}
+                >
+                  Overview
+                </DropdownMenuItem>
+                {teachingTabs.map((tab) => (
+                  <DropdownMenuItem
+                    key={tab.id}
+                    onClick={() => onTabChange(tab.id)}
+                    className={cn(
+                      "cursor-pointer transition-colors",
+                      activeTab === tab.id 
+                        ? "bg-[#8B1538]/10 text-[#8B1538] font-medium" 
+                        : "hover:bg-gray-50 text-gray-700"
+                    )}
+                  >
+                    {tab.label}
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
+          
+
           
           {/* Mobile menu */}
           <div className="md:hidden">
@@ -102,6 +153,11 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
               ))}
               <optgroup label="Publications">
                 {publicationTabs.map((tab) => (
+                  <option key={tab.id} value={tab.id}>{tab.label}</option>
+                ))}
+              </optgroup>
+              <optgroup label="Teaching & Activism">
+                {teachingTabs.map((tab) => (
                   <option key={tab.id} value={tab.id}>{tab.label}</option>
                 ))}
               </optgroup>
