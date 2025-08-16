@@ -44,7 +44,7 @@ export const BiographyTab = () => {
     <div className="max-w-4xl mx-auto space-y-12">
       {/* Header */}
       <div className="text-center animate-fade-in-up">
-        <h2 className="text-4xl font-bold text-white mb-4">Biography</h2>
+        <h2 className="text-4xl font-bold text-[#8B1538] mb-4">Biography</h2>
         <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
           From a poor peasant family in rural India to the halls of Harvard Medical School - 
           a journey of scientific discovery, social impact, and cultural preservation.
@@ -52,26 +52,26 @@ export const BiographyTab = () => {
       </div>
 
       {/* Main Bio */}
-      <Card className="glass-card p-8 md:p-12">
+      <Card className="bg-[#8B1538] p-8 md:p-12">
         <CardContent className="space-y-6 text-lg leading-relaxed">
-          <p className="text-black font-bold">
+          <p className="text-white font-bold">
             <strong>Dr. Rubul Mout</strong> is a Fellow (Research) at Harvard Medical School, Harvard University, 
             and the Stem Cell & Regenerative Biology Program, Boston Children's Hospital (BCH).
           </p>
           
-          <p className="text-black">
+          <p className="text-white">
             Born, brought up, and educated in India, Dr. Mout moved to the United States to pursue his PhD 
             from the University of Massachusetts, Amherst. Prior to joining Harvard/BCH, he was a Washington 
             Research Foundation Innovation Fellow at the Institute for Protein Design, University of Washington.
           </p>
           
-          <p className="text-black">
+          <p className="text-white">
             At Harvard/BCH, Dr. Mout developed soluble agonists for the Notch signaling pathway for T cell 
             development and function. These agonists promoted the development of T cells from bone marrow stem 
             cells and activated the Notch pathway in T cells during vaccination to boost cell-based immunity.
           </p>
           
-          <p className="text-black">
+          <p className="text-white">
             Currently, Dr. Mout uses computational protein design technologies to modulate signaling in immune 
             development, function, and ageing. The ultimate goal of this research is to enhance T cell function 
             to better combat cancer, autoimmune diseases, and viral infections.
@@ -116,16 +116,16 @@ export const BiographyTab = () => {
       </section>*/}
 
       {/* Books & Writing */}
-      <Card className="glass-card overflow-hidden">
+      <Card className="bg-[#8B1538] overflow-hidden">
         <CardContent className="p-8 md:p-12">
           <div className="flex items-center gap-4 mb-6">
-            <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <BookOpen className="w-6 h-6 text-primary-foreground" />
+            <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
+              <BookOpen className="w-6 h-6 text-[#8B1538]" />
             </div>
-            <h3 className="text-2xl font-bold">Literary Contributions</h3>
+            <h3 className="text-2xl font-bold text-white">Literary Contributions</h3>
           </div>
           
-          <div className="space-y-4 text-black">
+          <div className="space-y-4 text-white">
             <p>
               Dr. Mout is also the author of two books—a collection of short stories and a memoir—in 
               his native language, Assamese. His memoir depicts his extraordinary journey from a poor 
