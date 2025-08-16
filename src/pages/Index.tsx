@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import ResearchCard from "@/components/ResearchCard";
-import AchievementCard from "@/components/AchievementCard";
-import { Award, BookOpen, Heart, Beaker } from "lucide-react";
+import { Beaker } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
 import proteinDesignImage from "@/assets/work-protein-design.jpg";
 import stemCellImage from "@/assets/work-stemcell.jpg";
@@ -73,35 +72,6 @@ const Index = () => {
               description="Understanding age-associated immune changes to inform healthier longevity."
               image={immunoAgeingImage}
               gradientClass="from-purple-500/20 to-transparent"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Achievements Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-black/20 section-glow">{/* Updated background */}
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              Key Achievements & Impact
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <AchievementCard
-              title="Nobel Collaboration"
-              description="Collaborated with 2024 Nobel Laureate David Baker on protein design research featured in Nature magazine."
-              icon={<Award className="w-8 h-8" />}
-            />
-            <AchievementCard
-              title="Published Author"
-              description="Author of 40+ research articles and two bestselling books in Assamese, with 50,000+ copies sold."
-              icon={<BookOpen className="w-8 h-8" />}
-            />
-            <AchievementCard
-              title="Uplift Libraries"
-              description="Founded an initiative creating small-scale libraries for children in rural India, currently serving 6 libraries."
-              icon={<Heart className="w-8 h-8" />}
             />
           </div>
         </div>
