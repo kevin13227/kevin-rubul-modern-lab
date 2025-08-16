@@ -88,7 +88,7 @@ export const PublicationsTab = () => {
     },
     {
       title: "S Rana, NDB Le, R Mout, B Duncan, SG Elci, K Saha, VM Rotello. \"A Multichannel Biosensor for Rapid Determination of Cell Surface Glycomic Signatures\" ACS Cent. Sci., 2015, 1, 191-197.",
-      link: "placeholder"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&cstart=20&pagesize=80&citation_for_view=NpMfqDUAAAAJ:Se3iqnhoufwC"
     },
     {
       title: "CS Kim, R Mout, Y Zhao, YC Yeh, R Tang, Y Jeong, B Duncan, JA Hardy, VM Rotello. \"Co-Delivery of Protein and Small Molecule Therapeutics using Nanoparticle-Stabilized Nanocapsules\" Bioconjug. Chem., 2015, 26, 950-954.",
@@ -96,11 +96,11 @@ export const PublicationsTab = () => {
     },
     {
       title: "E Jeoung, YC Yeh, T Nelson, T Kushida, LS Wang, R Mout, X Li, K Saha, A Gupta, GY Tonga, JJ Lannutti, VM Rotello. \"Fabrication of Functional Nanofibers through Post‐Nanoparticle Functionalization\" Macromol. Rapid Commun., 2015, 36, 678-683.",
-      link: "placeholder"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:LkGwnXOMwfcC"
     },
     {
       title: "Z Ekmekci, K Saha, DF Moyano, GY Tonga, H Wang, R Mout, VM Rotello. \"Probing the Protein–Nanoparticle Interface: The Role of Aromatic Substitution Pattern on Affinity\" Supramol. Chem., 2015, 27, 123-126.",
-      link: "placeholder"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:W7OEmFMy1HYC"
     },
     {
       title: "Y Jiang, R Tang, B Duncan, Z Jiang, B Yan, R Mout, VM Rotello. \"Direct Cytosolic Delivery of siRNA using Nanoparticle-Stabilized Nanocapsules\" Angew. Chem. Int. Ed. Engl., 2015, 54, 506-510.",
@@ -116,35 +116,35 @@ export const PublicationsTab = () => {
     },
     {
       title: "YC Yeh, R Tang, R Mout, Y Jeong, VM Rotello \"Fabrication of Multiresponsive Bioactive Nanocapsules through Orthogonal Self-Assembly\" Angew. Chem. Int. Ed. Engl., 2014, 53, 5137-5141.",
-      link: "placeholder"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:zYLM7Y9cAGgC"
     },
     {
       title: "R Mout, GY Tonga, M Ray, DF Moyano, Y Xing, VM Rotello \"Environmentally Responsive Histidine-Carboxylate Zipper Formation between Proteins and Nanoparticles\" Nanoscale, 2014, 6, 8873-8877.",
-      link: "placeholder"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:YsMSGLbcyi4C"
     },
     {
       title: "YC Yeh, S Rana, R Mout, B Yan, FS Alfonso, VM Rotello. \"Supramolecular Tailoring of Protein–Nanoparticle Interactions using Cucurbituril Mediators\" Chem Commun., 2014, 50, 5565-5568.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:Tyk-4Ss8FVUC"
     },
     {
       title: "R Mout, VM Rotello. \"Bio and Nano Working Together: Engineering the Protein‐Nanoparticle Interface\" Isr. J. Chem., 2013, 53, 521-529.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:MXK_kJrjxJIC"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:UeHWp8X0CEIC"
     },
     {
       title: "R Tang, CS Kim, DJ Solfiell, S Rana, R Mout, EM Velázquez-Delgado, A Chompoosor, Y Jeong, B Yan, ZJ Zhu, CK Kim, JA Hardy, VM Rotello. \"Direct Delivery of Functional Proteins and Enzymes to the Cytosol using Nanoparticle-Stabilized Nanocapsules\" ACS Nano, 2013, 7, 6667-6673.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:IjCSPb-OGe4C"
     },
     {
       title: "V Nandwana, R Mout, YC Yeh, S Dickert, MT Tuominen, VM Rotello. \"Patterning of Protein/Quantum dot Hybrid Bionanostructures\" J. Inorg. Organomet. Polym. Mater., 2013, 23, 227-232.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:9yKSN-GCB0IC"
     },
     {
       title: "S Rana, AK Singla, A Bajaj, SG Elci, OR Miranda, R Mout, B Yan, FR Jirik, VM Rotello. \"Array-Based Sensing of Metastatic Cells and Tissues using Nanoparticle–Fluorescent Protein Conjugates\" ACS Nano, 2012, 6, 8233-8240.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:d1gkVwhDpl0C"
     },
     {
       title: "R Mout, DF Moyano, S Rana, VM Rotello. \"Surface Functionalization of Nanoparticles for Nanomedicine\" Chem. Soc. Rev., 2012, 41, 2539-2544.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u-x6o8ySG0sC"
     },
     {
       title: "S Rana, A Bajaj, R Mout, VM Rotello. \"Monolayer Coated Gold Nanoparticles for Delivery Applications\" Adv. Drug. Deliv. Rev., 2012, 64, 200-216.",
@@ -152,11 +152,11 @@ export const PublicationsTab = () => {
     },
     {
       title: "R Mout, Z Xu, AK Wolf, VJ Davisson, GK Jarori \"Anti-Malarial Activity of Geldanamycin Derivatives in Mice Infected with Plasmodium yoelii\" Malar J., 2012, 11, 54.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:qjMakFHDy7sC"
     },
     {
       title: "HK Vora, FR Shaik, I Pal-Bhowmick, R Mout, GK Jarori. \"Effect of Deletion of a Plant Like Pentapeptide Insert on Kinetic, Structural and Immunological Properties of Enolase from Plasmodium falciparum\" Arch. Biochem. Biophys., 2009, 485, 128-138",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:2osOgNQ5qMEC"
     }
   ];
 
@@ -173,7 +173,7 @@ export const PublicationsTab = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {publications.map((publication, index) => (
-                             <div key={index} className={`${publication.title.includes("Supramolecular Tailoring of Protein–Nanoparticle Interactions using Cucurbituril Mediators") ? "bg-green-100/80 border-green-300" : "bg-card/80 border-border/50"} backdrop-blur-sm border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]`}>
+               <div key={index} className="bg-card/80 border-border/50 backdrop-blur-sm border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
                 <div className="h-full flex flex-col">
                   <div className="flex-1">
                     <h3 className="text-base font-medium text-foreground leading-tight mb-4 line-clamp-6">
@@ -181,26 +181,33 @@ export const PublicationsTab = () => {
                     </h3>
                   </div>
                   <div className="mt-auto pt-4 border-t border-border/30">
-                    {publication.link === null ? (
-                      <span className="text-muted-foreground text-sm font-medium">
-                        Manuscript in Preparation
+                    <div className="flex justify-between items-center">
+                      <div>
+                        {publication.link === null ? (
+                          <span className="text-muted-foreground text-sm font-medium">
+                            Manuscript in Preparation
+                          </span>
+                        ) : publication.link === "placeholder" ? (
+                          <span className="text-muted-foreground text-sm font-medium">
+                            Placeholder
+                          </span>
+                        ) : (
+                          <a 
+                            href={publication.link} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-primary hover:text-primary-glow transition-colors flex items-center gap-2 text-sm font-medium group"
+                            title="View Publication"
+                          >
+                            <span>View Publication</span>
+                            <ExternalLink className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                          </a>
+                        )}
+                      </div>
+                      <span className="text-2xl font-bold text-foreground/80 ml-4">
+                        {index + 1}
                       </span>
-                    ) : publication.link === "placeholder" ? (
-                      <span className="text-muted-foreground text-sm font-medium">
-                        Placeholder
-                      </span>
-                    ) : (
-                      <a 
-                        href={publication.link} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-primary hover:text-primary-glow transition-colors flex items-center gap-2 text-sm font-medium group"
-                        title="View Publication"
-                      >
-                        <span>View Publication</span>
-                        <ExternalLink className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                      </a>
-                    )}
+                    </div>
                   </div>
                 </div>
               </div>
