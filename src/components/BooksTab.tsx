@@ -1,22 +1,26 @@
 import { BookOpen } from "lucide-react";
+//import projectStemCells from "../assets/project-stem-cells.jpg";
 
 const books = [
   {
-    title: "Jatra Aru Anyanya (The Journey and Others)",
+    title: "Dhuxorotat Xonghoto Shrawan",
     author: "Rubul Mout",
-    year: "2017",
-    publisher: "Bani Prakash",
+    year: "2015",
     language: "Assamese",
-    description: "A bestselling memoir depicting Dr. Mout's extraordinary journey from a poor peasant family in rural Assam to Harvard Medical School."
+    description: "A collection of short stories.",
+    imageUrl: "",
+    link: "https://www.amazon.com/dp/example1"
   },
   {
-    title: "Assamese Short Stories Collection",
+    title: "Moro Eta Sapon Ase",
     author: "Rubul Mout",
-    year: "2019",
-    publisher: "Student Stores", 
+    year: "2017",
     language: "Assamese",
-    description: "A collection of short stories exploring themes of science, education, and social transformation in contemporary Assam."
+    description: "A bestselling memoir depicting Dr. Mout's journey from a poor peasant family in rural Assam to Harvard Medical School. Over 50,000 copies have been sold.",
+    imageUrl: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1595491894i/54645343.jpg",
+    link: "https://www.goodreads.com/book/show/54645343-moro-eata-sapon-ase"
   }
+  
 ];
 
 export const BooksTab = () => {
@@ -37,17 +41,26 @@ export const BooksTab = () => {
               {books.map((book, index) => (
                 <div key={index} className="border-b border-border/30 pb-6 last:border-b-0">
                   <div className="flex items-start gap-6">
-                    <div className="w-16 h-20 bg-gradient-primary rounded flex items-center justify-center flex-shrink-0">
-                      <BookOpen className="h-8 w-8 text-primary-foreground" />
+                    <div className="w-40 h-60 rounded overflow-hidden flex-shrink-0">
+                      <img 
+                        src={book.imageUrl}
+                        alt={`Cover of ${book.title}`} 
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-foreground mb-2">
-                        {book.title}
+                        <a 
+                          href={book.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-primary transition-colors duration-200 hover:underline"
+                        >
+                          {book.title}
+                        </a>
                       </h3>
                       <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
                         <span>by {book.author}</span>
-                        <span>•</span>
-                        <span>{book.publisher}</span>
                         <span>•</span>
                         <span>{book.year}</span>
                         <span>•</span>
@@ -60,13 +73,6 @@ export const BooksTab = () => {
                   </div>
                 </div>
               ))}
-            </div>
-            
-            <div className="mt-8 p-6 bg-primary/5 rounded-xl border border-primary/20">
-              <h4 className="font-semibold text-foreground mb-2">Impact</h4>
-              <p className="text-sm text-muted-foreground">
-                "Jatra Aru Anyanya" became an instant bestseller with over 50,000 copies sold and is now included in educational curricula across Assam, inspiring countless students from rural backgrounds.
-              </p>
             </div>
           </div>
         </div>
