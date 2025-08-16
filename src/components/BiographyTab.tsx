@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { GraduationCap, Award, BookOpen, Globe, Microscope, Users } from "lucide-react";
+import rubulPortrait from "@/assets/rubul-portrait.jpg";
 
 export const BiographyTab = () => {
   const timeline = [
@@ -41,18 +42,40 @@ export const BiographyTab = () => {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto space-y-12">
-      {/* Header */}
+    <div className="max-w-6xl mx-auto space-y-12">
+      {/* Header with Portrait */}
       <div className="text-center animate-fade-in-up">
-        <h2 className="text-4xl font-bold text-[#8B1538] mb-4">Biography</h2>
-        <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
-          From a poor peasant family in rural India to the halls of Harvard Medical School - 
-          a journey of scientific discovery, social impact, and cultural preservation.
-        </p>
+        <div className="flex flex-col lg:flex-row items-center gap-12 mb-12">
+          {/* Portrait */}
+          <div className="flex justify-center lg:justify-start">
+            <div className="relative">
+              <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-[#FF0F7B]/30 shadow-2xl bg-gradient-to-br from-[#FF0F7B]/20 to-[#dbaf0d]/20 p-2">
+                <img 
+                  src={rubulPortrait} 
+                  alt="Dr. Rubul Mout" 
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </div>
+              {/* Glow effect */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#FF0F7B]/20 to-[#dbaf0d]/20 blur-xl -z-10"></div>
+            </div>
+          </div>
+          
+          {/* Text Content */}
+          <div className="flex-1 text-center lg:text-left">
+            <h2 className="text-5xl font-bold bg-gradient-to-r from-[#FF0F7B] via-[#dbaf0d] to-[#dbaf0d] bg-clip-text text-transparent mb-6">Dr. Rubul Mout</h2>
+            <h3 className="text-2xl font-semibold text-white mb-4">Research Fellow</h3>
+            <h4 className="text-xl text-gray-300 mb-6">Harvard Medical School & Boston Children's Hospital</h4>
+            <p className="text-lg text-gray-300 leading-relaxed">
+              From a poor peasant family in rural India to the halls of Harvard Medical School - 
+              a journey of scientific discovery, social impact, and cultural preservation.
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* Main Bio */}
-      <Card className="bg-[#8B1538] p-8 md:p-12">
+      <Card className="bg-gradient-to-br from-[#FF0F7B]/20 via-[#dbaf0d]/15 to-[#dbaf0d]/20 border border-[#FF0F7B]/30 shadow-[0_0_30px_#FF0F7B40] p-8 md:p-12">
         <CardContent className="space-y-6 text-lg leading-relaxed">
           <p className="text-white font-bold">
             <strong>Dr. Rubul Mout</strong> is a Fellow (Research) at Harvard Medical School, Harvard University, 

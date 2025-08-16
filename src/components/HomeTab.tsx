@@ -34,7 +34,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
               {/* Gradient overlay - default state */}
               <div className="absolute inset-0 bg-gradient-to-br from-red-900/80 via-red-800/60 to-black/80 group-hover:opacity-0 transition-opacity duration-500" />
               {/* Pink gradient overlay - hover state */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#FF0F7B]/90 via-[#EDB753]/70 to-[#EDD153]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#FF0F7B]/90 via-[#dbaf0d]/70 to-[#dbaf0d]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
               {/* Content */}
               <div className="absolute bottom-0 left-0 right-0 p-8">
@@ -57,7 +57,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
               {/* Gradient overlay - default state */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-blue-800/60 to-black/80 group-hover:opacity-0 transition-opacity duration-500" />
               {/* Pink gradient overlay - hover state */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#FF0F7B]/90 via-[#EDB753]/70 to-[#EDD153]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#FF0F7B]/90 via-[#dbaf0d]/70 to-[#dbaf0d]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
               {/* Content */}
               <div className="absolute bottom-0 left-0 right-0 p-8">
@@ -80,7 +80,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
               {/* Gradient overlay - default state */}
               <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 via-purple-800/60 to-black/80 group-hover:opacity-0 transition-opacity duration-500" />
               {/* Pink gradient overlay - hover state */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#FF0F7B]/90 via-[#EDB753]/70 to-[#EDD153]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#FF0F7B]/90 via-[#dbaf0d]/70 to-[#dbaf0d]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
               {/* Content */}
               <div className="absolute bottom-0 left-0 right-0 p-8">
@@ -96,7 +96,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
 
       {/* Call to Action */}
       <section className="py-16 text-center">
-        <div className="max-w-4xl mx-auto bg-gradient-to-r from-[#FF0F7B]/20 via-[#EDB753]/15 to-[#EDD153]/20 rounded-3xl p-12 border border-[#FF0F7B]/30 backdrop-blur-sm shadow-[0_0_30px_#FF0F7B60]">
+        <div className="max-w-4xl mx-auto bg-gradient-to-r from-[#FF0F7B]/20 via-[#dbaf0d]/15 to-[#dbaf0d]/20 rounded-3xl p-12 border border-[#FF0F7B]/30 backdrop-blur-sm shadow-[0_0_30px_#FF0F7B60]">
           <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Interested in Collaboration?
           </h3>
@@ -108,7 +108,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
             <Button 
               size="lg"
               onClick={() => onNavigate('contact')}
-              className="bg-gradient-to-r from-[#FF0F7B] via-[#EDB753] to-[#EDD153] hover:shadow-[0_0_40px_#FF0F7B90] text-white px-8 py-4 text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+              className="bg-gradient-to-r from-[#FF0F7B] via-[#dbaf0d] to-[#dbaf0d] hover:shadow-[0_0_40px_#FF0F7B90] text-white px-8 py-4 text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               Get In Touch
               <ArrowRight className="w-5 h-5 ml-2" />
@@ -125,7 +125,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
               size="lg"
               variant="outline"
               onClick={() => onNavigate('teaching')}
-              className="border-2 border-[#EDB753]/80 text-white hover:bg-[#EDB753]/10 hover:shadow-[0_0_25px_#EDB753_70] px-8 py-4 text-lg transition-all duration-300 backdrop-blur-sm"
+              className="border-2 border-[#dbaf0d]/80 text-white hover:bg-[#dbaf0d]/10 hover:shadow-[0_0_25px_#dbaf0d_70] px-8 py-4 text-lg transition-all duration-300 backdrop-blur-sm"
             >
               Join Science Activism
             </Button>
