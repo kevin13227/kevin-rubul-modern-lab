@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Mail, MapPin, Building, Phone, ExternalLink, Calendar, Users } from "lucide-react";
+import { Mail, MapPin, Building } from "lucide-react";
 
 export const ContactTab = () => {
   const contactInfo = [
@@ -25,48 +25,16 @@ export const ContactTab = () => {
     }
   ];
 
-  const collaborationAreas = [
-    {
-      title: "Research Collaboration",
-      description: "Protein design, cell biology, immunology, and computational biology projects",
-      icon: Users
-    },
-    {
-      title: "Speaking Engagements",
-      description: "Scientific conferences, educational institutions, and public outreach events",
-      icon: Calendar
-    },
-    {
-      title: "Science Education",
-      description: "Student mentorship, curriculum development, and educational program design",
-      icon: Building
-    }
-  ];
 
-  const socialLinks = [
-    {
-      platform: "Sunday Science Activism",
-      description: "Join weekly science sessions",
-      link: "https://research.childrenshospital.org/rubulmout/Science-activism"
-    },
-    {
-      platform: "Uplift Libraries",
-      description: "Support educational initiatives",
-      link: "https://upliftlibraries.com/"
-    },
-    {
-      platform: "Publications",
-      description: "View research publications",
-      link: "https://research.childrenshospital.org/rubulmout/publications-0"
-    }
-  ];
+
+
 
   return (
     <div className="max-w-4xl mx-auto space-y-12">
       {/* Header */}
       <div className="text-center animate-fade-in-up">
-        <h2 className="text-4xl font-bold text-foreground mb-4">Contact</h2>
-        <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+        <h2 className="text-4xl font-bold text-white mb-4">Contact</h2>
+        <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
           I'm always interested in meaningful collaborations, research opportunities, and 
           discussions about advancing science education. Feel free to reach out.
         </p>
@@ -113,54 +81,9 @@ export const ContactTab = () => {
         </CardContent>
       </Card>
 
-      {/* Collaboration Areas */}
-      <section>
-        <h3 className="text-3xl font-bold text-center mb-10">Collaboration Opportunities</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {collaborationAreas.map((area, index) => (
-            <Card key={index} className="text-center hover:shadow-lg transition-all duration-300 glass-card">
-              <CardHeader>
-                <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <area.icon className="w-8 h-8 text-primary-foreground" />
-                </div>
-                <CardTitle className="text-xl">{area.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-muted-foreground leading-relaxed">
-                  {area.description}
-                </CardDescription>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
 
-      {/* Quick Links */}
-      <Card className="glass-card">
-        <CardHeader>
-          <CardTitle className="text-2xl">Quick Links & Resources</CardTitle>
-          <CardDescription>
-            Direct access to programs, publications, and initiatives
-          </CardDescription>
-        </CardHeader>
-        
-        <CardContent className="space-y-4">
-          {socialLinks.map((link, index) => (
-            <div key={index} className="flex items-center justify-between p-4 bg-secondary/20 rounded-lg hover:bg-secondary/30 transition-colors">
-              <div>
-                <h4 className="font-semibold text-foreground">{link.platform}</h4>
-                <p className="text-muted-foreground text-sm">{link.description}</p>
-              </div>
-              <Button variant="outline" size="sm" asChild>
-                <a href={link.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                  Visit
-                  <ExternalLink className="w-4 h-4" />
-                </a>
-              </Button>
-            </div>
-          ))}
-        </CardContent>
-      </Card>
+
+
 
       {/* Response Time */}
       <Card className="bg-gradient-primary text-white border-0">
