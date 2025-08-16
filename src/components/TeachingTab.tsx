@@ -72,7 +72,7 @@ export const TeachingTab = () => {
       </div>
 
       {/* Impact Statistics */}
-      <section className="bg-gradient-primary rounded-3xl p-8 md:p-12 text-white">
+      <section className="bg-gradient-to-r from-[#FF0F7B] via-[#ffcc00] to-[#ffcc00] rounded-3xl p-8 md:p-12 text-white">
         <h3 className="text-3xl font-bold text-center mb-10">Educational Impact</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {impact.map((item, index) => (
@@ -93,7 +93,7 @@ export const TeachingTab = () => {
             <Card key={index} className="glass-card overflow-hidden hover:shadow-xl transition-all duration-300">
               <CardHeader className="bg-secondary/20">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#FF0F7B] via-[#ffcc00] to-[#ffcc00] rounded-lg flex items-center justify-center">
                     <initiative.icon className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div className="flex-1">
@@ -145,7 +145,7 @@ export const TeachingTab = () => {
       {/* Mission Statement */}
       <Card className="glass-card border-2 border-primary/20">
         <CardContent className="p-8 md:p-12 text-center">
-          <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-6">
+          <div className="w-16 h-16 bg-gradient-to-r from-[#FF0F7B] via-[#ffcc00] to-[#ffcc00] rounded-full flex items-center justify-center mx-auto mb-6">
             <Heart className="w-8 h-8 text-primary-foreground" />
           </div>
           
@@ -191,13 +191,24 @@ export const TeachingTab = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" className="px-8">
-            <Calendar className="w-5 h-5 mr-2" />
-            Join Sunday Science Sessions
+          <Button 
+            size="lg" 
+            className="bg-black hover:bg-black focus:bg-black active:bg-black border-2 border-white text-white px-8 py-4 text-lg font-medium group transition-transform duration-300 hover:scale-105"
+          >
+            <span className="group-hover:bg-gradient-to-r group-hover:from-[#FF0F7B] group-hover:via-[#ffcc00] group-hover:to-[#ffcc00] group-hover:bg-clip-text group-hover:text-transparent flex items-center">
+              <Calendar className="w-5 h-5 mr-2" />
+              Join Sunday Science Sessions
+            </span>
           </Button>
-          <Button size="lg" variant="outline">
-            <Users className="w-5 h-5 mr-2" />
-            Support Uplift Libraries
+          
+          <Button 
+            size="lg" 
+            className="bg-black hover:bg-black focus:bg-black active:bg-black border-2 border-white text-white px-8 py-4 text-lg font-medium group transition-transform duration-300 hover:scale-105"
+          >
+            <span className="group-hover:bg-gradient-to-r group-hover:from-[#FF0F7B] group-hover:via-[#ffcc00] group-hover:to-[#ffcc00] group-hover:bg-clip-text group-hover:text-transparent flex items-center">
+              <Users className="w-5 h-5 mr-2" />
+              Support Uplift Libraries
+            </span>
           </Button>
         </div>
       </section>

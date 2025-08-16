@@ -108,26 +108,32 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
             <Button 
               size="lg"
               onClick={() => onNavigate('contact')}
-              className="bg-gradient-to-r from-[#FF0F7B] via-[#dbaf0d] to-[#dbaf0d] hover:shadow-[0_0_40px_#FF0F7B90] text-white px-8 py-4 text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+              className="bg-black hover:bg-black focus:bg-black active:bg-black border-2 border-white text-white px-8 py-4 text-lg font-medium group transition-transform duration-300 hover:scale-105"
             >
-              Get In Touch
-              <ArrowRight className="w-5 h-5 ml-2" />
+              <span className="group-hover:bg-gradient-to-r group-hover:from-[#FF0F7B] group-hover:via-[#ffcc00] group-hover:to-[#ffcc00] group-hover:bg-clip-text group-hover:text-transparent flex items-center">
+                Get In Touch
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </span>
             </Button>
+            
             <Button 
               size="lg"
-              variant="outline"
               onClick={() => onNavigate('publications')}
-              className="border-2 border-[#FF0F7B]/80 text-white hover:bg-[#FF0F7B]/10 hover:shadow-[0_0_25px_#FF0F7B70] px-8 py-4 text-lg transition-all duration-300 backdrop-blur-sm"
+              className="bg-black hover:bg-black focus:bg-black active:bg-black border-2 border-white text-white px-8 py-4 text-lg font-medium group transition-transform duration-300 hover:scale-105"
             >
-              View Publications
+              <span className="group-hover:bg-gradient-to-r group-hover:from-[#FF0F7B] group-hover:via-[#ffcc00] group-hover:to-[#ffcc00] group-hover:bg-clip-text group-hover:text-transparent">
+                View Publications
+              </span>
             </Button>
+            
             <Button 
               size="lg"
-              variant="outline"
               onClick={() => onNavigate('teaching')}
-              className="border-2 border-[#dbaf0d]/80 text-white hover:bg-[#dbaf0d]/10 hover:shadow-[0_0_25px_#dbaf0d_70] px-8 py-4 text-lg transition-all duration-300 backdrop-blur-sm"
+              className="bg-black hover:bg-black focus:bg-black active:bg-black border-2 border-white text-white px-8 py-4 text-lg font-medium group transition-transform duration-300 hover:scale-105"
             >
-              Join Science Activism
+              <span className="group-hover:bg-gradient-to-r group-hover:from-[#FF0F7B] group-hover:via-[#ffcc00] group-hover:to-[#ffcc00] group-hover:bg-clip-text group-hover:text-transparent">
+                Join Science Activism
+              </span>
             </Button>
           </div>
         </div>

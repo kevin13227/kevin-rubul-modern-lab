@@ -44,7 +44,7 @@ export const ContactTab = () => {
       <Card className="glass-card">
         <CardHeader>
           <CardTitle className="text-2xl flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-gradient-to-r from-[#FF0F7B] via-[#ffcc00] to-[#ffcc00] rounded-lg flex items-center justify-center">
               <Mail className="w-5 h-5 text-primary-foreground" />
             </div>
             Contact Information
@@ -86,7 +86,7 @@ export const ContactTab = () => {
 
 
       {/* Response Time */}
-      <Card className="bg-gradient-primary text-white border-0">
+      <Card className="bg-gradient-to-r from-[#FF0F7B] via-[#ffcc00] to-[#ffcc00] text-white border-0">
         <CardContent className="p-8 text-center">
           <h3 className="text-2xl font-bold mb-4">Response Time</h3>
           <p className="text-white/90 text-lg leading-relaxed max-w-2xl mx-auto">
