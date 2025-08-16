@@ -10,7 +10,7 @@ export const ResearchTab = () => {
     <div className="max-w-6xl mx-auto space-y-16">
       {/* Header */}
       <div className="text-center space-y-6">
-        <h1 className="text-5xl font-bold text-foreground">Research</h1>
+        <h1 className="text-5xl font-bold text-[#8B1538]">Research</h1>
       </div>
 
 
@@ -20,7 +20,7 @@ export const ResearchTab = () => {
                      {/* Protein Design & Engineering */}
              <div id="protein-design" className="space-y-6">
                <div className="flex items-center justify-between">
-                 <h2 className="text-3xl font-bold text-foreground border-b-2 border-primary pb-2">
+                 <h2 className="text-3xl font-bold text-white border-b-2 border-primary pb-2">
                    Protein Design & Engineering
                  </h2>
                  <div className="w-32 h-32 overflow-hidden rounded-lg bg-gradient-to-br from-blue-500/20 to-purple-500/20 border border-primary/30 flex-shrink-0">
@@ -38,7 +38,7 @@ export const ResearchTab = () => {
                    </div>
                  </div>
                </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-4">
               <p className="text-muted-foreground leading-relaxed text-lg">
                 Proteins are the workhorses of cellular function, performing a myriad of essential tasks from catalyzing biochemical reactions to providing structural support. Our research focuses on understanding and manipulating these molecular machines to uncover new biological functions and develop therapeutic applications.
@@ -53,24 +53,24 @@ export const ResearchTab = () => {
             <div className="space-y-4">
               <Card className="bg-secondary/30 border-0">
                 <CardHeader>
-                  <CardTitle className="text-lg">Key Techniques</CardTitle>
+                  <CardTitle className="text-lg text-[#8B1538]">Key Techniques</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-sm text-muted-foreground">Computational protein design</span>
+                    <span className="text-sm text-white">Computational protein design</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-sm text-muted-foreground">Structure-function analysis</span>
+                    <span className="text-sm text-white">Structure-function analysis</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-sm text-muted-foreground">Protein-protein interaction engineering</span>
+                    <span className="text-sm text-white">Protein-protein interaction engineering</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-sm text-muted-foreground">Therapeutic protein development</span>
+                    <span className="text-sm text-white">Therapeutic protein development</span>
                   </div>
                 </CardContent>
               </Card>
@@ -81,7 +81,7 @@ export const ResearchTab = () => {
                        {/* Stem Cell Biology */}
                <div id="stem-cell-biology" className="space-y-6">
                  <div className="flex items-center justify-between">
-                   <h2 className="text-3xl font-bold text-foreground border-b-2 border-primary pb-2">
+                   <h2 className="text-3xl font-bold text-white border-b-2 border-primary pb-2">
                      Stem Cell Biology & Regenerative Medicine
                    </h2>
                    <div className="w-32 h-32 overflow-hidden rounded-lg bg-gradient-to-br from-green-500/20 to-teal-500/20 border border-primary/30 flex-shrink-0">
@@ -114,24 +114,24 @@ export const ResearchTab = () => {
             <div className="space-y-4">
               <Card className="bg-secondary/30 border-0">
                 <CardHeader>
-                  <CardTitle className="text-lg">Research Areas</CardTitle>
+                  <CardTitle className="text-lg text-[#8B1538]">Research Areas</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-sm text-muted-foreground">Hematopoietic stem cell biology</span>
+                    <span className="text-sm text-white">Hematopoietic stem cell biology</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-sm text-muted-foreground">T-cell development</span>
+                    <span className="text-sm text-white">T-cell development</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-sm text-muted-foreground">iPSC differentiation protocols</span>
+                    <span className="text-sm text-white">iPSC differentiation protocols</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-sm text-muted-foreground">Tissue engineering</span>
+                    <span className="text-sm text-white">Tissue engineering</span>
                   </div>
                 </CardContent>
               </Card>
@@ -142,7 +142,7 @@ export const ResearchTab = () => {
                        {/* Immunology & Aging */}
                <div id="immunology-aging" className="space-y-6">
                  <div className="flex items-center justify-between">
-                   <h2 className="text-3xl font-bold text-foreground border-b-2 border-primary pb-2">
+                   <h2 className="text-3xl font-bold text-white border-b-2 border-primary pb-2">
                      Immunology & Aging
                    </h2>
                    <div className="w-32 h-32 overflow-hidden rounded-lg bg-gradient-to-br from-pink-500/20 to-rose-500/20 border border-primary/30 flex-shrink-0">
@@ -175,24 +175,24 @@ export const ResearchTab = () => {
             <div className="space-y-4">
               <Card className="bg-secondary/30 border-0">
                 <CardHeader>
-                  <CardTitle className="text-lg">Key Findings</CardTitle>
+                  <CardTitle className="text-lg text-[#8B1538]">Key Findings</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-sm text-muted-foreground">Age-related immune dysfunction</span>
+                    <span className="text-sm text-white">Age-related immune dysfunction</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-sm text-muted-foreground">Immunotherapeutic strategies</span>
+                    <span className="text-sm text-white">Immunotherapeutic strategies</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-sm text-muted-foreground">Vaccine response optimization</span>
+                    <span className="text-sm text-white">Vaccine response optimization</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-sm text-muted-foreground">Inflammation and aging</span>
+                    <span className="text-sm text-white">Inflammation and aging</span>
                   </div>
                 </CardContent>
               </Card>
@@ -215,7 +215,7 @@ export const ResearchTab = () => {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-gray-700 leading-relaxed">
                   Developing engineered proteins that target specific cancer cell markers with high specificity and low toxicity. This project combines computational design with experimental validation to create novel therapeutic agents.
                 </p>
               </CardContent>
@@ -230,7 +230,7 @@ export const ResearchTab = () => {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-gray-700 leading-relaxed">
                   Investigating the use of induced pluripotent stem cells for tissue repair and regeneration in pediatric patients. Focus on developing safe and effective protocols for clinical applications.
                 </p>
               </CardContent>
@@ -246,7 +246,7 @@ export const ResearchTab = () => {
               </div>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 Developing strategies to rejuvenate the aging immune system and improve vaccine responses in elderly populations. This project aims to identify novel therapeutic targets and develop interventions that can restore immune function.
               </p>
             </CardContent>
