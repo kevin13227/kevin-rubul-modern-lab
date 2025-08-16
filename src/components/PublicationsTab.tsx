@@ -36,35 +36,35 @@ export const PublicationsTab = () => {
     },
     {
       title: "M Ray, YW Lee, J Hardie, R Mout, GY Tonga, ME Farkas, VM Rotello \"CRISPRed Macrophages for Cell-Based Cancer Immunotherapy\" Bioconjugate Chem. 2018, 29, 445-450.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:M3ejUd6NZC8C"
     },
     {
       title: "R Mout, VM Rotello. \"A General Method for Intracellular Protein Delivery through 'E-tag' Protein Engineering and Arginine Functionalized Gold Nanoparticles\" Bio-protocol, 2017, 7, e2661.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:4TOpqqG69KYC"
     },
     {
       title: "F Scaletti, D Luther, R Mout, M Ray, YW Lee, VM Rotello. \"CRISPR/Cas9 Protein Delivery Technologies\" G.I.T Laboratory Journal, 2017, 21, 22-23.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:_kc_bZDykSQC"
     },
     {
       title: "R Mout, VM Rotello. \"Cytosolic and Nuclear Delivery of CRISPR/Cas9-Ribonucleoprotein for Gene Editing using Arginine Functionalized Gold Nanoparticle\" Bio-protocol, 2017, 7, e2586.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:Zph67rFs4hoC"
     },
     {
       title: "R Mout, M Ray, T Tray, K Sasaki, GY Tonga, VM Rotello. \"General Strategy for Direct Cytosolic Protein Delivery via Protein-Nanoparticle Coengineering\" ACS Nano, 2017, 11, 6416-6421.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:KlAtU1dfN6UC"
     },
     {
       title: "NDB Le, GY Tonga, R Mout, et al., \"Cancer Cell Discrimination Using Host-Guest 'Doubled' Arrays\" J. Am. Chem. Soc., 2017, 139, 8008-8012.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:kNdYIx-mwKoC"
     },
     {
       title: "R Mout, M Ray, Y-W Lee, F Scaletti, VM Rotello. \"In Vivo Delivery of CRISPR/Cas9 for Therapeutic Gene Editing: Progress and Challenges\" Bioconjug. Chem., 2017, 28, 880-884.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:3fE2CSJIrl8C"
     },
     {
       title: "R Mout, M Ray, GY Tonga, Y.-W. Lee, T Tray, K Sasaki, VM Rotello. \"Direct Cytoplasmic Delivery of CRISPR/Cas9-Ribonucleoprotein for Efficient Gene Editing\" ACS Nano, 2017, 11, 2452-2458.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:8k81kl-MbHgC"
     },
     {
       title: "R Mout, GY Tonga, L Wang, M Ray, T Roy, VM Rotello. \"Programmed Self-Assembly of Hierarchical Nanostructures through Protein-Nanoparticle Coengineering\" ACS Nano, 2017, 11, 3456-3462.",
@@ -173,7 +173,7 @@ export const PublicationsTab = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {publications.map((publication, index) => (
-              <div key={index} className={`${publication.title.includes("CRISPRed Macrophages for Cell-Based Cancer Immunotherapy") ? "bg-green-100/80 border-green-300" : "bg-card/80 border-border/50"} backdrop-blur-sm border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]`}>
+                             <div key={index} className={`${publication.title.includes("Programmed Self-Assembly of Hierarchical Nanostructures through Protein-Nanoparticle Coengineering") ? "bg-green-100/80 border-green-300" : "bg-card/80 border-border/50"} backdrop-blur-sm border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]`}>
                 <div className="h-full flex flex-col">
                   <div className="flex-1">
                     <h3 className="text-base font-medium text-foreground leading-tight mb-4 line-clamp-6">
