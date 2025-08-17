@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Navigation } from "./Navigation";
 import { HeroSection } from "./HeroSection";
 import { HomeTab } from "./HomeTab";
+import { ResearchTab } from "./ResearchTab";
 import { BiographyTab } from "./BiographyTab";
 import { PublicationsTab } from "./PublicationsTab";
 import { TeachingTab } from "./TeachingTab";
@@ -15,16 +16,29 @@ import { SundayScienceTab } from "./SundayScienceTab";
 export const RubulMoutSite = () => {
   const [activeTab, setActiveTab] = useState('home');
 
-  const handleTabChange = (tab: string) => {
+  const handleTabChange = (tab: string, section?: string) => {
     setActiveTab(tab);
-    // Smooth scroll to top when changing tabs
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+    if (section && tab === 'research') {
+      // Wait for the component to render, then scroll to section
+      setTimeout(() => {
+        const element = document.getElementById(section);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }, 100);
+    } else {
+      // Smooth scroll to top when changing tabs
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   const renderActiveTab = () => {
     switch (activeTab) {
       case 'home':
         return <HomeTab onNavigate={handleTabChange} />;
+      case 'research':
+        return <ResearchTab />;
       case 'biography':
         return <BiographyTab />;
       case 'publications':
@@ -76,6 +90,12 @@ export const RubulMoutSite = () => {
             <div>
               <h4 className="font-semibold mb-4 text-white">Quick Links</h4>
               <div className="space-y-2">
+                <button 
+                  onClick={() => handleTabChange('research')}
+                  className="block text-gray-300 hover:text-primary transition-colors link-underline"
+                >
+                  Research
+                </button>
                 <button 
                   onClick={() => handleTabChange('home')}
                   className="block text-gray-300 hover:text-primary transition-colors link-underline"
