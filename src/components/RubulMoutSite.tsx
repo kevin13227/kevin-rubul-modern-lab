@@ -92,37 +92,38 @@ export const RubulMoutSite = () => {
               <div className="space-y-2">
                 <button 
                   onClick={() => handleTabChange('research')}
-                  className="block text-gray-300 hover:text-primary transition-colors link-underline"
+                  className="block text-gray-300 hover:text-primary transition-colors"
                 >
                   Research
                 </button>
-                <button 
-                  onClick={() => handleTabChange('home')}
-                  className="block text-gray-300 hover:text-primary transition-colors link-underline"
-                >
-                  Research Projects
-                </button>
+
                 <button 
                   onClick={() => handleTabChange('biography')}
-                  className="block text-gray-300 hover:text-primary transition-colors link-underline"
+                  className="block text-gray-300 hover:text-primary transition-colors"
                 >
                   Biography
                 </button>
                 <button 
                   onClick={() => handleTabChange('publications')}
-                  className="block text-gray-300 hover:text-primary transition-colors link-underline"
+                  className="block text-gray-300 hover:text-primary transition-colors"
                 >
-                  Publications & Patents
+                  Publications
+                </button>
+                <button 
+                  onClick={() => handleTabChange('patents')}
+                  className="block text-gray-300 hover:text-primary transition-colors"
+                >
+                  Patents
                 </button>
                 <button 
                   onClick={() => handleTabChange('teaching')}
-                  className="block text-gray-300 hover:text-primary transition-colors link-underline"
+                  className="block text-gray-300 hover:text-primary transition-colors"
                 >
                   Science Activism
                 </button>
                 <button 
                   onClick={() => handleTabChange('contact')}
-                  className="block text-gray-300 hover:text-primary transition-colors link-underline"
+                  className="block text-gray-300 hover:text-primary transition-colors"
                 >
                   Contact
                 </button>
@@ -136,7 +137,7 @@ export const RubulMoutSite = () => {
                   href="https://upliftlibraries.com/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block text-gray-300 hover:text-primary transition-colors link-underline"
+                  className="block text-gray-300 hover:text-primary transition-colors"
                 >
                   Uplift Libraries
                 </a>
@@ -144,7 +145,7 @@ export const RubulMoutSite = () => {
                   href="https://research.childrenshospital.org/rubulmout/Science-activism" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block text-gray-300 hover:text-primary transition-colors link-underline"
+                  className="block text-gray-300 hover:text-primary transition-colors"
                 >
                   Sunday Science Activism
                 </a>
@@ -152,7 +153,7 @@ export const RubulMoutSite = () => {
                   href="https://research.childrenshospital.org/rubulmout/publications-0" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block text-gray-300 hover:text-primary transition-colors link-underline"
+                  className="block text-gray-300 hover:text-primary transition-colors"
                 >
                   Publications
                 </a>

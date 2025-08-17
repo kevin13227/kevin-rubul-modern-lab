@@ -37,7 +37,7 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Button 
               size="lg" 
-              onClick={() => onNavigate('biography')} 
+              onClick={() => onNavigate('research')} 
               className="bg-black hover:bg-black focus:bg-black active:bg-black border-2 border-white text-white px-10 py-4 text-lg font-medium group transition-transform duration-300 hover:scale-105"
             >
               <span className="group-hover:bg-gradient-to-r group-hover:from-[#FF0F7B] group-hover:via-[#ffcc00] group-hover:to-[#ffcc00] group-hover:bg-clip-text group-hover:text-transparent">
