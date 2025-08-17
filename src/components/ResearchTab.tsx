@@ -10,7 +10,7 @@ export const ResearchTab = () => {
     <div className="max-w-6xl mx-auto space-y-16">
       {/* Header */}
       <div className="text-center space-y-6">
-        <h1 className="text-5xl font-bold text-[#8B1538]">Research</h1>
+        <h1 className="text-5xl font-bold text-[#8B1538]">Research Focus</h1>
       </div>
 
 
