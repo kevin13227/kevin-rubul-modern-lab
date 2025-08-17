@@ -8,7 +8,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { ChevronDown } from "lucide-react";
-import harvardLogo from "@/assets/harvard-logo.svg";
+import medschoolLogo from "@/assets/medschool-logo.png";
 
 interface NavigationProps {
   activeTab: string;
@@ -39,17 +39,8 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
     <nav className="bg-[#A51C30] sticky top-0 z-50 shadow-lg">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-4">
-            <div className="w-12 h-12 bg-white rounded-full p-2 flex items-center justify-center shadow-md">
-              <img 
-                src={harvardLogo} 
-                alt="Harvard University" 
-                className="w-8 h-8"
-              />
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-white tracking-wider">DR. RUBUL MOUT</h1>
-            </div>
+          <div>
+            <h1 className="text-xl font-bold text-white tracking-wider">DR. RUBUL MOUT</h1>
           </div>
           
           <div className="hidden md:flex items-center space-x-2">
@@ -145,6 +136,15 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
+            
+            {/* Med School Logo */}
+            <div className="ml-4">
+              <img 
+                src={medschoolLogo} 
+                alt="Medical School" 
+                className="h-12 w-auto"
+              />
+            </div>
           </div>
           
 
