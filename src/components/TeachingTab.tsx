@@ -203,26 +203,7 @@ export const TeachingTab = ({ onNavigate }: TeachingTabProps) => {
           in our mission to spread science education.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button 
-            size="lg" 
-
-            <span className="group-hover:bg-gradient-to-r group-hover:from-[#FF0F7B] group-hover:via-[#ffcc00] group-hover:to-[#ffcc00] group-hover:bg-clip-text group-hover:text-transparent flex items-center">
-              <Calendar className="w-5 h-5 mr-2" />
-              Join Sunday Science Sessions
-            </span>
-          </Button>
-          
-          <Button 
-            size="lg" 
-            className="bg-black hover:bg-black focus:bg-black active:bg-black border-2 border-white text-white px-8 py-4 text-lg font-medium group transition-transform duration-300 hover:scale-105"
-          >
-            <span className="group-hover:bg-gradient-to-r group-hover:from-[#FF0F7B] group-hover:via-[#ffcc00] group-hover:to-[#ffcc00] group-hover:bg-clip-text group-hover:text-transparent flex items-center">
-              <Users className="w-5 h-5 mr-2" />
-              Support Uplift Libraries
-            </span>
-          </Button>
-        </div>
+        
       </section>
     </div>
   );
