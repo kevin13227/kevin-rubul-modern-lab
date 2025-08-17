@@ -22,7 +22,7 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight tracking-tight">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-relaxed tracking-tight pb-4">
             Advancing Science Through
             <span className="block mt-4 bg-gradient-to-r from-[#FF0F7B] via-[#ffcc00] to-[#ffcc00] bg-clip-text text-transparent">
               Protein Design & Cell Biology

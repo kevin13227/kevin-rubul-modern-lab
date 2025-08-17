@@ -112,7 +112,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
             >
               <span className="group-hover:bg-gradient-to-r group-hover:from-[#FF0F7B] group-hover:via-[#ffcc00] group-hover:to-[#ffcc00] group-hover:bg-clip-text group-hover:text-transparent flex items-center">
                 Get In Touch
-                <ArrowRight className="w-5 h-5 ml-2" />
+                
               </span>
             </Button>
             
