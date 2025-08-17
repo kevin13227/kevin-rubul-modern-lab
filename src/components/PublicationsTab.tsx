@@ -4,11 +4,11 @@ export const PublicationsTab = () => {
   const publications = [
     {
       title: "AP Patni, R Mout, R Moore, AA Alghadeer, GQ Daley, D Baker, J Mathieu, H Ruohola-Baker, \"Designed Soluble Notch Agonist Drives Human Ameloblast Maturation for Tooth Regeneration\" bioRxiv, 2025, doi: https://doi.org/10.1101/2025.04.03.646929",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:JV2RwH3_ST0C"
+      link: "https://www.biorxiv.org/content/10.1101/2025.04.03.646929v1.abstract"
     },
     {
       title: "R Mout, ...U Lendahl, D Baker, SC Blacklow, GQ Daley et al., \"Design of Soluble Notch Agonists That Drive T Cell Development and Boost Immunity\" Cell, 2025, DOI: 10.1016/j.cell.2025.07.009.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:blknAaTinKkC"
+      link: "https://www.cell.com/cell/abstract/S0092-8674(25)00798-6"
     },
     {
       title: "R Mout, R Jing, L Hensch, U Lendahl, GQ Daley. \"Notch Signaling in Blood Development\" Manuscript in preparation, 2025",
@@ -16,11 +16,11 @@ export const PublicationsTab = () => {
     },
     {
       title: "B Huang, ...R Mout, ...C Bertozzi, D Baker. \"Designed endocytosis-inducing proteins degrade targets and amplify signals\" Nature, 2025, 638(8051), 796-804.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:M3NEmzRMIkIC"
+      link: "https://www.nature.com/articles/s41586-024-07948-2"
     },
     {
       title: "R Mout*#, RC Bretherton*, J Decarreau, S Lee, N Gregorio, NI Edman, M Ahlrichs, Y Hsia, DD Sahtoe, G Ueda, A Sharma, R Schulman, CA DeForest#, D Baker#. \"De novo design of modular protein hydrogels with programmable intra- and extracellular viscoelasticity\" Proc. Natl. Acad. Sci. U.S.A., 2024, 121(6), e2309457121 (#co-corresponding author)",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:e5wmG9Sq2KIC"
+      link: "https://www.pnas.org/doi/abs/10.1073/pnas.2309457121"
     },
     {
       title: "M Ray, G Brancolini, DC Luther, Z Jiang, R Cao-Milán, AM Cuadros, A Burden, V Clark, S Rana, R Mout, RF Landis, S Corni, VM Rotello. \"High affinity protein surface binding through co-engineering of nanoparticles and proteins\" Nanoscale, 2022, 14, 2411-2418.",
@@ -103,18 +103,6 @@ export const PublicationsTab = () => {
       link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:W7OEmFMy1HYC"
     },
     {
-      title: "Y Jiang, R Tang, B Duncan, Z Jiang, B Yan, R Mout, VM Rotello. \"Direct Cytosolic Delivery of siRNA using Nanoparticle-Stabilized Nanocapsules\" Angew. Chem. Int. Ed. Engl., 2015, 54, 506-510.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:eQOLeE2rZwMC"
-    },
-    {
-      title: "X Li, YC Yeh, K Giri, R Mout, RF Landis, YS Prakash, VM Rotello. \"Control of Nanoparticle Penetration into Biofilms through Surface Design\" Chem. Commun., 2015, 51, 282-285.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:WF5omc3nYNoC"
-    },
-    {
-      title: "X Li, H Kong, R Mout, K Saha, DF Moyano, SM Robinson, S Rana, X Zhang, MA Riley, VM Rotello. \"Rapid Identification of Bacterial Biofilms and Biofilm Wound Models using a Multichannel Nanosensor\" ACS Nano, 2014, 8, 12014-12019.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:ufrVoPGSRksC"
-    },
-    {
       title: "YC Yeh, R Tang, R Mout, Y Jeong, VM Rotello \"Fabrication of Multiresponsive Bioactive Nanocapsules through Orthogonal Self-Assembly\" Angew. Chem. Int. Ed. Engl., 2014, 53, 5137-5141.",
       link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:zYLM7Y9cAGgC"
     },
@@ -140,15 +128,15 @@ export const PublicationsTab = () => {
     },
     {
       title: "S Rana, AK Singla, A Bajaj, SG Elci, OR Miranda, R Mout, B Yan, FR Jirik, VM Rotello. \"Array-Based Sensing of Metastatic Cells and Tissues using Nanoparticle–Fluorescent Protein Conjugates\" ACS Nano, 2012, 6, 8233-8240.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:d1gkVwhDpl0C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:d1gkVwhDpl0C"
     },
     {
       title: "R Mout, DF Moyano, S Rana, VM Rotello. \"Surface Functionalization of Nanoparticles for Nanomedicine\" Chem. Soc. Rev., 2012, 41, 2539-2544.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u-x6o8ySG0sC"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:u-x6o8ySG0sC"
     },
     {
       title: "S Rana, A Bajaj, R Mout, VM Rotello. \"Monolayer Coated Gold Nanoparticles for Delivery Applications\" Adv. Drug. Deliv. Rev., 2012, 64, 200-216.",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:u5HHmVD_uO8C"
     },
     {
       title: "R Mout, Z Xu, AK Wolf, VJ Davisson, GK Jarori \"Anti-Malarial Activity of Geldanamycin Derivatives in Mice Infected with Plasmodium yoelii\" Malar J., 2012, 11, 54.",
@@ -178,34 +166,53 @@ export const PublicationsTab = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {publications.map((publication, index) => (
-               <div key={index} className="bg-card/80 border-white/30 backdrop-blur-sm border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
+               <div key={index} className="bg-gray-200/80 border-border/50 backdrop-blur-sm border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
                 <div className="h-full flex flex-col">
                   <div className="flex-1">
-                    <h3 className={`text-base font-medium leading-tight mb-4 line-clamp-6 ${index === 39 ? 'font-bold text-lg' : ''}`}>
-                      {index === 39 ? (
-                        <>
-                          For the complete list of publications and citations, please see the Google Scholar page{' '}
-                          <a 
-                            href={publication.link} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="text-primary hover:text-primary-glow underline"
-                          >
-                            here
-                          </a>
-                          .
-                        </>
-                      ) : (
-                        publication.title
-                      )}
-                    </h3>
+                    <h3 className={`text-base font-medium leading-tight mb-4 line-clamp-6 text-black ${index === 39 ? 'font-bold text-lg' : ''}`}>
+                       {index === 39 ? (
+                         <>
+                           For the complete list of publications and citations, please see the Google Scholar page{' '}
+                           <a 
+                             href={publication.link} 
+                             target="_blank" 
+                             rel="noopener noreferrer"
+                             className="text-red-600 hover:text-red-700 underline"
+                           >
+                             here
+                           </a>
+                           .
+                         </>
+                       ) : (
+                         <>
+                           {(() => {
+                             const titleMatch = publication.title.match(/"([^"]+)"/);
+                             if (titleMatch) {
+                               const quotedTitle = titleMatch[1];
+                               const restOfCitation = publication.title.replace(/"([^"]+)"/, '').trim();
+                               return (
+                                 <>
+                                   <div className="text-lg font-bold mb-2 text-black">
+                                     "{quotedTitle}"
+                                   </div>
+                                   <div className="text-sm text-gray-700">
+                                     {restOfCitation}
+                                   </div>
+                                 </>
+                               );
+                             }
+                             return publication.title;
+                           })()}
+                         </>
+                       )}
+                     </h3>
                   </div>
                   <div className="mt-auto pt-4 border-t border-border/30">
                     <div className="flex justify-between items-center">
                       <div>
                         {index === 39 ? null : (
                           publication.link === null ? (
-                            <span className="text-muted-foreground text-sm font-medium">
+                            <span className="text-black text-sm font-medium">
                               Manuscript in Preparation
                             </span>
                           ) : publication.link === "placeholder" ? (
@@ -217,7 +224,7 @@ export const PublicationsTab = () => {
                               href={publication.link} 
                               target="_blank" 
                               rel="noopener noreferrer"
-                              className="text-primary hover:text-primary-glow transition-colors flex items-center gap-2 text-sm font-medium group"
+                              className="text-red-600 hover:text-red-700 transition-colors flex items-center gap-2 text-sm font-medium group"
                               title="View Publication"
                             >
                               <span>View Publication</span>
@@ -226,7 +233,7 @@ export const PublicationsTab = () => {
                           )
                         )}
                       </div>
-                      <span className="text-2xl font-bold text-foreground/80 ml-4">
+                      <span className="text-2xl font-bold text-black ml-4">
                         {index === 39 ? null : index + 1}
                       </span>
                     </div>

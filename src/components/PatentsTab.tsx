@@ -48,21 +48,21 @@ export const PatentsTab = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="bg-card/80 backdrop-blur-sm border border-border/50 rounded-2xl p-8">
-            <h2 className="text-2xl font-bold text-foreground mb-6">Patent Portfolio</h2>
+          <div className="bg-gray-200/80 backdrop-blur-sm border border-border/50 rounded-2xl p-8">
+            <h2 className="text-2xl font-bold text-black mb-6">Patent Portfolio</h2>
             <div className="space-y-6">
               {patents.map((patent, index) => (
                 <div key={index} className="border-b border-border/30 pb-4 last:border-b-0">
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex-1">
-                      <h3 className="text-lg font-semibold text-foreground mb-1 leading-tight">
+                      <h3 className="text-lg font-semibold text-black mb-1 leading-tight">
                         {patent.title}
                       </h3>
-                      <p className="text-muted-foreground text-sm mb-2">
+                      <p className="text-gray-700 text-sm mb-2">
                         {patent.inventors}
                       </p>
                       <div className="flex items-center gap-4 text-sm">
-                        <span className="text-primary font-medium">
+                        <span className="text-red-600 font-medium">
                           {patent.patentNumber}
                         </span>
                       </div>
