@@ -75,7 +75,7 @@ export const BiographyTab = () => {
       </div>
 
       {/* Main Bio */}
-      <Card className="bg-gradient-to-br from-[#FF0F7B]/20 via-[#dbaf0d]/15 to-[#dbaf0d]/20 border border-[#FF0F7B]/30 shadow-[0_0_30px_#FF0F7B40] p-8 md:p-12">
+      <Card className="bg-black border border-[#FF0F7B]/30 shadow-[0_0_30px_#FF0F7B40] p-8 md:p-12">
         <CardContent className="space-y-6 text-lg leading-relaxed">
           <p className="text-white font-bold">
             <strong>Dr. Rubul Mout</strong> is a Fellow (Research) at Harvard Medical School, Harvard University, 
@@ -108,7 +108,7 @@ export const BiographyTab = () => {
         <div className="space-y-8">
           {timeline.map((item, index) => (
             <div key={index} className="flex items-start gap-6 animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
-              <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-r from-[#FF0F7B] via-[#ffcc00] to-[#ffcc00] rounded-full flex items-center justify-center">
+              <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-r from-[#FF0F7B]/20 via-[#ffcc00]/10 to-[#ffcc00]/10 rounded-full flex items-center justify-center">
                 <item.icon className="w-8 h-8 text-primary-foreground" />
               </div>
               <div className="flex-1">
