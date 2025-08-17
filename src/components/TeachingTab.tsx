@@ -3,7 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Video, Users, BookOpen, Heart, Globe, Calendar, ExternalLink } from "lucide-react";
 
-export const TeachingTab = () => {
+interface TeachingTabProps {
+  onNavigate?: (tab: string) => void;
+}
+
+export const TeachingTab = ({ onNavigate }: TeachingTabProps) => {
   const initiatives = [
     {
       title: "Sunday Science Activism",
@@ -26,7 +30,7 @@ export const TeachingTab = () => {
         "Science education and career guidance",
         //"Q&A sessions with aspiring scientists"
       ],
-      link: "https://research.childrenshospital.org/rubulmout/Science-activism"
+      link: "sundayScience"
     },
     {
       title: "Uplift Libraries",
@@ -119,20 +123,29 @@ export const TeachingTab = () => {
                   
                   {initiative.link && (
                     <div className="flex flex-col justify-center">
-                      <Button 
-                        asChild
-                        className="w-full md:w-auto"
-                      >
-                        <a 
-                          href={initiative.link} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="flex items-center gap-2"
+                      {initiative.link.startsWith('http') ? (
+                        <Button 
+                          asChild
+                          className="w-full md:w-auto"
+                        >
+                          <a 
+                            href={initiative.link} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2"
+                          >
+                            Learn More
+                            <ExternalLink className="w-4 h-4" />
+                          </a>
+                        </Button>
+                      ) : (
+                        <Button 
+                          onClick={() => onNavigate?.(initiative.link)}
+                          className="w-full md:w-auto"
                         >
                           Learn More
-                          <ExternalLink className="w-4 h-4" />
-                        </a>
-                      </Button>
+                        </Button>
+                      )}
                     </div>
                   )}
                 </div>
@@ -191,7 +204,11 @@ export const TeachingTab = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" className="px-8">
+          <Button 
+            size="lg" 
+            className="px-8"
+            onClick={() => onNavigate?.('sundayScience')}
+          >
             <Calendar className="w-5 h-5 mr-2" />
             Join Sunday Science Sessions
           </Button>

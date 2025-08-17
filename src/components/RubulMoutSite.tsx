@@ -34,7 +34,7 @@ export const RubulMoutSite = () => {
       case 'books':
         return <BooksTab />;
       case 'teaching':
-        return <TeachingTab />;
+        return <TeachingTab onNavigate={handleTabChange} />;
       case 'contact':
         return <ContactTab />;
       case 'courses':
