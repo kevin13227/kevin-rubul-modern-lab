@@ -47,31 +47,18 @@ export const PatentsTab = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-card/80 backdrop-blur-sm border border-border/50 rounded-2xl p-8">
-            <h2 className="text-2xl font-bold text-foreground mb-6">Patent Portfolio</h2>
-            <div className="space-y-6">
-              {patents.map((patent, index) => (
-                <div key={index} className="border-b border-border/30 pb-4 last:border-b-0">
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="flex-1">
-                      <h3 className="text-lg font-semibold text-foreground mb-1 leading-tight">
-                        {patent.title}
-                      </h3>
-                      <p className="text-muted-foreground text-sm mb-2">
-                        {patent.inventors}
-                      </p>
-                      <div className="flex items-center gap-4 text-sm">
-                        <span className="text-primary font-medium">
-                          {patent.patentNumber}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {patents.map((patent, index) => (
+            <div key={index} className="bg-gray-300/80 border-border/50 backdrop-blur-sm border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
+              <div className="h-full flex flex-col">
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-black mb-3">{patent.title}</h3>
+                  <p className="text-gray-700 mb-2">Inventors: {patent.inventors}</p>
+                  <span className="text-red-600 font-mono text-sm">{patent.patentNumber}</span>
                 </div>
-              ))}
+              </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

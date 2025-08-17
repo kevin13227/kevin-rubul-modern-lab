@@ -35,7 +35,7 @@ export const BooksTab = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="bg-card/80 backdrop-blur-sm border border-border/50 rounded-2xl p-8">
+          <div className="bg-gray-300/80 backdrop-blur-sm border border-border/50 rounded-2xl p-8">
             <h2 className="text-2xl font-bold text-foreground mb-6">Published Works</h2>
             <div className="space-y-8">
               {books.map((book, index) => (
@@ -49,24 +49,24 @@ export const BooksTab = () => {
                       />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-foreground mb-2">
+                      <h3 className="text-xl font-bold text-black mb-2">
                         <a 
                           href={book.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="hover:text-primary transition-colors duration-200 hover:underline"
+                          className="hover:text-red-600 transition-colors duration-200 hover:underline"
                         >
                           {book.title}
                         </a>
                       </h3>
-                      <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
+                      <div className="flex items-center gap-4 text-sm text-gray-700 mb-3">
                         <span>by {book.author}</span>
                         <span>•</span>
                         <span>{book.year}</span>
                         <span>•</span>
                         <span>{book.language}</span>
                       </div>
-                      <p className="text-muted-foreground leading-relaxed">
+                      <p className="text-gray-700 leading-relaxed">
                         {book.description}
                       </p>
                     </div>
