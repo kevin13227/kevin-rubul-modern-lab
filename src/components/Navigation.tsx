@@ -139,11 +139,18 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
             
             {/* Med School Logo */}
             <div className="ml-4">
-              <img 
-                src={medschoolLogo} 
-                alt="Medical School" 
-                className="h-12 w-auto"
-              />
+              <a 
+                href="https://hms.harvard.edu/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block hover:opacity-80 transition-opacity duration-300"
+              >
+                <img 
+                  src={medschoolLogo} 
+                  alt="Harvard Medical School" 
+                  className="h-12 w-auto"
+                />
+              </a>
             </div>
           </div>
           
