@@ -5,7 +5,7 @@ import { Separator } from "@/components/ui/separator";
 export const CoursesTab = () => {
   const initiatives = [
     {
-      title: "Immuno-Engineering",
+      title: "Immuno-Engineering (CLOSED)",
       description: (
         <>
           <br></br>
@@ -14,7 +14,7 @@ export const CoursesTab = () => {
       )
     },
     {
-      title: "A Six-Week Course on Modern Medicine",
+      title: "A Six-Week Course on Modern Medicine (CLOSED)",
       description: (
         <>
           <br></br>
