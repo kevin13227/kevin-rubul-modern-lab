@@ -44,7 +44,7 @@ export const BiographyTab = () => {
           {/* Portrait */}
           <div className="flex justify-center lg:justify-start">
             <div className="relative">
-              <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-[#FF0F7B]/30 shadow-2xl bg-gradient-to-br from-[#FF0F7B]/20 to-[#dbaf0d]/20 p-2">
+              <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-[#C41E3A]/50 shadow-2xl bg-gradient-to-br from-[#C41E3A]/20 to-[#C41E3A]/10 p-2">
                 <img 
                   src={rubulPortrait} 
                   alt="Dr. Rubul Mout" 
@@ -52,7 +52,7 @@ export const BiographyTab = () => {
                 />
               </div>
               {/* Glow effect */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#FF0F7B]/20 to-[#dbaf0d]/20 blur-xl -z-10"></div>
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#C41E3A]/20 to-[#C41E3A]/10 blur-xl -z-10"></div>
             </div>
           </div>
           
@@ -62,13 +62,13 @@ export const BiographyTab = () => {
             <h3 className="text-2xl font-semibold text-white mb-4">Research Fellow</h3>
             <h4 className="text-xl text-gray-300 mb-6">Harvard Medical School & Boston Children's Hospital</h4>
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
-              Placeholder Text
+              From humble beginnings in rural India to groundbreaking research at Harvard Medical School, Dr. Rubul Mout exemplifies the transformative power of science and education. His journey from a poor peasant family to becoming a leading researcher in protein design and cell biology inspires countless students worldwide.
             </p>
           </div>
           
           {/* Right Side Content - Key Stats */}
           <div className="lg:w-72 w-full">
-            <Card className="bg-black/50 border border-[#FF0F7B]/20 shadow-[0_0_20px_#FF0F7B30]">
+            <Card className="bg-black/50 border border-gray-600 shadow-[0_0_20px_#00000030]">
               <CardContent className="p-4">
                 <h4 className="text-lg font-bold text-white mb-3 text-center">At a Glance</h4>
                 <div className="space-y-3">
@@ -94,7 +94,7 @@ export const BiographyTab = () => {
       </div>
 
       {/* Main Bio */}
-      <Card className="bg-black border border-[#FF0F7B]/30 shadow-[0_0_30px_#FF0F7B40] p-8 md:p-12">
+      <Card className="bg-black border border-gray-600 shadow-[0_0_30px_#00000040] p-8 md:p-12">
         <CardContent className="space-y-6 text-lg leading-relaxed">
           <p className="text-white font-bold">
             <strong>Dr. Rubul Mout</strong> is a Fellow (Research) at Harvard Medical School, Harvard University, 
@@ -126,13 +126,13 @@ export const BiographyTab = () => {
         <h3 className="text-3xl font-bold text-center mb-10 text-white">Career Timeline</h3>
         <div className="space-y-8">
           {timeline.map((item, index) => (
-            <div key={index} className={`flex items-start gap-6 animate-fade-in-up ${item.highlighted ? 'bg-gradient-to-r from-[#FF0F7B]/10 via-[#dbaf0d]/5 to-[#dbaf0d]/5 p-6 rounded-lg border border-[#FF0F7B]/20' : ''}`} style={{ animationDelay: `${index * 0.1}s` }}>
+            <div key={index} className={`flex items-start gap-6 animate-fade-in-up ${item.highlighted ? 'bg-gradient-to-r from-[#FF0F7B]/10 via-[#dbaf0d]/5 to-[#dbaf0d]/5 p-6 rounded-lg border border-gray-600' : ''}`} style={{ animationDelay: `${index * 0.1}s` }}>
               <div className={`flex-shrink-0 w-16 h-16 ${item.highlighted ? 'bg-gradient-to-r from-[#FF0F7B] via-[#ffcc00] to-[#ffcc00]' : 'bg-gradient-to-r from-[#FF0F7B]/20 via-[#ffcc00]/10 to-[#ffcc00]/10'} rounded-full flex items-center justify-center`}>
                 <item.icon className="w-8 h-8 text-primary-foreground" />
               </div>
               <div className="flex-1">
                 <div className="flex items-center gap-4 mb-2">
-                  <span className={`text-sm font-semibold px-3 py-1 ${item.highlighted ? 'bg-gradient-to-r from-[#FF0F7B] to-[#dbaf0d] text-white' : 'bg-primary/10 text-primary'} rounded-full`}>
+                  <span className={`text-sm font-semibold px-3 py-1 ${item.highlighted ? 'bg-gradient-to-r from-[#FF0F7B] via-[#ffcc00] to-[#ffcc00] bg-clip-text text-transparent' : 'bg-primary/10 text-primary'} rounded-full`}>
                     {item.year}
                   </span>
                   <h4 className={`text-xl font-semibold ${item.highlighted ? 'text-white font-bold' : 'text-white'}`}>{item.title}</h4>
