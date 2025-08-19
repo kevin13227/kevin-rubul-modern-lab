@@ -233,7 +233,7 @@ export const PublicationsTab = () => {
           
           {/* Final Google Scholar text at bottom */}
           <div className="text-center mt-8">
-            <h3 className="font-bold text-lg text-[#f2f2f2] mb-4">
+            <h3 className="text-lg text-[#f2f2f2] mb-4">
               For the complete list of publications and citations, please see the Google Scholar page{' '}
               <a 
                 href="https://scholar.google.com/citations?user=NpMfqDUAAAAJ&hl=en"

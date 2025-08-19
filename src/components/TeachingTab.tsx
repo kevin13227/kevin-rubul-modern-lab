@@ -70,8 +70,19 @@ export const TeachingTab = ({ onNavigate }: TeachingTabProps) => {
         </p>
       </div>
 
-      {/* Divider */}
-      <Separator className="my-8" />
+      {/* Impact Statistics */}
+      <section className="bg-gradient-to-r from-[#FF0F7B] via-[#ffcc00] to-[#ffcc00] rounded-3xl p-8 md:p-12 text-white">
+                  <h3 className="text-3xl font-bold text-center mb-10 text-white tracking-wide">Educational Impact</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {impact.map((item, index) => (
+            <div key={index} className="text-center">
+              <div className="text-4xl md:text-5xl font-bold mb-2">{item.metric}</div>
+              <div className="text-xl font-semibold mb-1">{item.label}</div>
+              <div className="text-white/80 text-sm">{item.description}</div>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* Main Initiatives */}
       <section>
@@ -81,7 +92,7 @@ export const TeachingTab = ({ onNavigate }: TeachingTabProps) => {
             <Card key={index} className="glass-card overflow-hidden hover:shadow-xl transition-all duration-300">
               <CardHeader className="bg-secondary/20">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-[#A51C30] rounded-lg flex items-center justify-center">
+                  <div className="w-12 h-12 bg-[#ff4164] rounded-lg flex items-center justify-center">
                     <initiative.icon className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div className="flex-1">
