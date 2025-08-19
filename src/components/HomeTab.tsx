@@ -119,7 +119,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
               onClick={() => onNavigate('contact')}
               className="bg-black hover:bg-black focus:bg-black active:bg-black border-2 border-white text-white px-8 py-4 text-lg font-medium group transition-transform duration-300 hover:scale-105"
             >
-              <span className="group-hover:bg-gradient-to-r group-hover:from-[#FF0F7B] group-hover:via-[#ffcc00] group-hover:to-[#ffcc00] group-hover:bg-clip-text group-hover:text-transparent flex items-center">
+              <span className="group-hover:text-[#f5dc50] flex items-center">
                 Get In Touch
                 
               </span>
@@ -130,7 +130,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
               onClick={() => onNavigate('publications')}
               className="bg-black hover:bg-black focus:bg-black active:bg-black border-2 border-white text-white px-8 py-4 text-lg font-medium group transition-transform duration-300 hover:scale-105"
             >
-              <span className="group-hover:bg-gradient-to-r group-hover:from-[#FF0F7B] group-hover:via-[#ffcc00] group-hover:to-[#ffcc00] group-hover:bg-clip-text group-hover:text-transparent">
+              <span className="group-hover:text-[#f5dc50]">
                 View Publications
               </span>
             </Button>
@@ -140,7 +140,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
               onClick={() => onNavigate('teaching')}
               className="bg-black hover:bg-black focus:bg-black active:bg-black border-2 border-white text-white px-8 py-4 text-lg font-medium group transition-transform duration-300 hover:scale-105"
             >
-              <span className="group-hover:bg-gradient-to-r group-hover:from-[#FF0F7B] group-hover:via-[#ffcc00] group-hover:to-[#ffcc00] group-hover:bg-clip-text group-hover:text-transparent">
+              <span className="group-hover:text-[#f5dc50]">
                 Join Science Activism
               </span>
             </Button>
