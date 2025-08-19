@@ -1,0 +1,26 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Harvard Crimson background -->
+  <rect width="32" height="32" fill="#A51C30"/>
+  
+  <!-- Simplified Harvard Shield -->
+  <path d="M16 4L24 8V20L16 24L8 20V8L16 4Z" fill="#A51C30" stroke="white" stroke-width="1"/>
+  
+  <!-- Three simplified books -->
+  <!-- Top left book -->
+  <rect x="10" y="10" width="4" height="3" fill="white" stroke="#A51C30" stroke-width="0.5"/>
+  <line x1="10" y1="11.5" x2="14" y2="11.5" stroke="#A51C30" stroke-width="0.5"/>
+  
+  <!-- Top right book -->
+  <rect x="18" y="10" width="4" height="3" fill="white" stroke="#A51C30" stroke-width="0.5"/>
+  <line x1="18" y1="11.5" x2="22" y2="11.5" stroke="#A51C30" stroke-width="0.5"/>
+  
+  <!-- Bottom center book -->
+  <rect x="13" y="15" width="6" height="3" fill="white" stroke="#A51C30" stroke-width="0.5"/>
+  <line x1="13" y1="16.5" x2="19" y2="16.5" stroke="#A51C30" stroke-width="0.5"/>
+  
+  <!-- Simplified VERITAS text -->
+  <text x="16" y="26" text-anchor="middle" fill="white" font-family="serif" font-size="6" font-weight="bold">VERITAS</text>
+  
+  <!-- Subtle border -->
+  <rect width="32" height="32" fill="none" stroke="#8B0000" stroke-width="1"/>
+</svg>
