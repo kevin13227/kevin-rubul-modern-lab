@@ -156,7 +156,7 @@ export const PublicationsTab = () => {
   return (
     <div className="min-h-screen bg-gradient-subtle">
       <div className="container mx-auto px-6 py-12">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 animate-fade-in-up">
           <h1 className="text-4xl font-bold text-foreground mb-4">Publications</h1>
           <p className="text-xl text-muted-foreground">
             Peer-reviewed research publications in leading scientific journals
