@@ -21,8 +21,7 @@ export const BiographyTab = () => {
       year: "Present",
       title: "Research Fellow - Harvard Medical School",
       description: "Currently Research Fellow at Harvard Medical School and Boston Children's Hospital, leading groundbreaking research in protein design and developing breakthrough therapies for immune system enhancement.",
-      icon: Award,
-      highlighted: true
+      icon: Award
     }
   ];
 
@@ -126,16 +125,16 @@ export const BiographyTab = () => {
         <h3 className="text-3xl font-bold text-center mb-10 text-white">Career Timeline</h3>
         <div className="space-y-8">
           {timeline.map((item, index) => (
-            <div key={index} className={`flex items-start gap-6 animate-fade-in-up ${item.highlighted ? 'bg-gradient-to-r from-[#FF0F7B]/10 via-[#dbaf0d]/5 to-[#dbaf0d]/5 p-6 rounded-lg border border-[#FF0F7B]/20' : ''}`} style={{ animationDelay: `${index * 0.1}s` }}>
-              <div className={`flex-shrink-0 w-16 h-16 ${item.highlighted ? 'bg-gradient-to-r from-[#FF0F7B] via-[#ffcc00] to-[#ffcc00]' : 'bg-gradient-to-r from-[#FF0F7B]/20 via-[#ffcc00]/10 to-[#ffcc00]/10'} rounded-full flex items-center justify-center`}>
-                <item.icon className="w-8 h-8 text-primary-foreground" />
+            <div key={index} className="flex items-start gap-6 animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
+              <div className="flex-shrink-0 w-16 h-16 bg-red-900/20 rounded-lg flex items-center justify-center">
+                <item.icon className="w-8 h-8 text-primary" />
               </div>
               <div className="flex-1">
                 <div className="flex items-center gap-4 mb-2">
-                  <span className={`text-sm font-semibold px-3 py-1 ${item.highlighted ? 'bg-gradient-to-r from-[#FF0F7B] to-[#dbaf0d] text-white' : 'bg-primary/10 text-primary'} rounded-full`}>
+                  <span className="text-sm font-semibold px-3 py-1 bg-primary/10 text-primary rounded-full">
                     {item.year}
                   </span>
-                  <h4 className={`text-xl font-semibold ${item.highlighted ? 'text-white font-bold' : 'text-white'}`}>{item.title}</h4>
+                  <h4 className="text-xl font-semibold text-white">{item.title}</h4>
                 </div>
                 <p className="text-muted-foreground leading-relaxed">{item.description}</p>
               </div>
