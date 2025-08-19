@@ -6,7 +6,7 @@ import workStemcellImg from "@/assets/work-stemcell.jpg";
 import workImmunoageingImg from "@/assets/work-immunoageing.jpg";
 
 interface HomeTabProps {
-  onNavigate: (tab: string) => void;
+  onNavigate: (tab: string, section?: string) => void;
 }
 
 export const HomeTab = ({ onNavigate }: HomeTabProps) => {
@@ -24,7 +24,10 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {/* Protein Design Card */}
-          <div className="relative rounded-3xl overflow-hidden group cursor-pointer transition-all duration-500 hover:scale-105">
+          <div 
+            className="relative rounded-3xl overflow-hidden group cursor-pointer transition-all duration-500 hover:scale-105"
+            onClick={() => onNavigate('research', 'protein-design')}
+          >
             <div className="aspect-[4/3] relative">
               <img 
                 src={workProteinImg} 
@@ -47,7 +50,10 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
           </div>
 
           {/* Hematopoietic Stem & T-Cell Development Card */}
-          <div className="relative rounded-3xl overflow-hidden group cursor-pointer transition-all duration-500 hover:scale-105">
+          <div 
+            className="relative rounded-3xl overflow-hidden group cursor-pointer transition-all duration-500 hover:scale-105"
+            onClick={() => onNavigate('research', 'stem-cell-biology')}
+          >
             <div className="aspect-[4/3] relative">
               <img 
                 src={workStemcellImg} 
@@ -70,7 +76,10 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
           </div>
 
           {/* Immuno-Ageing Card */}
-          <div className="relative rounded-3xl overflow-hidden group cursor-pointer transition-all duration-500 hover:scale-105">
+          <div 
+            className="relative rounded-3xl overflow-hidden group cursor-pointer transition-all duration-500 hover:scale-105"
+            onClick={() => onNavigate('research', 'immunology-aging')}
+          >
             <div className="aspect-[4/3] relative">
               <img 
                 src={workImmunoageingImg} 

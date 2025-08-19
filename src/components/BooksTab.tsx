@@ -26,15 +26,15 @@ const books = [
 export const BooksTab = () => {
   return (
     <div className="min-h-screen bg-gradient-subtle">
-      <div className="container mx-auto px-6 py-12">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-white tracking-tight leading-tight mb-4">Books</h1>
-          <p className="text-xl text-muted-foreground">
-            Published literary works in Assamese language
-          </p>
-        </div>
+      <div className="container mx-auto px-6">
+        <div className="max-w-4xl mx-auto space-y-12">
+          <div className="text-center animate-fade-in-up">
+            <h1 className="text-4xl font-bold text-foreground mb-4">Books</h1>
+            <p className="text-xl text-muted-foreground">
+              Published literary works in Assamese language
+            </p>
+          </div>
 
-        <div className="max-w-4xl mx-auto">
           <div className="bg-gray-200/80 backdrop-blur-sm border border-border/50 rounded-2xl p-8">
             <h2 className="text-2xl font-bold text-black mb-6">Published Works</h2>
             <div className="space-y-8">
