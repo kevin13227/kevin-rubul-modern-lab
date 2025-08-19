@@ -40,7 +40,7 @@ export const ContactTab = () => {
     <div className="max-w-4xl mx-auto space-y-12">
       {/* Header */}
       <div className="text-center animate-fade-in-up">
-        <h2 className="text-4xl font-bold text-white mb-4">Contact</h2>
+        <h2 className="text-5xl font-bold text-white mb-4">Contact</h2>
         <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
           I'm always interested in meaningful collaborations, research opportunities, and 
           discussions about advancing science education. Feel free to reach out.
@@ -48,24 +48,24 @@ export const ContactTab = () => {
       </div>
 
       {/* Contact Information */}
-      <Card className="glass-card">
+      <Card className="bg-[#f2f2f2] border-border/50 backdrop-blur-sm border rounded-2xl p-6 hover:shadow-lg">
         <CardHeader>
-          <CardTitle className="text-2xl">
+          <CardTitle className="text-2xl text-black">
             Contact Information
           </CardTitle>
-          <CardDescription>
+          <CardDescription className="text-gray-900">
             Primary contact details and institutional affiliation
           </CardDescription>
         </CardHeader>
         
         <CardContent className="space-y-6">
           {contactInfo.map((contact, index) => (
-            <div key={index} className="flex items-start gap-4 p-4 bg-secondary/30 rounded-lg">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+            <div key={index} className="flex items-start gap-4 p-4 bg-primary/10 rounded-lg">
+              <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
                 <contact.icon className="w-6 h-6 text-primary" />
               </div>
               <div className="flex-1">
-                <h4 className="font-semibold text-foreground mb-1">{contact.label}</h4>
+                <h4 className="font-semibold text-gray-900 mb-1">{contact.label}</h4>
                 {contact.link ? (
                   <a 
                     href={contact.link}
@@ -102,7 +102,7 @@ export const ContactTab = () => {
                   <p className="text-foreground text-lg">{contact.value}</p>
                 )}
                 {contact.description && (
-                  <p className="text-muted-foreground text-sm mt-1">{contact.description}</p>
+                  <p className="text-gray-800 text-sm mt-1">{contact.description}</p>
                 )}
                 {/* Add Send Email button underneath the Email section */}
                 {contact.label === "Email" && (
