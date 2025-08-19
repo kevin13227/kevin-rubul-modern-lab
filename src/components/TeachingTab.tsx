@@ -57,12 +57,7 @@ export const TeachingTab = ({ onNavigate }: TeachingTabProps) => {
     }*/
   ];
 
-  const impact = [
-    { metric: "6", label: "Libraries Established", description: "Serving rural communities in India" },
-    { metric: "50,000+", label: "Books Sold", description: "Bestselling memoir in Assamese" },
-    { metric: "Weekly", label: "Science Sessions", description: "Sunday Science Activism program" },
-    { metric: "Global", label: "Student Reach", description: "International educational outreach" }
-  ];
+
 
   return (
     <div className="max-w-6xl mx-auto space-y-12">
@@ -75,19 +70,8 @@ export const TeachingTab = ({ onNavigate }: TeachingTabProps) => {
         </p>
       </div>
 
-      {/* Impact Statistics */}
-      <section className="bg-gradient-to-r from-[#FF0F7B] via-[#ffcc00] to-[#ffcc00] rounded-3xl p-8 md:p-12 text-white">
-                  <h3 className="text-3xl font-bold text-center mb-10 text-white tracking-wide">Educational Impact</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {impact.map((item, index) => (
-            <div key={index} className="text-center">
-              <div className="text-4xl md:text-5xl font-bold mb-2">{item.metric}</div>
-              <div className="text-xl font-semibold mb-1">{item.label}</div>
-              <div className="text-white/80 text-sm">{item.description}</div>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* Divider */}
+      <Separator className="my-8" />
 
       {/* Main Initiatives */}
       <section>
