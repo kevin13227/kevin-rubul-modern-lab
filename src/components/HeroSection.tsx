@@ -24,7 +24,7 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
         <div className="max-w-6xl mx-auto">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-relaxed tracking-tight pb-4">
             Advancing Science Through
-            {/*GRADIENT CHANGE*/}<span className="block mt-4 bg-gradient-to-r from-[#A51C30] via-[#A41F1D] to-[#ffcc00] bg-clip-text text-transparent pb-2 leading-tight">
+            <span className="block mt-4 text-[#ff4164] pb-2 leading-tight">
               Protein Design & Cell Biology
             </span>
           </h1>
@@ -38,9 +38,9 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
             <Button 
               size="lg" 
               onClick={() => onNavigate('research')} 
-              className="bg-black hover:bg-black focus:bg-black active:bg-black border-2 border-white text-white px-10 py-4 text-lg font-medium group transition-transform duration-300 hover:scale-95"
+              className="bg-black hover:bg-black focus:bg-black active:bg-black border-2 border-white text-white px-10 py-4 text-lg font-medium group transition-transform duration-300 hover:scale-105"
             >
-              <span className="group-hover:bg-gradient-to-r group-hover:from-[#FF0F7B] group-hover:via-[#ffcc00] group-hover:to-[#ffcc00] group-hover:bg-clip-text group-hover:text-transparent">
+              <span className="group-hover:text-[#f5dc50]">
                 Learn About My Research
               </span>
             </Button>
@@ -50,7 +50,7 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
               onClick={() => onNavigate('contact')} 
               className="bg-black hover:bg-black focus:bg-black active:bg-black border-2 border-white text-white px-10 py-4 text-lg font-medium group transition-transform duration-300 hover:scale-105"
             >
-              <span className="group-hover:bg-gradient-to-r group-hover:from-[#FF0F7B] group-hover:via-[#ffcc00] group-hover:to-[#ffcc00] group-hover:bg-clip-text group-hover:text-transparent">
+              <span className="group-hover:text-[#f5dc50]">
                 Get In Touch
               </span>
             </Button>

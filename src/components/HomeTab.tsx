@@ -1,17 +1,20 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { ScrollIndicator } from "./ScrollIndicator";
 import workProteinImg from "@/assets/work-protein-design.jpg";
 import workStemcellImg from "@/assets/work-stemcell.jpg";
 import workImmunoageingImg from "@/assets/work-immunoageing.jpg";
 
 interface HomeTabProps {
-  onNavigate: (tab: string, section?: string) => void;
+  onNavigate: (tab: string) => void;
 }
 
 export const HomeTab = ({ onNavigate }: HomeTabProps) => {
   return (
     <div className="space-y-16">
+      <ScrollIndicator />
+      
       {/* Research Focus */}
       <section className="py-20 bg-gray-900">
         <div className="text-center mb-16">
@@ -24,10 +27,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {/* Protein Design Card */}
-          <div 
-            className="relative rounded-3xl overflow-hidden group cursor-pointer transition-all duration-500 hover:scale-105"
-            onClick={() => onNavigate('research', 'protein-design')}
-          >
+          <div className="relative rounded-3xl overflow-hidden group cursor-pointer transition-all duration-500 hover:scale-105">
             <div className="aspect-[4/3] relative">
               <img 
                 src={workProteinImg} 
@@ -50,10 +50,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
           </div>
 
           {/* Hematopoietic Stem & T-Cell Development Card */}
-          <div 
-            className="relative rounded-3xl overflow-hidden group cursor-pointer transition-all duration-500 hover:scale-105"
-            onClick={() => onNavigate('research', 'stem-cell-biology')}
-          >
+          <div className="relative rounded-3xl overflow-hidden group cursor-pointer transition-all duration-500 hover:scale-105">
             <div className="aspect-[4/3] relative">
               <img 
                 src={workStemcellImg} 
@@ -76,10 +73,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
           </div>
 
           {/* Immuno-Ageing Card */}
-          <div 
-            className="relative rounded-3xl overflow-hidden group cursor-pointer transition-all duration-500 hover:scale-105"
-            onClick={() => onNavigate('research', 'immunology-aging')}
-          >
+          <div className="relative rounded-3xl overflow-hidden group cursor-pointer transition-all duration-500 hover:scale-105">
             <div className="aspect-[4/3] relative">
               <img 
                 src={workImmunoageingImg} 
@@ -119,7 +113,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
               onClick={() => onNavigate('contact')}
               className="bg-black hover:bg-black focus:bg-black active:bg-black border-2 border-white text-white px-8 py-4 text-lg font-medium group transition-transform duration-300 hover:scale-105"
             >
-              <span className="group-hover:bg-gradient-to-r group-hover:from-[#FF0F7B] group-hover:via-[#ffcc00] group-hover:to-[#ffcc00] group-hover:bg-clip-text group-hover:text-transparent flex items-center">
+              <span className="group-hover:text-[#f5dc50] flex items-center">
                 Get In Touch
                 
               </span>
@@ -130,7 +124,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
               onClick={() => onNavigate('publications')}
               className="bg-black hover:bg-black focus:bg-black active:bg-black border-2 border-white text-white px-8 py-4 text-lg font-medium group transition-transform duration-300 hover:scale-105"
             >
-              <span className="group-hover:bg-gradient-to-r group-hover:from-[#FF0F7B] group-hover:via-[#ffcc00] group-hover:to-[#ffcc00] group-hover:bg-clip-text group-hover:text-transparent">
+              <span className="group-hover:text-[#f5dc50]">
                 View Publications
               </span>
             </Button>
@@ -140,7 +134,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
               onClick={() => onNavigate('teaching')}
               className="bg-black hover:bg-black focus:bg-black active:bg-black border-2 border-white text-white px-8 py-4 text-lg font-medium group transition-transform duration-300 hover:scale-105"
             >
-              <span className="group-hover:bg-gradient-to-r group-hover:from-[#FF0F7B] group-hover:via-[#ffcc00] group-hover:to-[#ffcc00] group-hover:bg-clip-text group-hover:text-transparent">
+              <span className="group-hover:text-[#f5dc50]">
                 Join Science Activism
               </span>
             </Button>

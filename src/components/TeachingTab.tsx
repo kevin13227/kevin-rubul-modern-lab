@@ -68,7 +68,7 @@ export const TeachingTab = ({ onNavigate }: TeachingTabProps) => {
     <div className="max-w-6xl mx-auto space-y-12">
       {/* Header */}
       <div className="text-center animate-fade-in-up">
-        <h2 className="text-4xl font-bold text-foreground mb-4">Teaching & Science Activism</h2>
+        <h2 className="text-4xl font-bold text-white tracking-tight leading-tight mb-4">Teaching & Science Activism</h2>
         <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
           Dedicated to democratizing science education and creating opportunities for underprivileged 
           students around the world through innovative outreach programs and educational initiatives.
@@ -76,8 +76,8 @@ export const TeachingTab = ({ onNavigate }: TeachingTabProps) => {
       </div>
 
       {/* Impact Statistics */}
-      <section className="bg-gradient-to-r from-[#FF0F7B] via-[#ffcc00] to-[#ffcc00] rounded-3xl p-8 md:p-12 text-white">
-        <h3 className="text-3xl font-bold text-center mb-10">Educational Impact</h3>
+      <section className="bg-[#ff4164] rounded-3xl p-8 md:p-12 text-white">
+                  <h3 className="text-3xl font-bold text-center mb-10 text-white tracking-wide">Educational Impact</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {impact.map((item, index) => (
             <div key={index} className="text-center">
@@ -91,13 +91,13 @@ export const TeachingTab = ({ onNavigate }: TeachingTabProps) => {
 
       {/* Main Initiatives */}
       <section>
-        <h3 className="text-3xl font-bold text-center mb-10">Key Initiatives</h3>
+                  <h3 className="text-3xl font-bold text-center mb-10 text-white tracking-wide">Key Initiatives</h3>
         <div className="space-y-8">
           {initiatives.map((initiative, index) => (
             <Card key={index} className="glass-card overflow-hidden hover:shadow-xl transition-all duration-300">
               <CardHeader className="bg-secondary/20">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-[#A51C30] rounded-lg flex items-center justify-center">
+                  <div className="w-12 h-12 bg-[#ff4164] rounded-lg flex items-center justify-center">
                     <initiative.icon className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div className="flex-1">
@@ -162,7 +162,7 @@ export const TeachingTab = ({ onNavigate }: TeachingTabProps) => {
             <Heart className="w-8 h-8 text-primary-foreground" />
           </div>
           
-          <h3 className="text-2xl font-bold mb-4">Mission & Vision</h3>
+                      <h3 className="text-2xl font-bold text-white tracking-wide mb-4">Mission & Vision</h3>
           
           <blockquote className="text-xl text-muted-foreground italic leading-relaxed max-w-3xl mx-auto">
             "Science should not be a privilege limited to the few. Through education, outreach, and 
@@ -197,7 +197,7 @@ export const TeachingTab = ({ onNavigate }: TeachingTabProps) => {
 
       {/* Call to Action */}
       <section className="text-center bg-secondary/30 rounded-3xl p-8 md:p-12">
-        <h3 className="text-3xl font-bold mb-4">Join the Movement</h3>
+                    <h3 className="text-3xl font-bold text-white tracking-wide mb-4">Join the Movement</h3>
         <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
           Whether you're a student, educator, or science enthusiast, there are many ways to get involved 
           in our mission to spread science education.
