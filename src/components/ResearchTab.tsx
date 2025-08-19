@@ -10,7 +10,7 @@ export const ResearchTab = () => {
     <div className="max-w-6xl mx-auto space-y-16">
       {/* Header */}
       <div className="text-center space-y-6">
-        <h1 className="text-5xl font-bold bg-gradient-to-r from-[#FF0F7B] via-[#EDB753] to-[#EDD153] bg-clip-text text-transparent">Research</h1>
+        <h1 className="text-5xl font-bold text-white tracking-tight leading-tight">Research</h1>
       </div>
 
 
@@ -203,7 +203,7 @@ export const ResearchTab = () => {
 
       {/* Current Projects Section */}
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-3xl p-8 md:p-12 border border-[#FF0F7B]/20 shadow-[0_0_30px_#FF0F7B30]">
-        <h2 className="text-3xl font-bold text-center mb-10 bg-gradient-to-r from-[#FF0F7B] via-[#EDB753] to-[#EDD153] bg-clip-text text-transparent">Current Research Projects</h2>
+                  <h2 className="text-3xl font-bold text-center mb-10 text-white tracking-wide">Current Research Projects</h2>
         <div className="space-y-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <Card className="border border-[#FF0F7B]/30 bg-slate-800/50 shadow-[0_0_15px_#FF0F7B20] hover:shadow-[0_0_25px_#FF0F7B40] transition-all duration-300">
