@@ -7,7 +7,7 @@ interface HeroSectionProps {
 
 export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-900">
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -20,7 +20,7 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
       <div className="absolute inset-0 bg-black/70" />
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center">
+      <div className="relative z-10 text-center px-6 py-20">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-relaxed tracking-tight pb-4">
             Advancing Science Through
@@ -29,14 +29,15 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-white/80 mb-12 leading-relaxed max-w-4xl mx-auto font-light">
+          <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
             Research Fellow at Harvard Medical School & Boston Children's Hospital, 
-            working in protein design, hematopoietic stem & T-cell development, and immuno-ageing.
+            pioneering breakthrough therapies through innovative protein design and 
+            computational biology approaches.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Button 
-              size="lg" 
+              size="lg"
               onClick={() => onNavigate('research')} 
               className="bg-black hover:bg-black focus:bg-black active:bg-black border-2 border-white text-white px-10 py-4 text-lg font-medium group transition-transform duration-300 hover:scale-105"
             >
@@ -46,7 +47,7 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
             </Button>
             
             <Button 
-              size="lg" 
+              size="lg"
               onClick={() => onNavigate('contact')} 
               className="bg-black hover:bg-black focus:bg-black active:bg-black border-2 border-white text-white px-10 py-4 text-lg font-medium group transition-transform duration-300 hover:scale-105"
             >
@@ -57,6 +58,9 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
           </div>
         </div>
       </div>
-    </section>
+      
+      {/* Gradient fade at bottom */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-900 to-transparent"></div>
+    </div>
   );
 };

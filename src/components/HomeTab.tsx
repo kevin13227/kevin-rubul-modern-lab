@@ -99,7 +99,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
 
       {/* Call to Action */}
       <section className="py-16 text-center">
-        <div className="max-w-4xl mx-auto bg-gradient-to-r from-[#FF0F7B]/20 via-[#dbaf0d]/15 to-[#dbaf0d]/20 rounded-3xl p-12 border border-[#FF0F7B]/30 backdrop-blur-sm shadow-[0_0_30px_#FF0F7B60]">
+        <div className="max-w-4xl mx-auto bg-[#ff4164]/20 rounded-3xl p-12 border border-[#ff4164]/30 backdrop-blur-sm shadow-[0_0_30px_#ff416460]">
           <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Interested in Collaboration?
           </h3>
