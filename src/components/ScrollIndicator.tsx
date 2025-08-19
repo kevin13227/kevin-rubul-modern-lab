@@ -32,10 +32,11 @@ export const ScrollIndicator = ({ showOnMobile = false }: ScrollIndicatorProps) 
     };
   }, []);
 
-  // Always show on desktop, only show on mobile if showOnMobile is true
-  const shouldShow = showOnMobile ? window.innerWidth < 768 : true;
+  // Check if we should show on mobile
+  const shouldShowOnMobile = showOnMobile && window.innerWidth < 768;
+  const shouldShowOnDesktop = !showOnMobile;
 
-  if (!shouldShow) {
+  if (!shouldShowOnMobile && !shouldShowOnDesktop) {
     return null;
   }
 

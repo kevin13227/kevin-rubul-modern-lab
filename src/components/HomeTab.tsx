@@ -1,7 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { ScrollIndicator } from "./ScrollIndicator";
 import workProteinImg from "@/assets/work-protein-design.jpg";
 import workStemcellImg from "@/assets/work-stemcell.jpg";
 import workImmunoageingImg from "@/assets/work-immunoageing.jpg";
@@ -13,8 +12,6 @@ interface HomeTabProps {
 export const HomeTab = ({ onNavigate }: HomeTabProps) => {
   return (
     <div className="space-y-16">
-      <ScrollIndicator />
-      
       {/* Research Focus */}
       <section className="py-20 bg-gray-900">
         <div className="text-center mb-16">
