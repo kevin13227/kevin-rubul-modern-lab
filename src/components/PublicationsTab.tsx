@@ -155,15 +155,15 @@ export const PublicationsTab = () => {
 
   return (
     <div className="min-h-screen bg-gradient-subtle">
-      <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto space-y-12">
-          <div className="text-center animate-fade-in-up">
-            <h1 className="text-4xl font-bold text-foreground mb-4">Publications</h1>
-            <p className="text-xl text-muted-foreground">
-              Peer-reviewed research publications in leading scientific journals
-            </p>
-          </div>
+      <div className="container mx-auto px-6 py-12">
+        <div className="text-center mb-12">
+                      <h1 className="text-4xl font-bold text-white tracking-tight leading-tight mb-4">Publications</h1>
+          <p className="text-xl text-muted-foreground">
+            Peer-reviewed research publications in leading scientific journals
+          </p>
+        </div>
 
+        <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {publications.map((publication, index) => (
                <div key={index} className="bg-[#f2f2f2] border-border/50 backdrop-blur-sm border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
