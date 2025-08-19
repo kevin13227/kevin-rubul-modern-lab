@@ -6,15 +6,15 @@ import { Video, Users, BookOpen, Heart, Globe, Calendar, ExternalLink } from "lu
 export const SundayScienceTab = () => {
   return (
     <div className="min-h-screen bg-gradient-subtle">
-      <div className="container mx-auto px-6 py-12">
-        <div className="text-center mb-12 animate-fade-in-up">
-          <h1 className="text-4xl font-bold text-foreground mb-4">Sunday Science Activism</h1>
-          <p className="text-xl text-muted-foreground">
-            Weekly science education sessions for university students
-          </p>
-        </div>
+      <div className="container mx-auto px-6">
+        <div className="max-w-4xl mx-auto space-y-12">
+          <div className="text-center animate-fade-in-up">
+            <h1 className="text-4xl font-bold text-foreground mb-4">Sunday Science Activism</h1>
+            <p className="text-xl text-muted-foreground">
+              Weekly science education sessions for university students
+            </p>
+          </div>
 
-        <div className="max-w-4xl mx-auto">
           <div className="bg-card/80 backdrop-blur-sm border border-border/50 rounded-2xl p-8">
             <h2 className="text-2xl font-bold text-foreground mb-6">Sunday Science Sessions</h2>
             <p className="text-muted-foreground leading-relaxed mb-6">

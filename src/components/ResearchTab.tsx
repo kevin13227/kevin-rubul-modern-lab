@@ -10,7 +10,7 @@ export const ResearchTab = () => {
     <div className="max-w-6xl mx-auto space-y-16">
       {/* Header */}
       <div className="text-center space-y-6 animate-fade-in-up">
-        <h1 className="text-5xl font-bold bg-gradient-to-r from-[#FF0F7B] via-[#EDB753] to-[#EDD153] bg-clip-text text-transparent">Research</h1>
+        <h1 className="text-5xl font-bold bg-gradient-to-r from-[#FF0F7B] via-[#EDB753] to-[#EDD153] bg-clip-text text-transparent leading-tight">My Research Focus</h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
           Exploring the frontiers of molecular biology, stem cell research, and immunology to advance our understanding of life and develop innovative therapeutic approaches.
         </p>
