@@ -76,7 +76,7 @@ export const TeachingTab = ({ onNavigate }: TeachingTabProps) => {
       </div>
 
       {/* Impact Statistics */}
-      <section className="bg-gradient-to-r from-[#FF0F7B] via-[#ffcc00] to-[#ffcc00] rounded-3xl p-8 md:p-12 text-white">
+      <section className="bg-[#ff4164] rounded-3xl p-8 md:p-12 text-white">
                   <h3 className="text-3xl font-bold text-center mb-10 text-white tracking-wide">Educational Impact</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {impact.map((item, index) => (
@@ -97,7 +97,7 @@ export const TeachingTab = ({ onNavigate }: TeachingTabProps) => {
             <Card key={index} className="glass-card overflow-hidden hover:shadow-xl transition-all duration-300">
               <CardHeader className="bg-secondary/20">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-[#A51C30] rounded-lg flex items-center justify-center">
+                  <div className="w-12 h-12 bg-[#ff4164] rounded-lg flex items-center justify-center">
                     <initiative.icon className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div className="flex-1">
