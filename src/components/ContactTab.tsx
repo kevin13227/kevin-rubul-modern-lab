@@ -40,7 +40,7 @@ export const ContactTab = () => {
     <div className="max-w-4xl mx-auto space-y-12">
       {/* Header */}
       <div className="text-center animate-fade-in-up">
-        <h2 className="text-4xl font-bold text-white mb-4">Contact</h2>
+        <h2 className="text-5xl font-bold text-white mb-4">Contact</h2>
         <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
           I'm always interested in meaningful collaborations, research opportunities, and 
           discussions about advancing science education. Feel free to reach out.

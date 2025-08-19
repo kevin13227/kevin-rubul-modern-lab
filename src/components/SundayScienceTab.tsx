@@ -30,7 +30,7 @@ export const SundayScienceTab = () => {
             
             <div className="space-y-4">
               <div className="p-4 bg-primary/5 rounded-lg">
-                <h3 className="font-semibold text-foreground mb-2">Email Requirements</h3>
+                <h3 className="font-semibold text-foreground mb-2">Email Contents</h3>
                 <ul className="text-sm text-muted-foreground space-y-1">
                   <li>• College/university affiliation</li>
                   <li>• Group size</li>

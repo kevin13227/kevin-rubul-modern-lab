@@ -23,7 +23,7 @@ All colors MUST be HSL.
 
     /* Primary - New gradient colors */
     --primary: 351 71% 38%; /* #FF0F7B */
-    --primary-foreground: 0 0% 98%;
+    --primary-foreground: 0 0% 95%;
     --primary-glow: 351 71% 38%; /* #FF0F7B */
     --primary-muted: 351 71% 38%;
     --primary-accent: 250 76% 62%; /* #EDB753 */

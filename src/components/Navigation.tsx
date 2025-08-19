@@ -142,7 +142,7 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
                 href="https://hms.harvard.edu/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="block hover:opacity-20 transition-opacity duration-300"
+                className="block hover:opacity-80 transition-opacity duration-300"
               >
                 <img 
                   src={medschoolLogo} 
