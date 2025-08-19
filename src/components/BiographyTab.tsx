@@ -64,31 +64,6 @@ export const BiographyTab = () => {
               From humble beginnings in rural India to groundbreaking research at Harvard Medical School, Dr. Rubul Mout exemplifies the transformative power of science and education. His journey from a poor peasant family to becoming a leading researcher in protein design and cell biology inspires countless students worldwide.
             </p>
           </div>
-          
-          {/* Right Side Content - Key Stats */}
-          <div className="lg:w-72 w-full">
-            <Card className="bg-black/50 border border-gray-600 shadow-[0_0_20px_#00000030]">
-              <CardContent className="p-4">
-                <h4 className="text-lg font-bold text-white mb-3 text-center">At a Glance</h4>
-                <div className="space-y-3">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold bg-gradient-to-r from-[#FF0F7B] to-[#dbaf0d] bg-clip-text text-transparent">40+</div>
-                    <div className="text-xs text-gray-300">Research Publications</div>
-                  </div>
-                  <Separator className="bg-[#FF0F7B]/20" />
-                  <div className="text-center">
-                    <div className="text-2xl font-bold bg-gradient-to-r from-[#FF0F7B] to-[#dbaf0d] bg-clip-text text-transparent">50K+</div>
-                    <div className="text-xs text-gray-300">Books Sold</div>
-                  </div>
-                  <Separator className="bg-[#FF0F7B]/20" />
-                  <div className="text-center">
-                    <div className="text-lg font-bold bg-gradient-to-r from-[#FF0F7B] to-[#dbaf0d] bg-clip-text text-transparent">Nobel</div>
-                    <div className="text-xs text-gray-300">Laureate Collaboration</div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </div>
 
