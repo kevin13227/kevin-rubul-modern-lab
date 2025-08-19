@@ -43,8 +43,8 @@ export const TeachingTab = ({ onNavigate }: TeachingTabProps) => {
         "Educational resource distribution"
       ],
       link: "https://upliftlibraries.com/"
-    },
-    {
+    }
+    /*{
       title: "Educational Outreach",
       description: "Featured in various educational media and documentaries",
       icon: Globe,
@@ -54,7 +54,7 @@ export const TeachingTab = ({ onNavigate }: TeachingTabProps) => {
         "Apple podcast appearance",
         "Scientific communication advocacy"
       ]
-    }
+    }*/
   ];
 
   const impact = [
@@ -97,7 +97,7 @@ export const TeachingTab = ({ onNavigate }: TeachingTabProps) => {
             <Card key={index} className="glass-card overflow-hidden hover:shadow-xl transition-all duration-300">
               <CardHeader className="bg-secondary/20">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-[#FF0F7B] via-[#ffcc00] to-[#ffcc00] rounded-lg flex items-center justify-center">
+                  <div className="w-12 h-12 bg-[#A51C30] rounded-lg flex items-center justify-center">
                     <initiative.icon className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div className="flex-1">

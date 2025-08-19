@@ -166,7 +166,7 @@ export const PublicationsTab = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {publications.map((publication, index) => (
-               <div key={index} className="bg-gray-200/80 border-border/50 backdrop-blur-sm border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
+               <div key={index} className="bg-[#f2f2f2] border-border/50 backdrop-blur-sm border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
                 <div className="h-full flex flex-col">
                   <div className="flex-1">
                     <h3 className={`text-base font-medium leading-tight mb-4 line-clamp-6 text-black ${index === 39 ? 'font-bold text-lg' : ''}`}>
@@ -228,7 +228,7 @@ export const PublicationsTab = () => {
                               title="View Publication"
                             >
                               <span>View Publication</span>
-                              <ExternalLink className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                              <ExternalLink className="w-4 h-4 group-hover:scale-100 transition-transform" />
                             </a>
                           )
                         )}
