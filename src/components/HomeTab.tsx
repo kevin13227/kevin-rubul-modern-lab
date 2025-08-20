@@ -13,10 +13,10 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
   return (
     <div className="space-y-16">
       {/* Research Focus */}
-      <section className="py-20 bg-gray-900">
+      <section className="pt-32 pb-20 relative z-10">
         {/* RESEARCH FOCUS TITLE - MADE VISIBLE AND PROMINENT */}
         <div className="text-center mb-16 px-6">
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-8 tracking-tight z-50 relative">
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-8 tracking-tight">
             Research Focus
           </h2>
           <p className="text-xl md:text-2xl text-gray-400 max-w-6xl mx-auto leading-relaxed">
