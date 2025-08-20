@@ -30,6 +30,7 @@ const publicationTabs = [
 ];
 
 const teachingTabs = [
+  { id: 'teaching', label: 'Overview' },
   { id: 'courses', label: 'Courses' },
   { id: 'sundayScience', label: 'Sunday Science' }
 ];
@@ -147,17 +148,6 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-white border border-gray-200" sideOffset={5}>
-                <DropdownMenuItem
-                  onClick={() => onTabChange('teaching')}
-                  className={cn(
-                    "cursor-pointer transition-colors font-medium",
-                    activeTab === 'teaching'
-                      ? "bg-[#A51C30]/10 text-[#A51C30] font-medium" 
-                      : "hover:bg-gray-50 text-gray-700"
-                  )}
-                >
-                  Overview
-                </DropdownMenuItem>
                 {teachingTabs.map((tab) => (
                   <DropdownMenuItem
                     key={tab.id}
