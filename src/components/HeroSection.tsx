@@ -25,14 +25,13 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-relaxed tracking-tight pb-4">
             Advancing Science Through
             <span className="block mt-4 text-[#ff4164] pb-2 leading-tight">
-              Protein Design & Cell Biology
+              Protein Design, Cancer & Immunobiology
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
             Research Fellow at Harvard Medical School & Boston Children's Hospital, 
-            pioneering breakthrough therapies through innovative protein design and 
-            computational biology approaches.
+            pioneering breakthrough therapies through innovative computational protein design and stem cell & immunobiology.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -56,6 +55,10 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
               </span>
             </Button>
           </div>
+          
+          <p className="text-lg text-gray-400 mt-8 max-w-3xl mx-auto leading-relaxed">
+            Our work is published in Cell, PNAS, & Nature communications, among others; and our technology is featured in Nature, HMS News, etc.
+          </p>
         </div>
       </div>
     </div>
