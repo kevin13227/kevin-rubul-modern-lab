@@ -163,88 +163,90 @@ export const PublicationsTab = () => {
   return (
     <div className="min-h-screen bg-gradient-subtle">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-12 animate-fade-in-up">
-          <h1 className="text-5xl font-bold text-white tracking-tight leading-tight mb-4">Publications</h1>
-          <p className="text-xl text-muted-foreground">
-            Peer-reviewed research publications in leading scientific journals
-          </p>
-        </div>
+        <div className="max-w-6xl mx-auto space-y-12">
+          <div className="text-center animate-fade-in-up">
+            <h1 className="text-5xl font-bold text-foreground mb-4">Publications</h1>
+            <p className="text-xl text-muted-foreground">
+              Peer-reviewed research publications in leading scientific journals
+            </p>
+          </div>
 
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {publications.map((publication, index) => (
-               <div key={index} className="bg-[#f2f2f2] border-border/50 backdrop-blur-sm border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
-                <div className="h-full flex flex-col">
-                  <div className="flex-1">
-                    <h3 className="text-base font-medium leading-tight mb-4 line-clamp-6 text-black">
-                       {(() => {
-                         const titleMatch = publication.title.match(/"([^"]+)"/);
-                         if (titleMatch) {
-                           const quotedTitle = titleMatch[1];
-                           const restOfCitation = publication.title.replace(/"([^"]+)"/, '').trim();
-                           return (
-                             <>
-                               <div className="text-lg font-bold mb-2 text-black">
-                                 "{quotedTitle}"
-                               </div>
-                               <div className="text-sm text-gray-700">
-                                 {restOfCitation}
-                               </div>
-                             </>
-                           );
-                         }
-                         return publication.title;
-                       })()}
-                     </h3>
-                  </div>
-                  <div className="mt-auto pt-4 border-t border-border/30">
-                    <div className="flex justify-between items-center">
-                      <div>
-                        {publication.link === null ? (
-                          <span className="text-black text-sm font-medium">
-                            Manuscript in Preparation
-                          </span>
-                        ) : publication.link === "placeholder" ? (
-                          <span className="text-gray-700 text-sm font-medium">
-                            Placeholder
-                          </span>
-                        ) : (
-                          <a 
-                            href={publication.link} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="text-primary hover:text-primary-glow transition-colors flex items-center gap-2 text-sm font-medium group"
-                            title="View Publication"
-                          >
-                            <span>View Publication</span>
-                            <ExternalLink className="w-4 h-4 group-hover:scale-100 transition-transform" />
-                          </a>
-                        )}
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {publications.map((publication, index) => (
+                <div key={index} className="bg-[#f2f2f2] border-border/50 backdrop-blur-sm border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
+                  <div className="h-full flex flex-col">
+                    <div className="flex-1">
+                      <h3 className="text-base font-medium leading-tight mb-4 line-clamp-6 text-black">
+                        {(() => {
+                          const titleMatch = publication.title.match(/"([^"]+)"/);
+                          if (titleMatch) {
+                            const quotedTitle = titleMatch[1];
+                            const restOfCitation = publication.title.replace(/"([^"]+)"/, '').trim();
+                            return (
+                              <>
+                                <div className="text-lg font-bold mb-2 text-black">
+                                  "{quotedTitle}"
+                                </div>
+                                <div className="text-sm text-gray-700">
+                                  {restOfCitation}
+                                </div>
+                              </>
+                            );
+                          }
+                          return publication.title;
+                        })()}
+                      </h3>
+                    </div>
+                    <div className="mt-auto pt-4 border-t border-border/30">
+                      <div className="flex justify-between items-center">
+                        <div>
+                          {publication.link === null ? (
+                            <span className="text-black text-sm font-medium">
+                              Manuscript in Preparation
+                            </span>
+                          ) : publication.link === "placeholder" ? (
+                            <span className="text-gray-700 text-sm font-medium">
+                              Placeholder
+                            </span>
+                          ) : (
+                            <a 
+                              href={publication.link} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="text-primary hover:text-primary-glow transition-colors flex items-center gap-2 text-sm font-medium group"
+                              title="View Publication"
+                            >
+                              <span>View Publication</span>
+                              <ExternalLink className="w-4 h-4 group-hover:scale-100 transition-transform" />
+                            </a>
+                          )}
+                        </div>
+                        <span className="text-sm font-bold text-black ml-4">
+                          {index + 1}
+                        </span>
                       </div>
-                      <span className="text-sm font-bold text-black ml-4">
-                        {index + 1}
-                      </span>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
-          
-          {/* Final Google Scholar text at bottom */}
-          <div className="text-center mt-8">
-            <h3 className="font-bold text-lg text-[#f2f2f2] mb-4">
-              For the complete list of publications and citations, please see the Google Scholar page{' '}
-              <a 
-                href="https://scholar.google.com/citations?user=NpMfqDUAAAAJ&hl=en"
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-red-600 hover:text-red-700 underline"
-              >
-                here
-              </a>
-              .
-            </h3>
+              ))}
+            </div>
+            
+            {/* Final Google Scholar text at bottom */}
+            <div className="text-center mt-8">
+              <h3 className="font-bold text-lg text-[#f2f2f2] mb-4">
+                For the complete list of publications and citations, please see the Google Scholar page{' '}
+                <a 
+                  href="https://scholar.google.com/citations?user=NpMfqDUAAAAJ&hl=en"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-red-600 hover:text-red-700 underline"
+                >
+                  here
+                </a>
+                .
+              </h3>
+            </div>
           </div>
         </div>
       </div>

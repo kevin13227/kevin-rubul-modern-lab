@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import {
@@ -34,8 +34,25 @@ const teachingTabs = [
 ];
 
 export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className="bg-[#A51C30] sticky top-0 z-50 shadow-lg">
+    <nav className={cn(
+      "sticky top-0 z-50 shadow-lg transition-all duration-300",
+      isScrolled 
+        ? "bg-[#A51C30] shadow-xl" 
+        : "bg-[#A51C30]"
+    )}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div>

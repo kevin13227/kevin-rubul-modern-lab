@@ -4,7 +4,6 @@ import { ArrowRight } from "lucide-react";
 import workProteinImg from "@/assets/work-protein-design.jpg";
 import workStemcellImg from "@/assets/work-stemcell.jpg";
 import workImmunoageingImg from "@/assets/work-immunoageing.jpg";
-import { ScrollIndicator } from "./ScrollIndicator";
 
 interface HomeTabProps {
   onNavigate: (tab: string) => void;
@@ -13,13 +12,11 @@ interface HomeTabProps {
 export const HomeTab = ({ onNavigate }: HomeTabProps) => {
   return (
     <div className="space-y-16">
-      <ScrollIndicator />
-      
       {/* Research Focus */}
-      <section className="py-20 bg-gray-900">
+      <section className="pt-32 pb-20 relative z-10">
         {/* RESEARCH FOCUS TITLE - MADE VISIBLE AND PROMINENT */}
         <div className="text-center mb-16 px-6">
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-8 tracking-tight z-50 relative">
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-8 tracking-tight">
             Research Focus
           </h2>
           <p className="text-xl md:text-2xl text-gray-400 max-w-6xl mx-auto leading-relaxed">
@@ -52,12 +49,12 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
             </div>
           </div>
 
-          {/* Hematopoietic Stem & T-Cell Development Card */}
+          {/* Immune Cell Function in Cancer Card */}
           <div className="relative rounded-3xl overflow-hidden group cursor-pointer transition-all duration-500 hover:scale-105 opacity-60 backdrop-blur-sm">
             <div className="aspect-[4/3] relative">
               <img 
                 src={workStemcellImg} 
-                alt="Hematopoietic Stem & T-Cell Development" 
+                alt="Immune Cell Function in Cancer" 
                 className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-500"
               />
               {/* Gradient overlay - default state */}
@@ -67,9 +64,9 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
               
               {/* Content */}
               <div className="absolute bottom-0 left-0 right-0 p-8">
-                <h3 className="text-3xl font-bold text-white mb-4">Hematopoietic Stem & T-Cell Development</h3>
+                <h3 className="text-3xl font-bold text-white mb-4">Immune Cell Function in Cancer</h3>
                 <p className="text-white/90 text-lg leading-relaxed">
-                  Decoding developmental programs guiding immune cell formation and function.
+                  Boosting T cell function to fight cancer.
                 </p>
               </div>
             </div>
