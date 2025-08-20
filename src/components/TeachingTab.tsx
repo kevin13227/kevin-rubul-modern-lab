@@ -64,7 +64,7 @@ export const TeachingTab = ({ onNavigate }: TeachingTabProps) => {
       {/* Header */}
       <div className="text-center animate-fade-in-up">
         <h2 className="text-5xl font-bold text-white tracking-tight leading-tight mb-4">Teaching & Science Activism</h2>
-        <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+        <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
           Dedicated to democratizing science education and creating opportunities for underprivileged 
           students around the world through innovative outreach programs and educational initiatives.
         </p>

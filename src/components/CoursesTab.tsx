@@ -66,7 +66,7 @@ export const CoursesTab = () => {
       {/* Header */}
       <div className="text-center animate-fade-in-up">
         <h2 className="text-5xl font-bold text-foreground mb-4">Courses</h2>
-        <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+        <p className="text-xl text-muted-foreground">
           Courses designed for college and university students studying science
         </p>
       </div>
