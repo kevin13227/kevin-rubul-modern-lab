@@ -21,7 +21,7 @@ export const CoursesTab = () => {
           <strong>Course update:</strong> 210 registered participants (undergraduate and postgraduate students) joined this course from many countries across the world. Most participants were from India, but there were significant numbers from countries such as Bangladesh, Jordan, Egypt, Australia, Gambia. Among Indian students, most came from places like Aligarh Muslim University, IISER-Trivandrum, Delhi University, Gauhati University, Tezpur University, and many other known and unknown places. Some of the lectures are now available online at:{" "}
           <a 
             href="https://www.youtube.com/channel/UCFa70atKObm0UEptWgp_38g" 
-            className="text-primary hover:underline font-medium"
+            className="text-primary font-medium hover:text-primary-glow transition-colors link-underline"
           >
             https://www.youtube.com/channel/UCFa70atKObm0UEptWgp_38g
           </a>
@@ -41,7 +41,7 @@ export const CoursesTab = () => {
           College and university students from any discipline of sciences can apply for this course. To be considered for this course, they must send me an email with the following details: 1) applicant's name, affiliation, study level (college or university, which semester, etc), and study discipline; 2) a short paragraph on what is the applicant's dream and why he/she wants to participate in the course. Note, all these details are MUST—a mere email with 'please accept me into the course' is not enough and hence will not be considered. This is just to make sure that the applicants are serious about a science career. Please email your application to{" "}
           <a 
             href="mailto:rubulharvard@gmail.com" 
-            className="text-primary hover:underline font-medium"
+            className="text-primary font-medium hover:text-primary-glow transition-colors link-underline"
           >
             rubulharvard@gmail.com
           </a>
@@ -50,7 +50,7 @@ export const CoursesTab = () => {
           Learn more at at my Harvard webpage:{" "}
           <a 
             href="https://scholar.harvard.edu/rubulmout/teaching" 
-            className="text-primary hover:underline font-medium"
+            className="text-primary font-medium hover:text-primary-glow transition-colors link-underline"
           >
             https://scholar.harvard.edu/rubulmout/teaching
           </a>
@@ -65,7 +65,7 @@ export const CoursesTab = () => {
     <div className="max-w-6xl mx-auto space-y-12">
       {/* Header */}
       <div className="text-center animate-fade-in-up">
-        <h2 className="text-4xl font-bold text-foreground mb-4">Courses</h2>
+        <h2 className="text-5xl font-bold text-foreground mb-4">Courses</h2>
         <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
           Courses designed for college and university students studying science
         </p>
@@ -75,12 +75,12 @@ export const CoursesTab = () => {
       <section>
         <div className="space-y-8">
           {initiatives.map((initiative, index) => (
-            <Card key={index} className="glass-card overflow-hidden hover:shadow-xl transition-all duration-300">
-              <CardHeader className="bg-secondary/20">
+            <Card key={index} className="bg-[#f2f2f2] border-border/50 backdrop-blur-sm border rounded-2xl hover:shadow-lg">
+              <CardHeader>
                 <div className="flex items-center gap-4">
                   <div className="flex-1">
-                    <CardTitle className="text-2xl">{initiative.title}</CardTitle>
-                    <CardDescription className="text-lg mt-1">{initiative.description}</CardDescription>
+                    <CardTitle className="text-2xl text-primary">{initiative.title}</CardTitle>
+                    <CardDescription className="text-lg text-gray-900 mt-1">{initiative.description}</CardDescription>
                   </div>
                 </div>
               </CardHeader>

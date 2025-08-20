@@ -9,19 +9,19 @@ export const SundayScienceTab = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto space-y-12">
           <div className="text-center animate-fade-in-up">
-            <h1 className="text-4xl font-bold text-foreground mb-4">Sunday Science Activism</h1>
+            <h1 className="text-5xl font-bold text-foreground mb-4">Sunday Science Activism</h1>
             <p className="text-xl text-muted-foreground">
               Weekly science education sessions for university students
             </p>
           </div>
 
-          <div className="bg-card/80 backdrop-blur-sm border border-border/50 rounded-2xl p-8">
-            <h2 className="text-2xl font-bold text-foreground mb-6">Sunday Science Sessions</h2>
-            <p className="text-muted-foreground leading-relaxed mb-6">
+          <div className="bg-[#f2f2f2] border-border/50 backdrop-blur-sm border rounded-2xl hover:shadow-lg backdrop-blur-sm p-8">
+            <h2 className="text-2xl font-bold text-primary mb-6">Sunday Science Sessions</h2>
+            <p className="text-gray-900 leading-relaxed mb-6">
               Every Sunday, I set aside one and a half hours (9:00-10:30 AM, EST) to talk to university students about science and science careers. Meetings are held through Zoom or Google Meet. Those who are interested can contact me at{" "}
           <a 
             href="mailto:rubulharvard@gmail.com" 
-            className="text-primary hover:underline font-medium"
+            className="text-primary font-medium hover:text-primary-glow transition-colors link-underline"
           >
             rubulharvard@gmail.com
           </a>
@@ -29,9 +29,9 @@ export const SundayScienceTab = () => {
             </p>
             
             <div className="space-y-4">
-              <div className="p-4 bg-primary/5 rounded-lg">
+              <div className="p-4 bg-primary rounded-lg">
                 <h3 className="font-semibold text-foreground mb-2">Email Requirements</h3>
-                <ul className="text-sm text-muted-foreground space-y-1">
+                <ul className="text-sm text-foreground space-y-1">
                   <li>• College/university affiliation</li>
                   <li>• Group size</li>
                   <li>• Study disciplines</li>
