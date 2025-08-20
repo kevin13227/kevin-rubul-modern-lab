@@ -61,39 +61,59 @@ export const BiographyTab = () => {
             <h3 className="text-2xl font-semibold text-white mb-4">Research Fellow</h3>
             <h4 className="text-xl text-gray-300 mb-6">Harvard Medical School & Boston Children's Hospital</h4>
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
-              From humble beginnings in rural India to groundbreaking research at Harvard Medical School, Dr. Rubul Mout exemplifies the transformative power of science and education. His journey from a poor peasant family to becoming a leading researcher in protein design and cell biology inspires countless students worldwide.
+              <em>"From humble beginnings in rural India to groundbreaking research at Harvard Medical School, Dr. Rubul Mout exemplifies the transformative power of science and education. His journey from a poor peasant family to becoming a leading researcher in protein design and cell biology inspires countless students worldwide."</em>
             </p>
           </div>
         </div>
       </div>
 
-      {/* Main Bio */}
-      <Card className="bg-black border border-gray-600 shadow-[0_0_30px_#00000040] p-8 md:p-12">
-        <CardContent className="space-y-6 text-lg leading-relaxed">
-          <p className="text-white font-bold">
-            <strong>Dr. Rubul Mout</strong> is a Fellow (Research) at Harvard Medical School, Harvard University, 
-            and the Stem Cell & Regenerative Biology Program, Boston Children's Hospital (BCH).
-          </p>
-          
-          <p className="text-white">
-            Born, and educated in India, Dr. Mout moved to the United States to pursue his PhD 
-            from the University of Massachusetts, Amherst. Prior to joining Harvard/BCH, he was a Washington 
-            Research Foundation Innovation Fellow at the Institute for Protein Design, University of Washington.
-          </p>
-          
-          <p className="text-white">
-            At Harvard/BCH, Dr. Mout developed soluble agonists for the Notch signaling pathway for T cell 
-            development and function. These agonists promoted the development of T cells from bone marrow stem 
-            cells and activated the Notch pathway in T cells during vaccination to boost cell-based immunity.
-          </p>
-          
-          <p className="text-white">
-            Currently, Dr. Mout uses computational protein design technologies to modulate signaling in immune 
-            development, function, and ageing. The ultimate goal of this research is to enhance T cell function 
-            to better combat cancer, autoimmune diseases, and viral infections.
-          </p>
-        </CardContent>
-      </Card>
+             {/* Main Bio */}
+       <Card className="bg-black border border-gray-600 shadow-[0_0_30px_#00000040] p-8 md:p-12">
+         <CardContent className="space-y-6 text-lg leading-relaxed">
+           <p className="text-white font-bold">
+             <strong>Dr. Rubul Mout</strong> is a Fellow (Research) at Harvard Medical School, Harvard University, 
+             and the Stem Cell & Regenerative Biology Program, Boston Children's Hospital (BCH).
+           </p>
+           
+           <p className="text-white">
+             Born, and educated in India, Dr. Mout moved to the United States to pursue his PhD 
+             from the University of Massachusetts, Amherst. Prior to joining Harvard/BCH, he was a Washington 
+             Research Foundation Innovation Fellow at the Institute for Protein Design, University of Washington.
+           </p>
+           
+           <p className="text-white">
+             At Harvard/BCH, Dr. Mout developed soluble agonists for the Notch signaling pathway for T cell 
+             development and function. These agonists promoted the development of T cells from bone marrow stem 
+             cells and activated the Notch pathway in T cells during vaccination to boost cell-based immunity.
+           </p>
+           
+           <p className="text-white">
+             Currently, Dr. Mout uses computational protein design technologies to modulate signaling in immune 
+             development, function, and ageing. The ultimate goal of this research is to enhance T cell function 
+             to better combat cancer, autoimmune diseases, and viral infections.
+           </p>
+           
+           <p className="text-white">
+             Dr. Mout is the co-author of 40 research articles and the inventor of numerous
+             technologies in gene editing, protein design, and T-cell engineering with multiple
+             patents. During his PhD, he developed a technology for intracellular protein delivery and
+             gene editing in mammalian cells, known as the 'E-tag' method, which was published in
+             a series of multiple research papers and an approved patent. His work on protein
+             design and Notch signaling in collaboration with his former postdoctoral mentor David
+             Baker (2024 Nobel Laureate in Chemistry), George Daley (Dean, Harvard Medical
+             School), and others was featured in Nature magazine. In addition, his research has
+             been featured in numerous media, including a LabTV/NIH minidocumentary and an
+             American Chemical Society (ACS) feature video.
+           </p>
+           
+           <p className="text-white">
+             He is also the author of two books in Assamese. He founded Uplift Libraries, an
+             initiative to create small-scale libraries for children in rural India, and the founder of
+             Sunday Science Activism, and science outreach program to interact with college and
+             university students from around the world.
+           </p>
+         </CardContent>
+       </Card>
 
       {/* Timeline */}
       <section>
