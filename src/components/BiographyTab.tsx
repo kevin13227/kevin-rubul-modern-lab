@@ -138,30 +138,30 @@ export const BiographyTab = () => {
         </div>
       </section>
 
-      {/* Books & Writing */}
-      <Card className="bg-[#8B1538] overflow-hidden">
-        <CardContent className="p-8 md:p-12">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
-              <BookOpen className="w-6 h-6 text-[#8B1538]" />
+             {/* Books & Writing */}
+       <Card className="bg-[#f2f2f2] border-border/50 backdrop-blur-sm border rounded-2xl p-8 md:p-12 hover:shadow-lg">
+         <CardContent className="space-y-6">
+                                   <div className="flex items-center gap-4 mb-6">
+              <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
+                <BookOpen className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold text-black">Literary Contributions</h3>
             </div>
-            <h3 className="text-2xl font-bold text-white">Literary Contributions</h3>
-          </div>
-          
-          <div className="space-y-4 text-white">
-            <p>
-              Dr. Mout is also the author of two books in Assamese, a memoir and a collection of short stories. His memoir depicts his journey from a poor 
-              peasant's family in a far-remote corner of India, near the Assam-Arunachal border.
-            </p>
-            <p>
-              The memoir, Moro Eta Sapon Ase, has been an instant bestseller, and since its first publication in 2017 it has 
-              sold over 50,000 copies (as of January 2025), making it one of the highest-selling books 
-              in the Assamese language. The book is also included in many school/college/university 
-              curriculums across Assam.
-            </p>
-          </div>
-        </CardContent>
-      </Card>
+           
+           <div className="space-y-4 text-gray-900">
+             <p>
+               Dr. Mout is also the author of two books in Assamese, a memoir and a collection of short stories. His memoir depicts his journey from a poor 
+               peasant's family in a far-remote corner of India, near the Assam-Arunachal border.
+             </p>
+             <p>
+               The memoir, Moro Eta Sapon Ase, has been an instant bestseller, and since its first publication in 2017 it has 
+               sold over 50,000 copies (as of January 2025), making it one of the highest-selling books 
+               in the Assamese language. The book is also included in many school/college/university 
+               curriculums across Assam.
+             </p>
+           </div>
+         </CardContent>
+       </Card>
     </div>
   );
 };
