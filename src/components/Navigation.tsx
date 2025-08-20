@@ -7,7 +7,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { ChevronDown, Lock, Unlock } from "lucide-react";
+import { ChevronDown, ChevronUp, Lock, Unlock } from "lucide-react";
 import medschoolLogo from "@/assets/medschool-logo.png";
 import medschoolLogoCompact from "@/assets/medschool-logo-compact.png";
 
@@ -38,6 +38,8 @@ const teachingTabs = [
 export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isLocked, setIsLocked] = useState(false);
+  const [publicationsOpen, setPublicationsOpen] = useState(false);
+  const [teachingOpen, setTeachingOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,7 +57,7 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
 
   return (
     <nav className={cn(
-      "z-50 shadow-lg transition-all duration-300 w-full",
+      "z-40 shadow-lg transition-all duration-300 w-full",
       isLocked ? "fixed top-0 left-0 right-0" : "sticky top-0",
       isScrolled 
         ? "bg-[#A51C30] shadow-xl" 
@@ -67,13 +69,13 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
             <h1 className="text-xl font-bold text-white tracking-wider">DR. RUBUL MOUT</h1>
           </div>
           
-          <div className="hidden md:flex items-center justify-center flex-1 space-x-2">
+          <div className="hidden md:flex items-center justify-center flex-1 space-x-2 relative z-50">
             {/* Lock Toggle Button */}
             <Button
               variant="ghost"
               size="sm"
               onClick={toggleLock}
-              className="text-white hover:bg-white/10 hover:text-white transition-all duration-300 p-2 mr-2"
+              className="text-white hover:bg-white/15 hover:text-white hover:scale-105 transition-all duration-300 p-2 mr-2"
               title={isLocked ? "Unlock navigation bar" : "Lock navigation bar to top of screen"}
             >
               {isLocked ? (
@@ -89,10 +91,10 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
                 variant="ghost"
                 onClick={() => onTabChange(tab.id)}
                 className={cn(
-                  "px-6 py-2 transition-all duration-300 font-medium tracking-wide relative",
+                  "px-6 py-2 transition-all font-medium tracking-wide rounded-none",
                   activeTab === tab.id 
                     ? "bg-white text-[#A51C30] hover:bg-white/90 shadow-[0_0_20px_#A51C3080]" 
-                    : "text-white hover:bg-white/10 hover:text-white hover:shadow-[0_0_15px_#A51C3060]"
+                    : "text-white hover:bg-white/15 hover:text-white hover:scale-105 hover:shadow-[0_0_15px_#A51C3060]"
                 )}
               >
                 {tab.label}
@@ -100,30 +102,47 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
             ))}
             
             {/* Publications Dropdown */}
-            <DropdownMenu>
+            <DropdownMenu modal={false} open={publicationsOpen} onOpenChange={setPublicationsOpen}>
               <DropdownMenuTrigger asChild>
                 <Button
                   variant="ghost"
-                  className={cn(
-                    "px-6 py-2 transition-all duration-300 font-medium tracking-wide",
-                    ['publications', 'patents', 'books'].includes(activeTab)
-                      ? "bg-white text-[#A51C30] hover:bg-white/90" 
-                      : "text-white hover:bg-white/10 hover:text-white"
-                  )}
+                                      className={cn(
+                      "px-6 py-2 font-medium tracking-wide rounded-none",
+                      publicationsOpen ? "transition-none" : "transition-none hover:scale-105",
+                      ['publications', 'patents', 'books'].includes(activeTab)
+                        ? "bg-white text-[#A51C30] hover:bg-white/90 hover:text-[#A51C30]" 
+                        : "text-white hover:bg-white/15 hover:text-white"
+                    )}
                 >
-                  Publications <ChevronDown className="ml-2 h-4 w-4" />
+                  Publications {publicationsOpen ? <ChevronUp className="ml-2 h-4 w-4" /> : <ChevronDown className="ml-2 h-4 w-4" />}
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-white border border-gray-200" sideOffset={5}>
-                {publicationTabs.map((tab) => (
+              <DropdownMenuContent 
+                className="bg-[#A51C30] border-0 shadow-xl rounded-lg mt-0 p-0 min-w-[200px] animate-none z-40" 
+                sideOffset={0}
+                align="center"
+              >
+                {publicationTabs.map((tab, index) => (
                   <DropdownMenuItem
                     key={tab.id}
-                    onClick={() => onTabChange(tab.id)}
+                    onClick={() => {
+                      onTabChange(tab.id);
+                      setPublicationsOpen(false);
+                    }}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        onTabChange(tab.id);
+                        setPublicationsOpen(false);
+                      }
+                    }}
                     className={cn(
-                      "cursor-pointer transition-colors",
+                      "cursor-pointer transition-none px-6 py-3 focus:outline-none",
+                      index === 0 ? "rounded-t-lg" : "",
+                      index === publicationTabs.length - 1 ? "rounded-b-lg" : "",
                       activeTab === tab.id 
-                        ? "bg-[#A51C30]/10 text-[#A51C30] font-medium" 
-                        : "hover:bg-gray-50 text-gray-700"
+                        ? "bg-white text-[#A51C30] font-medium hover:text-[#A51C30]" 
+                        : "text-white hover:bg-white/15 hover:text-white focus:bg-white/15"
                     )}
                   >
                     {tab.label}
@@ -133,30 +152,47 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
             </DropdownMenu>
 
             {/* Teaching Dropdown */}
-            <DropdownMenu>
+            <DropdownMenu modal={false} open={teachingOpen} onOpenChange={setTeachingOpen}>
               <DropdownMenuTrigger asChild>
                 <Button
                   variant="ghost"
-                  className={cn(
-                    "px-6 py-2 transition-all duration-300 font-medium tracking-wide",
-                    ['teaching', 'courses', 'sundayscience'].includes(activeTab)
-                      ? "bg-white text-[#A51C30] hover:bg-white/90" 
-                      : "text-white hover:bg-white/10 hover:text-white"
-                  )}
-                >
-                  Teaching & Activism <ChevronDown className="ml-2 h-4 w-4" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-white border border-gray-200" sideOffset={5}>
-                {teachingTabs.map((tab) => (
+                                      className={cn(
+                      "px-6 py-2 font-medium tracking-wide rounded-none",
+                      teachingOpen ? "transition-none" : "transition-none hover:scale-105",
+                      ['teaching', 'courses', 'sundayscience'].includes(activeTab)
+                        ? "bg-white text-[#A51C30] hover:bg-white/90 hover:text-[#A51C30]" 
+                        : "text-white hover:bg-white/15 hover:text-white"
+                      )}
+                  >
+                    Teaching & Activism {teachingOpen ? <ChevronUp className="ml-2 h-4 w-4" /> : <ChevronDown className="ml-2 h-4 w-4" />}
+                  </Button>
+                </DropdownMenuTrigger>
+              <DropdownMenuContent 
+                className="bg-[#A51C30] border-0 shadow-xl rounded-lg mt-0 p-0 min-w-[200px] animate-none z-40" 
+                sideOffset={0}
+                align="center"
+              >
+                {teachingTabs.map((tab, index) => (
                   <DropdownMenuItem
                     key={tab.id}
-                    onClick={() => onTabChange(tab.id)}
+                    onClick={() => {
+                      onTabChange(tab.id);
+                      setTeachingOpen(false);
+                    }}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        onTabChange(tab.id);
+                        setTeachingOpen(false);
+                      }
+                    }}
                     className={cn(
-                      "cursor-pointer transition-colors",
+                      "cursor-pointer transition-none px-6 py-3 focus:outline-none",
+                      tab.id === 'teaching' && activeTab === 'teaching' ? "rounded-t-none" : index === 0 ? "rounded-t-lg" : "",
+                      index === teachingTabs.length - 1 ? "rounded-b-lg" : "",
                       activeTab === tab.id 
-                        ? "bg-[#A51C30]/10 text-[#A51C30] font-medium" 
-                        : "hover:bg-gray-50 text-gray-700"
+                        ? "bg-white text-[#A51C30] font-medium hover:text-[#A51C30]" 
+                        : "text-white hover:bg-white/15 hover:text-white focus:bg-white/15"
                     )}
                   >
                     {tab.label}
@@ -172,7 +208,7 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
               href="https://hms.harvard.edu/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="block hover:opacity-20 transition-opacity duration-300"
+              className="block hover:bg-black/30 hover:scale-105 duration-300 rounded-lg p-1"
             >
               <img 
                 src={medschoolLogoCompact} 
