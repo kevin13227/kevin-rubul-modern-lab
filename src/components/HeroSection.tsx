@@ -56,9 +56,11 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
             </Button>
           </div>
           
-          <p className="text-lg text-gray-400 mt-8 max-w-3xl mx-auto leading-relaxed">
-            Our work is published in Cell, PNAS, & Nature communications, among others; and our technology is featured in Nature, HMS News, etc.
-          </p>
+          <div className="mt-12 pt-8 border-t border-gray-600/30">
+            <p className="text-base md:text-lg text-gray-300 max-w-4xl mx-auto leading-relaxed opacity-90">
+              Our work is published in Cell, PNAS, & Nature communications, among others; and our technology is featured in Nature, HMS News, etc.
+            </p>
+          </div>
         </div>
       </div>
     </div>
