@@ -44,7 +44,7 @@ export const PatentsTab = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto space-y-12">
           <div className="text-center animate-fade-in-up">
-            <h1 className="text-4xl font-bold text-foreground mb-4">Patents</h1>
+            <h1 className="text-5xl font-bold text-foreground mb-4">Patents</h1>
             <p className="text-xl text-muted-foreground">
               Patented innovations in biotechnology and nanomedicine
             </p>
@@ -52,12 +52,12 @@ export const PatentsTab = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {patents.map((patent, index) => (
-              <div key={index} className="bg-gray-300/80 border-border/50 backdrop-blur-sm border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
+              <div key={index} className="bg-[#f2f2f2] border-border/50 backdrop-blur-sm border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
                 <div className="h-full flex flex-col">
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-black mb-3">{patent.title}</h3>
                     <p className="text-gray-700 mb-2">Inventors: {patent.inventors}</p>
-                    <span className="text-red-600 font-mono text-sm">{patent.patentNumber}</span>
+                    <span className="text-primary font-mono text-sm">{patent.patentNumber}</span>
                   </div>
                 </div>
               </div>
