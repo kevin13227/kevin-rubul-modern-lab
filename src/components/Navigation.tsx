@@ -7,7 +7,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Lock, Unlock } from "lucide-react";
 import medschoolLogo from "@/assets/medschool-logo.png";
 import medschoolLogoCompact from "@/assets/medschool-logo-compact.png";
 
@@ -36,6 +36,7 @@ const teachingTabs = [
 
 export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isLocked, setIsLocked] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,9 +48,14 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const toggleLock = () => {
+    setIsLocked(!isLocked);
+  };
+
   return (
     <nav className={cn(
-      "sticky top-0 z-50 shadow-lg transition-all duration-300 w-full",
+      "z-50 shadow-lg transition-all duration-300 w-full",
+      isLocked ? "fixed top-0 left-0 right-0" : "sticky top-0",
       isScrolled 
         ? "bg-[#A51C30] shadow-xl" 
         : "bg-[#A51C30]"
@@ -61,6 +67,21 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
           </div>
           
           <div className="hidden md:flex items-center justify-center flex-1 space-x-2">
+            {/* Lock Toggle Button */}
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={toggleLock}
+              className="text-white hover:bg-white/10 hover:text-white transition-all duration-300 p-2 mr-2"
+              title={isLocked ? "Unlock navigation bar" : "Lock navigation bar to top of screen"}
+            >
+              {isLocked ? (
+                <Lock className="h-4 w-4" />
+              ) : (
+                <Unlock className="h-4 w-4" />
+              )}
+            </Button>
+            
             {tabs.map((tab) => (
               <Button
                 key={tab.id}
