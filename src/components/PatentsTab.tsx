@@ -42,7 +42,7 @@ export const PatentsTab = () => {
   return (
     <div className="min-h-screen bg-gradient-subtle">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto space-y-12">
+        <div className="max-w-6xl mx-auto space-y-12">
           <div className="text-center animate-fade-in-up">
             <h1 className="text-5xl font-bold text-foreground mb-4">Patents</h1>
             <p className="text-xl text-muted-foreground">

@@ -74,7 +74,7 @@ export const ContactTab = () => {
                     {contact.value}
                   </a>
                 ) : contact.links ? (
-                  <div className="text-foreground text-lg">
+                  <div className="text-gray-900 text-lg">
                     {contact.links.map((link, linkIndex) => (
                       <span key={linkIndex}>
                         <a 
