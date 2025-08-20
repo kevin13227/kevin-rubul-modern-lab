@@ -1,4 +1,5 @@
 import { BookOpen } from "lucide-react";
+import Book from "@/assets/Book.jpg";
 //import projectStemCells from "../assets/project-stem-cells.jpg";
 
 const books = [
@@ -8,7 +9,7 @@ const books = [
     year: "2015",
     language: "Assamese",
     description: "A collection of short stories.",
-    imageUrl: "",
+    imageUrl: Book,
     link: "https://www.amazon.com/dp/example1"
   },
   {
@@ -29,13 +30,13 @@ export const BooksTab = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto space-y-12">
           <div className="text-center animate-fade-in-up">
-            <h1 className="text-4xl font-bold text-foreground mb-4">Books</h1>
+            <h1 className="text-5xl font-bold text-foreground mb-4">Books</h1>
             <p className="text-xl text-muted-foreground">
               Published literary works in Assamese language
             </p>
           </div>
 
-          <div className="bg-gray-200/80 backdrop-blur-sm border border-border/50 rounded-2xl p-8">
+          <div className="bg-[#f2f2f2] backdrop-blur-sm border border-border/50 rounded-2xl p-8">
             <h2 className="text-2xl font-bold text-black mb-6">Published Works</h2>
             <div className="space-y-8">
               {books.map((book, index) => (
@@ -54,7 +55,7 @@ export const BooksTab = () => {
                           href={book.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="hover:text-red-600 transition-colors duration-200 hover:underline"
+                          className="text-primary hover:text-primary-glow transition-colors link-underline text-lg"
                         >
                           {book.title}
                         </a>
