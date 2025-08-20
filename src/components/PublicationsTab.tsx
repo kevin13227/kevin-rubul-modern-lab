@@ -164,7 +164,7 @@ export const PublicationsTab = () => {
     <div className="min-h-screen bg-gradient-subtle">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12 animate-fade-in-up">
-          <h1 className="text-4xl font-bold text-white tracking-tight leading-tight mb-4">Publications</h1>
+          <h1 className="text-5xl font-bold text-white tracking-tight leading-tight mb-4">Publications</h1>
           <p className="text-xl text-muted-foreground">
             Peer-reviewed research publications in leading scientific journals
           </p>
@@ -213,7 +213,7 @@ export const PublicationsTab = () => {
                             href={publication.link} 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="text-red-600 hover:text-red-700 transition-colors flex items-center gap-2 text-sm font-medium group"
+                            className="text-primary hover:text-primary-glow transition-colors flex items-center gap-2 text-sm font-medium group"
                             title="View Publication"
                           >
                             <span>View Publication</span>
