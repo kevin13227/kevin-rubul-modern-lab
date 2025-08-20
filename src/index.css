@@ -292,6 +292,14 @@ a:focus-visible {
   outline-offset: 2px !important;
 }
 
+/* Ensure navigation extends fully to scroll bar */
+nav {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
 /* Custom scrollbar styling */
 ::-webkit-scrollbar {
   width: 12px;
