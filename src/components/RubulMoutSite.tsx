@@ -71,98 +71,168 @@ export const RubulMoutSite = () => {
       )}
       
       {/* Main Content */}
-      <main className="container mx-auto px-6 py-12">
+      <main className="container mx-auto px-6 py-12 pt-20">
         {renderActiveTab()}
       </main>
       
       {/* Footer */}
-      <footer className="border-t border-gray-800 bg-gray-800 py-12">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="font-bold text-lg mb-4 text-white">Dr. Rubul Mout</h3>
-              <p className="text-gray-300 leading-relaxed">
+      <footer className="relative border-t border-gray-800 bg-gray-800 py-12 mt-32">
+        {/* Gradient overlay for home page - positioned at top of footer */}
+        {activeTab === 'home' && (
+          <div className="absolute top-0 left-0 right-0 bg-gradient-to-t from-gray-800 via-gray-800/60 to-transparent pointer-events-none" style={{height: '100px', zIndex: 5}}></div>
+        )}
+        
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+            {/* Dr. Rubul Mout Section */}
+            <div className="text-center">
+              <h3 className="font-bold text-lg mb-4 text-[#ff4164]">
+                Dr. Rubul Mout
+              </h3>
+              <p className="text-gray-300 leading-relaxed text-sm text-left">
                 Research Fellow at Harvard Medical School & Boston Children's Hospital, 
                 advancing protein design and cell biology for therapeutic applications.
               </p>
             </div>
             
-            <div>
-              <h4 className="font-semibold mb-4 text-white">Quick Links</h4>
-              <div className="space-y-2">
-                <button 
-                  onClick={() => handleTabChange('research')}
-                  className="block text-gray-300 hover:text-primary transition-colors"
-                >
-                  Research
-                </button>
-
-                <button 
-                  onClick={() => handleTabChange('biography')}
-                  className="block text-gray-300 hover:text-primary transition-colors"
-                >
-                  Biography
-                </button>
-                <button 
-                  onClick={() => handleTabChange('publications')}
-                  className="block text-gray-300 hover:text-primary transition-colors"
-                >
-                  Publications
-                </button>
-                <button 
-                  onClick={() => handleTabChange('patents')}
-                  className="block text-gray-300 hover:text-primary transition-colors"
-                >
-                  Patents
-                </button>
-                <button 
-                  onClick={() => handleTabChange('teaching')}
-                  className="block text-gray-300 hover:text-primary transition-colors"
-                >
-                  Science Activism
-                </button>
-                <button 
-                  onClick={() => handleTabChange('contact')}
-                  className="block text-gray-300 hover:text-primary transition-colors"
-                >
-                  Contact
-                </button>
+            {/* Quick Links - Centered Section, Left Aligned Text, Narrower Width */}
+            <div className="text-center flex justify-center">
+              <div className="w-32">
+                <h4 className="font-bold text-lg mb-4 text-[#ff4164]">
+                  Quick Links
+                </h4>
+                <div className="space-y-2 text-left">
+                  <button 
+                    onClick={() => handleTabChange('research')}
+                    className="block text-gray-300 hover:text-[#ff4164] transition-colors duration-300 text-sm relative group"
+                  >
+                    <span className="relative">
+                      Research
+                      <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#ff4164] transition-all duration-300 group-hover:w-full"></span>
+                    </span>
+                  </button>
+                  <button 
+                    onClick={() => handleTabChange('biography')}
+                    className="block text-gray-300 hover:text-[#ff4164] transition-colors duration-300 text-sm relative group"
+                  >
+                    <span className="relative">
+                      Biography
+                      <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#ff4164] transition-all duration-300 group-hover:w-full"></span>
+                    </span>
+                  </button>
+                  <button 
+                    onClick={() => handleTabChange('publications')}
+                    className="block text-gray-300 hover:text-[#ff4164] transition-colors duration-300 text-sm relative group"
+                  >
+                    <span className="relative">
+                      Publications
+                      <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#ff4164] transition-all duration-300 group-hover:w-full"></span>
+                    </span>
+                  </button>
+                  <button 
+                    onClick={() => handleTabChange('patents')}
+                    className="block text-gray-300 hover:text-[#ff4164] transition-colors duration-300 text-sm relative group"
+                  >
+                    <span className="relative">
+                      Patents
+                      <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#ff4164] transition-all duration-300 group-hover:w-full"></span>
+                    </span>
+                  </button>
+                  <button 
+                    onClick={() => handleTabChange('teaching')}
+                    className="block text-gray-300 hover:text-[#ff4164] transition-colors duration-300 text-sm relative group"
+                  >
+                    <span className="relative">
+                      Science Activism
+                      <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#ff4164] transition-all duration-300 group-hover:w-full"></span>
+                    </span>
+                  </button>
+                  <button 
+                    onClick={() => handleTabChange('contact')}
+                    className="block text-gray-300 hover:text-[#ff4164] transition-colors duration-300 text-sm relative group"
+                  >
+                    <span className="relative">
+                      Contact
+                      <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#ff4164] transition-all duration-300 group-hover:w-full"></span>
+                    </span>
+                  </button>
+                </div>
               </div>
             </div>
             
-            <div>
-              <h4 className="font-semibold mb-4 text-white">External Links</h4>
-              <div className="space-y-2">
-                <a 
-                  href="https://upliftlibraries.com/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block text-gray-300 hover:text-primary transition-colors"
-                >
-                  Uplift Libraries
-                </a>
-                <a 
-                  href="https://research.childrenshospital.org/rubulmout/Science-activism" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block text-gray-300 hover:text-primary transition-colors"
-                >
-                  Sunday Science Activism
-                </a>
-                <a 
-                  href="https://research.childrenshospital.org/rubulmout/publications-0" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block text-gray-300 hover:text-primary transition-colors"
-                >
-                  Publications
-                </a>
+            {/* External Links - Centered Section, Left Aligned Text, Narrower Width */}
+            <div className="text-center flex justify-center">
+              <div className="w-32">
+                <h4 className="font-bold text-lg mb-4 text-[#ff4164]">
+                  External Links
+                </h4>
+                <div className="space-y-2 text-left">
+                  <a 
+                    href="https://upliftlibraries.com/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block text-gray-300 hover:text-[#ff4164] transition-colors duration-300 text-sm relative group"
+                  >
+                    <span className="relative">
+                      Uplift Libraries
+                      <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#ff4164] transition-all duration-300 group-hover:w-full"></span>
+                    </span>
+                  </a>
+                  <a 
+                    href="https://research.childrenshospital.org/rubulmout/Science-activism" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block text-gray-300 hover:text-[#ff4164] transition-colors duration-300 text-sm relative group"
+                  >
+                    <span className="relative">
+                      Sunday Science Activism
+                      <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#ff4164] transition-all duration-300 group-hover:w-full"></span>
+                    </span>
+                  </a>
+                  <a 
+                    href="https://scholar.google.com/citations?user=NpMfqDUAAAAJ&hl=en" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block text-gray-300 hover:text-[#ff4164] transition-colors duration-300 text-sm relative group"
+                  >
+                    <span className="relative">
+                      Citations
+                      <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#ff4164] transition-all duration-300 group-hover:w-full"></span>
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
           
-          <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Dr. Rubul Mout. All rights reserved. | Harvard Medical School & Boston Children's Hospital</p>
+          {/* Decorative separator */}
+          <div className="flex items-center justify-center my-8">
+            <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent"></div>
+            <div className="mx-4 w-2 h-2 bg-gradient-to-r from-[#ff4164] to-[#dbaf0d] rounded-full"></div>
+            <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent"></div>
+          </div>
+          
+          <div className="text-center text-gray-400">
+            <p className="text-sm">
+              &copy; 2025 Dr. Rubul Mout. All rights reserved. | 
+              <a 
+                href="https://hms.harvard.edu/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-[#ff4164] font-medium hover:underline"
+              >
+                &nbsp;Harvard Medical School
+              </a>
+              &nbsp;&amp;&nbsp;
+              <a 
+                href="https://www.childrenshospital.org/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-[#ff4164] font-medium hover:underline"
+              >
+                Boston Children's Hospital
+              </a>
+            </p>
           </div>
         </div>
       </footer>
