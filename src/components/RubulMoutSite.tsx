@@ -76,7 +76,7 @@ export const RubulMoutSite = () => {
       </main>
       
       {/* Footer */}
-      <footer className="border-t border-gray-800 bg-gray-800 py-12">
+      <footer className="border-t border-gray-600 bg-gray-800 py-16 mt-16 relative z-10">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
