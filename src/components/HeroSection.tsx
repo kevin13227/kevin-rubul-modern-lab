@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroMolecularBg from "@/assets/hero-molecular-bg.jpg";
+import proteinMoleculeBg from "@/assets/protein-molecule-ai.png";
 
 interface HeroSectionProps {
   onNavigate: (tab: string) => void;
@@ -12,12 +12,12 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
       <div 
         className="fixed inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url(${heroMolecularBg})`,
+          backgroundImage: `url(${proteinMoleculeBg})`,
         }}
       />
       
-      {/* Fixed Black Overlay - 60% opacity */}
-      <div className="fixed inset-0 bg-black/60" />
+      {/* Fixed Black Overlay - 30% opacity (reduced from 60% for better visibility) */}
+      <div className="fixed inset-0 bg-black/30" />
       
       {/* Content */}
       <div className="relative z-10 text-center px-6 py-20">
