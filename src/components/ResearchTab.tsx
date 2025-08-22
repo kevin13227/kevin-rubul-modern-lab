@@ -121,6 +121,25 @@ export const ResearchTab = () => {
           </div>
         </div>
       </section>
+      <br /><br/>
+      <h1 className="text-5xl text-center font-bold text-white leading-tight">Mentors and Collaborators</h1>
+
+      <div className="bg-[#f2f2f2] border-border/50 backdrop-blur-sm border rounded-2xl hover:shadow-lg backdrop-blur-sm p-8">
+        <h2 className="text-3xl text-primary mb-6">Mentors</h2>
+        <p className="text-gray-900 leading-relaxed text-lg">
+        <li>David Baker, Nobel laureate in Chemistry 2024, University of Washington</li>
+        <li>George Daley, Dean of Harvard Medical School</li>
+        </p>
+      </div>
+
+      <div className="bg-[#f2f2f2] border-border/50 backdrop-blur-sm border rounded-2xl hover:shadow-lg backdrop-blur-sm p-8">
+        <h2 className="text-3xl text-primary mb-6">Collaborators</h2>
+        <p className="text-gray-900 leading-relaxed text-lg">
+        <li>Stephen C. Blacklow, Chair, Department of Biological Chemistry and Molecular Pharmacology</li>
+        <li>Urban Lendahl, Former Nobel Committee Chairman, Karolinska Institutet</li>
+        </p>
+      </div>
+
     </div>
   );
 };
