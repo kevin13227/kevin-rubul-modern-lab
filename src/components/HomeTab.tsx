@@ -19,10 +19,7 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-8 tracking-tight">
             Research Focus
           </h2>
-          <p className="text-xl md:text-2xl text-gray-400 max-w-6xl mx-auto leading-relaxed">
-            An RNA-centric view of the cell surface: protein design, hematopoietic stem & T-cell 
-            development, and immuno-ageing.
-          </p>
+
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto px-6">
@@ -64,9 +61,9 @@ export const HomeTab = ({ onNavigate }: HomeTabProps) => {
               
               {/* Content */}
               <div className="absolute bottom-0 left-0 right-0 p-8">
-                <h3 className="text-3xl font-bold text-white mb-4">Immune Cell Function in Cancer</h3>
+                <h3 className="text-3xl font-bold text-white mb-4">Enhancing Immune Cell Function in Cancer</h3>
                 <p className="text-white/90 text-lg leading-relaxed">
-                  Boosting T cell function to fight cancer.
+                  Boosting T cell function through designed<br />proteins to fight cancer.
                 </p>
               </div>
             </div>
