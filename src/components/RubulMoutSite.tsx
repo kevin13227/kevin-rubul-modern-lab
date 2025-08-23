@@ -12,6 +12,7 @@ import { BooksTab } from "./BooksTab";
 import { CoursesTab } from "./CoursesTab";
 import { SundayScienceTab } from "./SundayScienceTab";
 import { NewsTab } from "./NewsTab";
+import { ChatBox } from "./ChatBox";
 import proteinMoleculeBg from "@/assets/protein-molecule-ai.png";
 
 
@@ -251,6 +252,9 @@ export const RubulMoutSite = () => {
           </div>
         </div>
       </footer>
+      
+      {/* ChatBox - Only visible on contact page */}
+      <ChatBox isVisible={activeTab === 'contact'} />
     </div>
   );
 };
