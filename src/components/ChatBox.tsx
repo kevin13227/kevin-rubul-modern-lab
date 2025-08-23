@@ -18,7 +18,7 @@ export const ChatBox = ({ isVisible }: ChatBoxProps) => {
   const [messages, setMessages] = useState([
     {
       id: 1,
-      text: "Hello! How can I help you today?",
+      text: "Hello! I am Dr. Rubul Mout's AI Assistant and can aid you with sending him a message.",
       isUser: false,
       timestamp: new Date(),
     },
