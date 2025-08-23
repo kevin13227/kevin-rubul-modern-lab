@@ -23,9 +23,9 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
       <div className="relative z-10 text-center px-6 py-20">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-relaxed tracking-tight pb-4">
-            Advancing Science Through
+            Fighting Cancer & Aging
             <span className="block mt-4 text-[#ff4164] pb-2 leading-tight">
-              Protein Design, Cancer & Immunobiology
+              with Protein Design & Immunobiology
             </span>
           </h1>
           
@@ -58,7 +58,7 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
           
           <div className="mt-12 pt-8 border-t border-gray-600/30">
             <p className="text-base md:text-lg text-gray-300 max-w-4xl mx-auto leading-relaxed opacity-90">
-              Our work is published in Cell, PNAS, & Nature communications, among others; and our technology is featured in Nature, HMS News, etc.
+              Our work is published in <a href="https://www.cell.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#ff4164] underline transition-colors duration-300">Cell</a>, <a href="https://www.pnas.org" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#ff4164] underline transition-colors duration-300">PNAS</a>, & <a href="https://www.nature.com/ncomms" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#ff4164] underline transition-colors duration-300">Nature communications</a>, among others; and our technology is featured in <a href="https://www.nature.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#ff4164] underline transition-colors duration-300">Nature</a>, <a href="https://hms.harvard.edu/news" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#ff4164] underline transition-colors duration-300">HMS News</a>, etc.
             </p>
           </div>
         </div>
