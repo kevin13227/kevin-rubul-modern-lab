@@ -71,7 +71,7 @@ export const ChatBox = ({ isVisible }: ChatBoxProps) => {
       <div className="fixed bottom-6 right-6 z-50">
         <Button
           onClick={() => setIsOpen(true)}
-          className="h-14 px-6 rounded-full bg-red-800 hover:bg-red-900 shadow-lg"
+          className="h-14 px-6 rounded-full bg-[#A51C30] hover:bg-[#A51C30]/90 shadow-lg"
         >
           Contact Me
         </Button>
@@ -82,10 +82,10 @@ export const ChatBox = ({ isVisible }: ChatBoxProps) => {
   if (isMinimized) {
     return (
       <div className="fixed bottom-6 right-6 z-50">
-        <Card className="w-80 shadow-lg">
-          <CardHeader className="pb-2">
+        <Card className="w-80 shadow-lg bg-white border border-gray-300 overflow-hidden">
+          <CardHeader className="pb-2 text-white bg-[#A51C30]">
             <div className="flex items-center justify-between">
-              <CardTitle className="text-sm">Chat Assistant</CardTitle>
+              <CardTitle className="text-lg">Chat Assistant</CardTitle>
               <div className="flex gap-1">
                 <Button
                   variant="ghost"
@@ -113,10 +113,10 @@ export const ChatBox = ({ isVisible }: ChatBoxProps) => {
 
   return (
     <div className="fixed bottom-6 right-6 z-50">
-      <Card className="w-80 h-96 shadow-lg">
-        <CardHeader className="pb-2 border-b">
+      <Card className="w-80 h-96 shadow-lg bg-white border border-gray-300 overflow-hidden">
+        <CardHeader className="pb-2 border-b bg-[#A51C30] text-white border-[#A51C30]">
           <div className="flex items-center justify-between">
-            <CardTitle className="text-sm">Chat Assistant</CardTitle>
+            <CardTitle className="text-lg">Chat Assistant</CardTitle>
             <div className="flex gap-1">
               <Button
                 variant="ghost"
@@ -142,7 +142,7 @@ export const ChatBox = ({ isVisible }: ChatBoxProps) => {
           {/* Messages Area - Fixed height with scroll */}
           <div 
             ref={messagesContainerRef}
-            className="flex-1 p-3 overflow-y-auto"
+            className="flex-1 p-3 overflow-y-auto bg-white"
             style={{ maxHeight: '280px' }}
           >
             <div className="space-y-2">
@@ -173,12 +173,12 @@ export const ChatBox = ({ isVisible }: ChatBoxProps) => {
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyPress={handleKeyPress}
                 placeholder="Type your message..."
-                className="flex-1"
+                className="flex-1 bg-gray-200 text-black placeholder-black/70 border-0"
               />
               <Button
                 onClick={handleSendMessage}
                 size="sm"
-                className="bg-red-800 hover:bg-red-900"
+                className="bg-[#A51C30] hover:bg-[#A51C30]/90 text-white"
               >
                 <Send className="h-4 w-4" />
               </Button>
