@@ -63,16 +63,20 @@ export const RubulMoutSite = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 relative">
-      {/* Background Image - Fixed to viewport for entire site */}
-      <div 
-        className="fixed inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-        style={{
-          backgroundImage: `url(${proteinMoleculeBg})`,
-        }}
-      />
+      {/* Background Image - Fixed to viewport for entire site (hidden on research page) */}
+      {activeTab !== 'research' && (
+        <div 
+          className="fixed inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+          style={{
+            backgroundImage: `url(${proteinMoleculeBg})`,
+          }}
+        />
+      )}
       
-      {/* Fixed Black Overlay - 10% opacity for subtle background */}
-      <div className="fixed inset-0 bg-black/10" />
+      {/* Fixed Black Overlay - 10% opacity for subtle background (hidden on research page) */}
+      {activeTab !== 'research' && (
+        <div className="fixed inset-0 bg-black/10" />
+      )}
       
       {/* Navigation */}
       <Navigation activeTab={activeTab} onTabChange={handleTabChange} />
