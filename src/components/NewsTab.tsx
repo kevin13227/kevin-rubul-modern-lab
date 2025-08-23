@@ -3,8 +3,32 @@ import { ExternalLink } from "lucide-react";
 export const NewsTab = () => {
   const news = [
     {
-      title: "AP Patni, R Mout, R Moore, AA Alghadeer, GQ Daley, D Baker, J Mathieu, H Ruohola-Baker, \"Designed Soluble Notch Agonist Drives Human Ameloblast Maturation for Tooth Regeneration\" bioRxiv, 2025, doi: https://doi.org/10.1101/2025.04.03.646929",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NpMfqDUAAAAJ&pagesize=80&citation_for_view=NpMfqDUAAAAJ:JV2RwH3_ST0C"
+      title: "Nature, \"Notching up a win: fresh tools for activating Notch\" 2024",
+      link: "https://www.nature.com/articles/d41586-024-03822-3"
+    },
+    {
+      title: "Harvard News, \"AI-Designed Proteins Can Boost Production of T Cells\" 2025",
+      link: "https://hms.harvard.edu/news/ai-designed-proteins-can-boost-production-t-cells"
+    },
+    {
+      title: "UW News, \"Using computers to design proteins allows researchers to make tunable hydrogels that can form both inside and outside of cells\" 2024",
+      link: "https://www.washington.edu/news/2024/01/30/using-computers-to-design-proteins-allows-researchers-to-make-tunable-hydrogels-that-can-form-both-inside-and-outside-of-cells/"
+    },
+    {
+      title: "Phys.org, \"Overcoming hurdles in CRISPR gene editing to improve treatment\" 2017",
+      link: "https://phys.org/news/2017-02-hurdles-crispr-gene-treatment.html"
+    },
+    {
+      title: "GEN (Genetic Enginnering and Biotechnology News), \"AI-Designed Notch Agonists Boost T-Cell Differentiation\" 2025",
+      link: "https://www.genengnews.com/topics/artificial-intelligence/ai-designed-notch-agonists-boost-t-cell-differentiation/"
+    },
+    {
+      title: "The Sentinel, \"Dr. Rubul Mout: Assam’s scientist and the AI-engineered proteins for cancer therapy\" 2025",
+      link: "https://www.sentinelassam.com/more-news/editorial/dr-rubul-mout-assams-scientist-and-the-ai-engineered-proteins-for-cancer-therapy"
+    },
+    {
+      title: "Pratadin Time, \"Renowned Biotechnologist Rubul Mout Inspires Students at Assam Down Town University\" 2024",
+      link: "https://www.pratidintime.com/guwahati-news-breaking-latest/renowned-biotechnologist-rubul-mout-inspires-students-at-assam-down-town-university"
     }
   ];
 
@@ -15,7 +39,7 @@ export const NewsTab = () => {
           <div className="text-center animate-fade-in-up">
             <h1 className="text-5xl font-bold text-foreground mb-4">News</h1>
             <p className="text-xl text-muted-foreground">
-              Relevant scientific news articles featuring Dr. Mout
+              Relevant news articles celebrating scientific breakthroughs
             </p>
           </div>
 
@@ -70,9 +94,9 @@ export const NewsTab = () => {
                             </a>
                           )}
                         </div>
-                        <span className="text-sm font-bold text-black ml-4">
+                        {/*<span className="text-sm font-bold text-black ml-4">
                           {index + 1}
-                        </span>
+                        </span>*/}
                       </div>
                     </div>
                   </div>
