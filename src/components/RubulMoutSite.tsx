@@ -97,7 +97,7 @@ export const RubulMoutSite = () => {
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
             {/* Dr. Rubul Mout Section */}
-            <div className="text-center">
+            <div className="text-left">
               <h3 className="font-bold text-lg mb-4 text-[#ff4164]">
                 Dr. Rubul Mout
               </h3>
@@ -107,8 +107,8 @@ export const RubulMoutSite = () => {
               </p>
             </div>
             
-            {/* Quick Links - Centered Section, Left Aligned Text, Narrower Width */}
-            <div className="text-center flex justify-center">
+            {/* Quick Links - Left Aligned Section */}
+            <div className="text-left">
               <div className="w-32">
                 <h4 className="font-bold text-lg mb-4 text-[#ff4164]">
                   Quick Links
@@ -172,8 +172,8 @@ export const RubulMoutSite = () => {
               </div>
             </div>
             
-            {/* External Links - Centered Section, Left Aligned Text, Narrower Width */}
-            <div className="text-center flex justify-center">
+            {/* External Links - Left Aligned Section */}
+            <div className="text-left">
               <div className="w-32">
                 <h4 className="font-bold text-lg mb-4 text-[#ff4164]">
                   External Links
