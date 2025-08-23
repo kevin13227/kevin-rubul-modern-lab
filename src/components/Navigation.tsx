@@ -27,6 +27,7 @@ const publicationTabs = [
   { id: 'publications', label: 'Publications' },
   { id: 'patents', label: 'Patents' },
   { id: 'books', label: 'Books' },
+  { id: 'news', label: "News" },
 ];
 
 const teachingTabs = [
@@ -91,34 +92,34 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
                 variant="ghost"
                 onClick={() => onTabChange(tab.id)}
                 className={cn(
-                  "px-6 py-2 transition-all font-medium tracking-wide rounded-lg",
+                  "px-6 py-2 transition-all duration-300 font-medium tracking-wide relative",
                   activeTab === tab.id 
                     ? "bg-white text-[#A51C30] hover:bg-white/90 shadow-[0_0_20px_#A51C3080]" 
-                    : "text-white hover:bg-white/15 hover:scale-105 hover:shadow-[0_0_15px_#A51C3060]"
+                    : "text-white hover:bg-white/10 hover:text-white hover:shadow-[0_0_15px_#A51C3060]"
                 )}
               >
                 {tab.label}
               </Button>
             ))}
             
-                        {/* Publications Dropdown */}
+            {/* Publications Dropdown */}
             <DropdownMenu modal={false} open={publicationsOpen} onOpenChange={setPublicationsOpen}>
               <DropdownMenuTrigger asChild>
                 <Button
                   variant="ghost"
                   className={cn(
-                    "px-6 py-2 transition-all font-medium tracking-wide rounded-lg",
+                    "px-6 py-2 transition-all font-medium rounded-lg",
                     publicationsOpen ? "transition-none" : "hover:scale-105",
-                    ['publications', 'patents', 'books'].includes(activeTab)
+                    ['publications', 'patents', 'books', 'news'].includes(activeTab)
                       ? "bg-white text-[#A51C30] hover:bg-white/90 hover:text-[#A51C30] shadow-[0_0_20px_#A51C3080]" 
-                      : "text-white hover:bg-white/15 hover:text-white hover:scale-105 hover:shadow-[0_0_15px_#A51C3060]"
+                      : "text-white hover:bg-white/15 hover:text-white hover:shadow-[0_0_15px_#A51C3060]"
                   )}
                 >
                   Publications {publicationsOpen ? <ChevronUp className="ml-2 h-4 w-4" /> : <ChevronDown className="ml-2 h-4 w-4" />}
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent 
-                className="bg-[#A51C30] border-0 shadow-xl rounded-lg mt-0 p-0 min-w-[200px] animate-none z-40" 
+                className="bg-white border border-gray-200"
                 sideOffset={0}
                 align="center"
               >
@@ -137,12 +138,12 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
                       }
                     }}
                     className={cn(
-                      "cursor-pointer transition-none px-6 py-3 focus:outline-none",
+                      "cursor-pointer transition-none px-3 py-2 focus:outline-none",
                       index === 0 ? "rounded-t-lg" : "",
                       index === publicationTabs.length - 1 ? "rounded-b-lg" : "",
                       activeTab === tab.id 
-                        ? "bg-white text-[#A51C30] font-medium" 
-                        : "text-white hover:bg-white/15"
+                        ? "bg-[#A51C30]/10 text-[#A51C30] font-medium" 
+                        : "hover:bg-gray-50 text-gray-700"
                     )}
                   >
                     {tab.label}
@@ -157,18 +158,17 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
                 <Button
                   variant="ghost"
                   className={cn(
-                    "px-6 py-2 transition-all font-medium tracking-wide rounded-lg",
-                    teachingOpen ? "transition-none" : "hover:scale-105",
+                    "px-6 py-2 transition-all font-medium rounded-lg",
                     ['teaching', 'courses', 'sundayscience'].includes(activeTab)
                       ? "bg-white text-[#A51C30] hover:bg-white/90 hover:text-[#A51C30] shadow-[0_0_20px_#A51C3080]" 
-                      : "text-white hover:bg-white/15 hover:text-white hover:scale-105 hover:shadow-[0_0_15px_#A51C3060]"
+                      : "text-white hover:bg-white/15 hover:text-white hover:shadow-[0_0_15px_#A51C3060]"
                     )}
                   >
                     Teaching & Activism {teachingOpen ? <ChevronUp className="ml-2 h-4 w-4" /> : <ChevronDown className="ml-2 h-4 w-4" />}
                   </Button>
                 </DropdownMenuTrigger>
               <DropdownMenuContent 
-                className="bg-[#A51C30] border-0 shadow-xl rounded-lg mt-0 p-0 min-w-[200px] animate-none z-40" 
+                className="bg-white border border-gray-200"
                 sideOffset={0}
                 align="center"
               >
@@ -187,12 +187,12 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
                       }
                     }}
                     className={cn(
-                      "cursor-pointer transition-none px-6 py-3 focus:outline-none",
+                      "cursor-pointer transition-none px-3 py-2 focus:outline-none",
                       tab.id === 'teaching' && activeTab === 'teaching' ? "rounded-t-none" : index === 0 ? "rounded-t-lg" : "",
                       index === teachingTabs.length - 1 ? "rounded-b-lg" : "",
                       activeTab === tab.id 
-                        ? "bg-white text-[#A51C30] font-medium" 
-                        : "text-white hover:bg-white/15"
+                        ? "bg-[#A51C30]/10 text-[#A51C30] font-medium" 
+                        : "hover:bg-gray-50 text-gray-700"
                     )}
                   >
                     {tab.label}
