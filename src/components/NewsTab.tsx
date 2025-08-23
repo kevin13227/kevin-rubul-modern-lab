@@ -23,7 +23,7 @@ export const NewsTab = () => {
       link: "https://www.genengnews.com/topics/artificial-intelligence/ai-designed-notch-agonists-boost-t-cell-differentiation/"
     },
     {
-      title: "The Sentinel, \"Dr. Rubul Mout: Assam’s scientist and the AI-engineered proteins for cancer therapy\" 2025",
+      title: "The Sentinel, \"Dr. Rubul Mout: Assam\’s scientist and the AI-engineered proteins for cancer therapy\" 2025",
       link: "https://www.sentinelassam.com/more-news/editorial/dr-rubul-mout-assams-scientist-and-the-ai-engineered-proteins-for-cancer-therapy"
     },
     {
@@ -39,7 +39,7 @@ export const NewsTab = () => {
           <div className="text-center animate-fade-in-up">
             <h1 className="text-5xl font-bold text-foreground mb-4">News</h1>
             <p className="text-xl text-muted-foreground">
-              Relevant news articles celebrating scientific breakthroughs
+              News articles celebrating relevant scientific discoveries
             </p>
           </div>
 
@@ -87,9 +87,9 @@ export const NewsTab = () => {
                               target="_blank" 
                               rel="noopener noreferrer"
                               className="text-primary hover:text-primary-glow transition-colors flex items-center gap-2 text-sm font-medium group"
-                              title="View Publication"
+                              title="View Article"
                             >
-                              <span>View Publication</span>
+                              <span>View Article</span>
                               <ExternalLink className="w-4 h-4 group-hover:scale-100 transition-transform" />
                             </a>
                           )}
