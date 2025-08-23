@@ -11,6 +11,7 @@ import { PatentsTab } from "./PatentsTab";
 import { BooksTab } from "./BooksTab";
 import { CoursesTab } from "./CoursesTab";
 import { SundayScienceTab } from "./SundayScienceTab";
+import { NewsTab } from "./NewsTab";
 
 
 export const RubulMoutSite = () => {
@@ -55,6 +56,8 @@ export const RubulMoutSite = () => {
         return <CoursesTab />;
       case 'sundayScience':
         return <SundayScienceTab />;
+      case 'news':
+        return <NewsTab />;
       default:
         return <HomeTab onNavigate={handleTabChange} />;
     }
