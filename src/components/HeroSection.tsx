@@ -8,16 +8,8 @@ interface HeroSectionProps {
 export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image - Fixed to viewport */}
-      <div 
-        className="fixed inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${proteinMoleculeBg})`,
-        }}
-      />
-      
-      {/* Fixed Black Overlay - 30% opacity (reduced from 60% for better visibility) */}
-      <div className="fixed inset-0 bg-black/30" />
+      {/* Additional overlay for hero section */}
+      <div className="fixed inset-0 bg-black/20" />
       
       {/* Content */}
       <div className="relative z-10 text-center px-6 py-20">

@@ -11,6 +11,7 @@ import { PatentsTab } from "./PatentsTab";
 import { BooksTab } from "./BooksTab";
 import { CoursesTab } from "./CoursesTab";
 import { SundayScienceTab } from "./SundayScienceTab";
+import proteinMoleculeBg from "@/assets/protein-molecule-ai.png";
 
 
 export const RubulMoutSite = () => {
@@ -61,7 +62,18 @@ export const RubulMoutSite = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900">
+    <div className="min-h-screen bg-gray-900 relative">
+      {/* Background Image - Fixed to viewport for entire site */}
+      <div 
+        className="fixed inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+        style={{
+          backgroundImage: `url(${proteinMoleculeBg})`,
+        }}
+      />
+      
+      {/* Fixed Black Overlay - 10% opacity for subtle background */}
+      <div className="fixed inset-0 bg-black/10" />
+      
       {/* Navigation */}
       <Navigation activeTab={activeTab} onTabChange={handleTabChange} />
       
@@ -71,7 +83,7 @@ export const RubulMoutSite = () => {
       )}
       
       {/* Main Content */}
-      <main className="container mx-auto px-6 py-12 pt-20">
+      <main className="container mx-auto px-6 py-12 pt-20 relative z-10">
         {renderActiveTab()}
       </main>
       

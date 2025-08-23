@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { GraduationCap, Award, BookOpen, Globe, Microscope, Users } from "lucide-react";
+import { GraduationCap, Award, BookOpen, Globe, Microscope, Users, Download } from "lucide-react";
 import rubulPortrait from "@/assets/rubul-portrait.jpg";
 
 export const BiographyTab = () => {
@@ -60,6 +60,20 @@ export const BiographyTab = () => {
             <h2 className="text-5xl font-bold text-white mb-6">Dr. Rubul Mout</h2>
             <h3 className="text-2xl font-semibold text-white mb-4">Research Fellow</h3>
             <h4 className="text-xl text-gray-300 mb-6">Harvard Medical School & Boston Children's Hospital</h4>
+            
+            {/* CV Preview Link */}
+            <div className="mb-6">
+              <a
+                href="/cv-rubul-mout.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-300 border border-white/20 hover:border-white/40"
+              >
+                <Download className="w-4 h-4" />
+                Preview CV
+              </a>
+            </div>
+            
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
               <em>"From humble beginnings in rural India to groundbreaking research at Harvard Medical School, Dr. Rubul Mout exemplifies the transformative power of science and education. His journey from a poor peasant family to becoming a leading researcher in protein design and cell biology inspires countless students worldwide."</em>
             </p>
