@@ -1,6 +1,23 @@
 import { ExternalLink } from "lucide-react";
 
 export const PublicationsTab = () => {
+  // Function to make "R Mout" bold in citations
+  const makeRubulNameBold = (text: string) => {
+    // Replace "R Mout" with bold version, handling various formats
+    const boldRubulName = text.replace(
+      /(R\s+Mout)/g, 
+      '<strong class="font-bold text-black">$1</strong>'
+    );
+    
+    // Also handle variations like "R Mout*", "R Mout#", etc.
+    const boldRubulNameWithSymbols = boldRubulName.replace(
+      /(R\s+Mout[*#])/g, 
+      '<strong class="font-bold text-black">$1</strong>'
+    );
+    
+    return boldRubulNameWithSymbols;
+  };
+
   const publications = [
     {
       title: "AP Patni, R Mout, R Moore, AA Alghadeer, GQ Daley, D Baker, J Mathieu, H Ruohola-Baker, \"Designed Soluble Notch Agonist Drives Human Ameloblast Maturation for Tooth Regeneration\" bioRxiv, 2025, doi: https://doi.org/10.1101/2025.04.03.646929",
@@ -188,13 +205,22 @@ export const PublicationsTab = () => {
                                 <div className="text-lg font-bold mb-2 text-black">
                                   "{quotedTitle}"
                                 </div>
-                                <div className="text-sm text-gray-700">
-                                  {restOfCitation}
-                                </div>
+                                <div 
+                                  className="text-sm text-gray-700"
+                                  dangerouslySetInnerHTML={{ 
+                                    __html: makeRubulNameBold(restOfCitation) 
+                                  }}
+                                />
                               </>
                             );
                           }
-                          return publication.title;
+                          return (
+                            <div 
+                              dangerouslySetInnerHTML={{ 
+                                __html: makeRubulNameBold(publication.title) 
+                              }}
+                            />
+                          );
                         })()}
                       </h3>
                     </div>
