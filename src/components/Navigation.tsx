@@ -92,7 +92,12 @@ export const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
         <div className="w-full px-8 py-4">
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-xl font-bold text-white tracking-wider">DR. RUBUL MOUT</h1>
+              <button 
+                onClick={() => onTabChange('home')}
+                className="text-xl font-bold text-white tracking-wider hover:text-white/80 transition-colors duration-200 cursor-pointer"
+              >
+                DR. RUBUL MOUT
+              </button>
             </div>
             
             <div className="hidden md:flex items-center justify-center flex-1 space-x-2 relative z-50">
